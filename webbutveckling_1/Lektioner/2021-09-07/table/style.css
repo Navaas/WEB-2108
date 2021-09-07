@@ -1,0 +1,10 @@
+table, th, td {
+    border: 1px solid purple;
+    border-collapse: collapse;
+    width: 30em;
+    background-color: aquamarine;
+}
+
+#food table, th, {
+    background-color: purple;
+}
