@@ -1,6 +1,4 @@
 
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 o
 ?webbutveckling_1/Lektioner/2021-09-06/repetition_html/README.md,a\9\a904477195b1ebba6863c6925a77352a423da830
 p
@@ -9,11 +7,23 @@ q
 Awebbutveckling_1/Lektioner/2021-09-06/repetition_html/index2.html,a\f\af6e9452be2dc5a8368cb65d682ebb260a473a0d
 q
 Awebbutveckling_1/Lektioner/2021-09-06/repetition_html/index3.html,b\4\b4680294b30a96baed08152bf42e3804e27e5180
-U
-%webbutveckling_1/Läxa/omMigStyle.css,e\a\ea4d34602b34aa828d1d6f1b252bc348f80dc24a
-R
-"webbutveckling_1/Läxa/Om mig.html,0\c\0c3c5a3d428d696393d5e0345707130ac89da4af
 o
 ?webbutveckling_1/Lektioner/2021-09-06/repetition_css/style4.css,c\e\ced5ef808af3ee95ca33a0344f6a074677001bb2
 o
 ?webbutveckling_1/Lektioner/2021-09-06/repetition_css/style3.css,0\5\05aaaf5df90e0d7623a6f1a5af7d8f77d61fded5
+o
+?webbutveckling_1/Lektioner/2021-09-06/repetition_css/index.html,7\c\7ca9ee8f351550b8f176f64bf070c3c38e9b7cd4
+p
+@webbutveckling_1/Lektioner/2021-09-06/repetition_css/index2.html,a\e\ae141a37bd622782f9ca139b9949205fcdd1e662
+p
+@webbutveckling_1/Lektioner/2021-09-06/repetition_css/index3.html,5\0\504e46abba96bb71102ed7121831be14716bce14
+p
+@webbutveckling_1/Lektioner/2021-09-06/repetition_css/index4.html,a\c\ac1dbebdbceb7bd03d51fc746c87c467364aced0
+q
+Awebbutveckling_1/Lektioner/2021-09-07/table/table-genomgång.html,4\2\429067930ec4ca42c035adb94064bcde76fc8779
+p
+@webbutveckling_1/Lektioner/2021-09-07/table/style-genomgång.css,e\4\e4e31f02f348dcc2015e727301ed9737696dd0f7
+e
+5webbutveckling_1/Lektioner/2021-09-07/table/style.css,6\5\65bc2c750512e1b41d0d0edf50a5517c214fd6d1
+f
+6webbutveckling_1/Lektioner/2021-09-07/table/index.html,4\7\4773dfcc5a599d90d044d2efdd3732dca4d80585
