@@ -1,0 +1,32 @@
+#navbar {
+    list-style-type: none;
+    margin: 5em;
+    padding: 10;
+    overflow: hidden;
+    border: 1px solid snow;
+    width: 20em;
+    border-radius: 25px;
+    font-family: "Palatino Linotype";
+}
+.navbar-item {
+    float: left;
+}
+
+.navbar-link {
+    display: block;
+    color: white;
+    text-align: center;
+    /*padding: 14px 16px;*/
+    padding: 0.84em 1em;
+    text-decoration: none;
+}
+
+.navbar-link:hover:not(.active) {
+    background-color: darkseagreen;
+}
+
+.active {
+    background-color: snow;
+    color:  black
+
+}
