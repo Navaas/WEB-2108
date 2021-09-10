@@ -2,3 +2,8 @@ body {
     background-image: url(../img/tree.jpg);
     background-size: 100%;
 }
+
+p {
+    font-family: "Palatino Linotype";
+    color: white;
+}
