@@ -19,11 +19,7 @@ p
 @webbutveckling_1/Lektioner/2021-09-06/repetition_css/index3.html,5\0\504e46abba96bb71102ed7121831be14716bce14
 p
 @webbutveckling_1/Lektioner/2021-09-06/repetition_css/index4.html,a\c\ac1dbebdbceb7bd03d51fc746c87c467364aced0
-q
-Awebbutveckling_1/Lektioner/2021-09-07/table/table-genomgång.html,4\2\429067930ec4ca42c035adb94064bcde76fc8779
 p
 @webbutveckling_1/Lektioner/2021-09-07/table/style-genomgång.css,e\4\e4e31f02f348dcc2015e727301ed9737696dd0f7
 e
 5webbutveckling_1/Lektioner/2021-09-07/table/style.css,6\5\65bc2c750512e1b41d0d0edf50a5517c214fd6d1
-f
-6webbutveckling_1/Lektioner/2021-09-07/table/index.html,4\7\4773dfcc5a599d90d044d2efdd3732dca4d80585
