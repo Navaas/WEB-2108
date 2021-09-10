@@ -14,3 +14,5 @@ Jag kommer göra följande HTML-filer som ska slås ihop till en helhet. Alla fi
 Här är en grundplan som jag har tänkt. HTML filerna kommer följa samma tema med samma bakgrundsbild/fonter/färger.
 
 Jag kommer även skriva en "loggbok" i ett word-dokument om det blir förändringar samt de problem jag stöter på och hur jag löser dom.
+
+Kommer även försöka göra commit i GitHub ofta för att jag själv ska kunna följa mitt kodande och ha som dokumentation.
