@@ -3,18 +3,21 @@ body {
     background-size: 100%;
 }
 
-section {
-    width: 50em;
-    padding: 10em 5em 20em;
-    background-image: url("../img/marmor2.JPG");
-    opacity: 35%;
+section{
+    background-image: url(../img/marmor.jpg);
+    width: 60em;
     border-radius: 25px;
-    margin: auto;
-    margin-top: 2em;
+    padding: 1em;
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 article{
-    width: 30%;
+    width: 33%;
     float: left;
     font-family: "Palatino Linotype";
 }
