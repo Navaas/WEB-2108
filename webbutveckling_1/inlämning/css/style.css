@@ -8,7 +8,7 @@ section{
     width: 60em;
     border-radius: 25px;
     padding: 1em;
-    margin-bottom: 1em;
+    margin: 1em 15em 0em;
 }
 
 section:after {
