@@ -8,6 +8,7 @@ section{
     width: 60em;
     border-radius: 25px;
     padding: 1em;
+    margin-bottom: 1em;
 }
 
 section:after {
@@ -20,4 +21,9 @@ article{
     width: 33%;
     float: left;
     font-family: "Palatino Linotype";
+}
+
+#column1{
+    width: 50em;
+    margin: 0px 75px 0px;
 }
