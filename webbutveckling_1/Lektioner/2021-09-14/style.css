@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #5f93e8;
+    color: black;
+}
+
+header, section, aside, footer {
+    margin: 0;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+header{
+    background: aqua;
+}
+
+hero{
+    background: blue;
+}
+
+content {
+    flex: 1;
+    background: cadetblue;
+}
+
+sidebar{
+    background: darkorchid;
+}
+
+footer{
+    background: darksalmon;
+}
+
+@media screen and (min-width:780px) {
+    
+}
+@media screen and (min-width:992px){
+
+}

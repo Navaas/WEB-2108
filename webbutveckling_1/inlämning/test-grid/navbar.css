@@ -1,14 +1,22 @@
+
+* {box-sizing: border-box
+}
+
+body {
+    background-color: #aaaaaa;
+}
+
 #navbar {
     list-style-type: none;
-    margin: auto auto 5em auto;
+    margin: auto;
     overflow: hidden;
     border: 1px solid snow;
     border-radius: 5em;
-    text-align: center;
-    width: 100%;
+    width: 32%;
+
 }
 .navbar-item {
-    display: inline-block;
+    float: left;
 }
 
 .navbar-link {

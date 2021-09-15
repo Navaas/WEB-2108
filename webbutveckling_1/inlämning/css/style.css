@@ -1,29 +1,61 @@
-body {
+/* Mobile */
+* {
+    box-sizing: border-box;
+}
+body{
     background-image: url(../img/tree.jpg);
     background-size: 100%;
 }
 
-section{
-    background-image: url(../img/marmor.jpg);
-    width: 60em;
-    border-radius: 25px;
+.img-responsive {
+    width: 60%;
+    max-width: 500px;
+}
+
+.container {
+    background-color: white;
+    display: grid;
+    grid-template-columns:2fr 1fr
+    width: 70%;
+    margin: auto auto 2em auto;
+    border-radius: 15px;
+    color: black;
     padding: 1em;
-    margin: 1em 15em 0em;
+
 }
 
-section:after {
-    content: "";
-    display: table;
-    clear: both;
+
+header {
+    text-align: center;
 }
 
-article{
-    width: 33%;
-    float: left;
-    font-family: "Palatino Linotype";
+/*mobile*/
+.container {
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
 }
 
-#column1{
-    width: 50em;
-    margin: 0px 75px 0px;
+/*tablet*/
+@media only screen and (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+    "header nav"
+    "main main"
+    }
+
+
+/*desktop*/
+@media only screen and (min-width: 1200px) {
+    .container {
+        /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+    "header nav nav nav"
+    "main main main aside"
+    }
+}
+
 }
