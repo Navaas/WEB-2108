@@ -1,11 +1,6 @@
-
 body {
     background-image: url(../img/tree.jpg);
     background-size: 100%;
-}
-
-section {
-    width: 100%;
 }
 
 h3 {
@@ -24,18 +19,15 @@ table, th, td {
     background-color: white;
     display: grid;
     width: 70%;
-}
-
-.color-cell1, .color-cell2, .color-cell3 {
-    background-color: darkseagreen;
-}
-
-div {
-    grid-template-columns:2fr 1fr;
+    grid-template-columns:1fr 1fr;
     margin: auto auto 2em auto;
     border-radius: 15px;
     color: black;
     padding: 1em;
+}
+
+.color-cell1, .color-cell2, .color-cell3 {
+    background-color: darkseagreen;
 }
 
 .img-responsive {
@@ -43,16 +35,24 @@ div {
     max-width: 500px;
 }
 
-/*mobile*/
-.container {
-    grid-template-areas:
-    "header"
-    "nav"
-    "main"
+
+@media only screen and (min-width: 768px) {
+    .table1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .table2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .table3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
 
-/*tablet*/
-@media only screen and (min-width: 768px) {
+
+@media only screen and (min-width: 992px) {
     .table1 {
         grid-template-columns: repeat(1, 1fr);
     }
