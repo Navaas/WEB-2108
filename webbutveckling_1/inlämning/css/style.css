@@ -19,7 +19,7 @@ body{
     font-family: "Palatino Linotype";
 }
 
-.about-me-box2{
+.about-me-box2 {
     background-color: white;
     display: grid;
     width: 70%;
@@ -28,7 +28,7 @@ body{
     border-radius: 15px;
     color: black;
     padding: 1em;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, fr);
     grid-template-rows: auto;
     font-family: "Palatino Linotype";
 }
@@ -38,6 +38,11 @@ body{
     max-width: 500px;
 }
 
+.img-responsive1 {
+    width: 20%;
+    max-width: 500px;
+    text-align: center;
+}
 
 @media only screen and (min-width: 768px) {
     .about-me-box2 {
@@ -57,7 +62,7 @@ body{
     }
 
     .about-me-box2 {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(, 1fr);
     }
 }
 
@@ -67,6 +72,6 @@ body{
     }
 
     .about-me-box2 {
-        grid-template-columns: repeat(1, 2fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }

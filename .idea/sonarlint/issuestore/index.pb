@@ -32,8 +32,6 @@ W
 q
 Awebbutveckling_1/Lektioner/2021-09-07/table/table-genomgång.html,4\2\429067930ec4ca42c035adb94064bcde76fc8779
 V
-&webbutveckling_1/inlämning/other.html,a\4\a46719744c6df90dda0e83b8528fa1c7884e228a
-V
 &webbutveckling_1/inlämning/index.html,5\0\506acfd77a55e07fd988ee42464b9ff774a8e9f5
 U
 %webbutveckling_1/inlämning/README.md,4\d\4d49e27f011a728de1f0ffe382efd8bd8cc5c7eb
