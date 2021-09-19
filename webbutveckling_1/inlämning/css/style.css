@@ -6,6 +6,14 @@ body{
     background-size: 100%;
 }
 
+.img-me{
+    text-align: center;
+}
+
+.img-ice{
+    text-align: center;
+}
+
 .about-me-box1 {
     background-color: white;
     display: grid;
@@ -23,12 +31,24 @@ body{
     background-color: white;
     display: grid;
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto auto 2em auto;
     border-radius: 15px;
     color: black;
     padding: 1em;
-    grid-template-columns: repeat(3, fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    font-family: "Palatino Linotype";
+}
+
+.about-me-box3 {
+    background-color: white;
+    display: grid;
+    width: 50%;
+    margin: auto auto 2em auto;
+    border-radius: 15px;
+    color: black;
+    padding: 1em;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     font-family: "Palatino Linotype";
 }
@@ -62,7 +82,7 @@ body{
     }
 
     .about-me-box2 {
-        grid-template-columns: repeat(, 1fr);
+        grid-template-columns: repeat(1, 3fr);
     }
 }
 
@@ -72,6 +92,6 @@ body{
     }
 
     .about-me-box2 {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 3fr);
     }
 }
