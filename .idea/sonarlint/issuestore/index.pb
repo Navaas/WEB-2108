@@ -31,7 +31,5 @@ W
 'webbutveckling_1/Läxa/Om mig/README.md,e\7\e7b64d5191be2eb1b00079a404904eb2b47139f4
 q
 Awebbutveckling_1/Lektioner/2021-09-07/table/table-genomgång.html,4\2\429067930ec4ca42c035adb94064bcde76fc8779
-V
-&webbutveckling_1/inlämning/index.html,5\0\506acfd77a55e07fd988ee42464b9ff774a8e9f5
 U
 %webbutveckling_1/inlämning/README.md,4\d\4d49e27f011a728de1f0ffe382efd8bd8cc5c7eb

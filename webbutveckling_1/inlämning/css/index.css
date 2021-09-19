@@ -1,0 +1,52 @@
+* {
+    box-sizing: content-box;
+}
+
+body {
+    background-image: url(../img/tree.jpg);
+    background-size: cover;
+}
+
+.header {
+    color: white;
+    text-align: center;
+    font-family: "Palatino Linotype";
+}
+
+p, li {
+    font-family: "Palatino Linotype";
+    color: black;
+}
+
+.box-index {
+    background-color: white;
+    width: 70%;
+    margin: auto auto 2em auto;
+    border-radius: 15px;
+    padding: 0.5em;
+    grid-template-columns: repeat(1, 1fr)
+}
+
+.text{
+    text-align: center;
+}
+.hakunamatata{
+    text-align: center;
+}
+
+.img-responsive {
+    width: 20%;
+    max-width: 500px;
+}
+
+@media only screen and (min-width: 992px) {
+    .box-index {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .box-index {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

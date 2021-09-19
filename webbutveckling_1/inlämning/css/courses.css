@@ -1,11 +1,15 @@
+* {
+    box-sizing: content-box;
+}
+
 body {
     background-image: url(../img/tree.jpg);
-    background-size: 100%;
+    background-size: cover;
 }
 
 h3 {
     text-align: center;
-    font-family: "Palatino Linotype";
+    font-family: "Palatino Linotype", sans-serif;
     padding: 0;
 }
 
@@ -13,20 +17,25 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     padding: 0.5em;
+    text-wrap: normal;
 }
 
-.table1, .table2, .table3 {
+.box {
     background-color: white;
-    display: grid;
     width: 70%;
-    grid-template-columns:1fr 1fr;
     margin: auto auto 2em auto;
     border-radius: 15px;
     color: black;
-    padding: 1em;
+    padding: 0.5em;
+    word-wrap: anywhere;
+    text-wrap: unset;
 }
 
-.color-cell1, .color-cell2, .color-cell3 {
+.box td, th {
+    min-width: 50px;
+}
+
+.color-cell {
     background-color: darkseagreen;
 }
 
@@ -36,47 +45,15 @@ table, th, td {
 }
 
 
-@media only screen and (min-width: 768px) {
-    .table1 {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .table2 {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .table3 {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-}
-
-
 @media only screen and (min-width: 992px) {
-    .table1 {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .table2 {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .table3 {
+    .box {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
 
 @media only screen and (min-width: 1200px) {
-    .table1 {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .table2 {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .table3 {
+    .box {
         grid-template-columns: repeat(1, 1fr);
     }
 }
