@@ -1,0 +1,49 @@
+/* Mobile First */
+* {
+    box-sizing: border-box;
+}
+h4 {
+    text-align: center;
+}
+
+.fun-fact{
+    text-align: left;
+}
+.grid-container-about {
+    display: grid;
+    background-color: white;
+    margin: 30px;
+    border: solid 1px black;
+    padding: 1em;
+    column-gap: 1em;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+img {
+    text-align: center;
+}
+
+.img-responsive {
+    width: 50%;
+    max-width: 500%;
+}
+
+@media only screen and (min-width: 768px) {
+    .grid-container-about {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+    .grid-container-me {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .grid-container-about {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+    .grid-container-me {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

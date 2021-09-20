@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: whitesmoke;
 }
 
 .navbar-item {
@@ -21,7 +21,7 @@ body {
 
 .navbar-link {
     display: block;
-    color: white;
+    color: grey;
     text-align: center;
     /*padding: 14px 16px;*/
     padding: 0.84em 1em;
@@ -33,5 +33,18 @@ body {
 }
 
 .active {
-    background-color: #04AA6D;
+    background-color: navajowhite;
+}
+
+@media only screen and (min-width: 768px) {
+    .active {
+        background-color: darkorchid;
+
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .active {
+        background-color: darkblue;
+    }
 }

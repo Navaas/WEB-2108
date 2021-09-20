@@ -1,0 +1,36 @@
+/* Mobile First */
+
+.grid-container-products {
+    display: grid;
+    background-color: white;
+    margin: 30px;
+    border: solid 1px black;
+    padding: 0.5em;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.imge-link {
+    text-align: center;
+}
+
+.img-responsive {
+    width: 100%;
+    max-width: 500px;
+}
+
+@media only screen and (min-width: 768px) {
+    .grid-container-products {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+
+    @media only screen and (min-width: 1200px) {
+        .grid-container-products {
+            grid-template-columns: repeat(2, 1fr);
+        } {
+    }
+    }
+}
+
+

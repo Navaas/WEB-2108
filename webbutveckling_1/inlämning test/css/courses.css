@@ -8,3 +8,16 @@ table, th, td {
     padding: 0.5em;
     text-wrap: normal;
 }
+
+@media only screen and (min-width: 768px) {
+    .active {
+        background-color: darkorchid;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .active {
+        background-color: darkblue;
+    }
+}
+
