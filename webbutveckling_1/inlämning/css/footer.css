@@ -8,7 +8,7 @@ footer {
     border-radius: 5em;
     left: auto;
     right: auto;
-    bottom: 0;
+    bottom: 0px;
     grid-template-columns: repeat(1, 1fr)
 }
 

@@ -44,16 +44,10 @@ X
 Y
 )webbutveckling_1/inlämning/products.html,3\b\3b5248c99ff8a1ad99dcd8b5d2ed433874700e7a
 [
-+webbutveckling_1/inlämning test/blogg.html,5\2\5298a6351b2f6c26b8ac4b47fac09a39f28b825d
-[
 +webbutveckling_1/inlämning test/other.html,9\c\9c484fa4fc45b886d25c098a72d9843bfdc9b4e0
 Z
 *webbutveckling_1/inlämning test/README.md,c\7\c78d8021f023bd47016ab6dee0291f0e2ccd95fc
 Y
 )webbutveckling_1/inlämning/css/index.css,1\c\1c08243f3dc5d228ea87aa6bedd8f7e4397244a8
-[
-+webbutveckling_1/inlämning/css/courses.css,4\b\4badbc31484afb7eb5b13a2ba4451e23e5abc344
 V
 &webbutveckling_1/inlämning/about.html,3\3\3355a6c2b79f96f4a88ec884f95e3e938e7eb3d8
-\
-,webbutveckling_1/inlämning/css/products.css,c\b\cb7011981d2aa1eadc490a6e55600d1befc726d9
