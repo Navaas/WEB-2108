@@ -34,8 +34,6 @@ Awebbutveckling_1/Lektioner/2021-09-07/table/table-genomgång.html,4\2\42906793
 Y
 )webbutveckling_1/inlämning/css/style.css,2\8\28673690b77682d8fcd8525b3519c3610a5f7385
 V
-&webbutveckling_1/inlämning/index.html,5\0\506acfd77a55e07fd988ee42464b9ff774a8e9f5
-V
 &webbutveckling_1/inlämning/blogg.html,f\f\ffa09fc51f5061fcb75eed851cf05ed2a2fdb7d6
 U
 %webbutveckling_1/inlämning/README.md,4\d\4d49e27f011a728de1f0ffe382efd8bd8cc5c7eb
@@ -47,7 +45,5 @@ Y
 +webbutveckling_1/inlämning test/other.html,9\c\9c484fa4fc45b886d25c098a72d9843bfdc9b4e0
 Z
 *webbutveckling_1/inlämning test/README.md,c\7\c78d8021f023bd47016ab6dee0291f0e2ccd95fc
-Y
-)webbutveckling_1/inlämning/css/index.css,1\c\1c08243f3dc5d228ea87aa6bedd8f7e4397244a8
 V
 &webbutveckling_1/inlämning/about.html,3\3\3355a6c2b79f96f4a88ec884f95e3e938e7eb3d8

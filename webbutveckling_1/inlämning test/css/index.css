@@ -6,6 +6,7 @@
     border: solid 1px black;
     margin: 30px;
     padding: 0.5em;
+    border-radius: 15px;
     grid-template-columns: repeat(1fr);
 }
 
