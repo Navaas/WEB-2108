@@ -1,5 +1,10 @@
 /* Mobile First */
 
+header {
+    color: white;
+    text-align: center;
+    font-family: "Palatino Linotype", sans-serif;
+}
 .container {
     display: grid;
     background-color: white;
@@ -7,10 +12,9 @@
     margin: 30px;
     padding: 0.5em;
     border-radius: 15px;
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: repeat(0,1fr);
 }
 
-}
 img {
     text-align: center;
 }
@@ -25,7 +29,6 @@ img {
 
 @media only screen and (min-width: 768px) {
     .container {
-        background-color: steelblue;
         grid-template-columns: repeat(1fr);
         display: grid;
     }
@@ -33,7 +36,6 @@ img {
 
 @media only screen and (min-width: 1200px) {
     .container {
-        background-color: steelblue;
         grid-template-columns: repeat(1fr);
         display: grid;
         max-width: 60em;
