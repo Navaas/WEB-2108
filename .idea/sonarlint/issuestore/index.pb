@@ -41,8 +41,6 @@ X
 (webbutveckling_1/inlämning/courses.html,4\2\4230c9c61a87c733c359b0a69d96e91215062ea0
 Y
 )webbutveckling_1/inlämning/products.html,3\b\3b5248c99ff8a1ad99dcd8b5d2ed433874700e7a
-[
-+webbutveckling_1/inlämning test/other.html,9\c\9c484fa4fc45b886d25c098a72d9843bfdc9b4e0
 Z
 *webbutveckling_1/inlämning test/README.md,c\7\c78d8021f023bd47016ab6dee0291f0e2ccd95fc
 V

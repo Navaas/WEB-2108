@@ -1,18 +1,25 @@
 * {
     box-sizing: border-box;
 }
+.remove {
+    display: none;
+}
+
 .container {
-    display: grid;
     background-color: white;
     margin: 30px;
     border: solid 1px black;
     padding: 1em;
     border-radius: 15px;
-    column-gap: 1em;
-    text-wrap: unset;
-    grid-template-columns: repeat(1, 1fr);
 }
 
+main{
+    margin-bottom: 70px;
+}
+
+table{
+    width: 100%;
+}
 
 table, th, td {
     border: 1px solid black;
@@ -24,12 +31,16 @@ table, th, td {
     .container {
         background-color: darkorchid;
     }
+    .remove{
+        display: block;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
     .container {
         background-color: pink;
-        max-width: 70em;
+        margin-right: 15em;
+        margin-left: 15em;
     }
 }
 

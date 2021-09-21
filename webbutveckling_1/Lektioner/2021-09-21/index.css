@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+header, nav, main, aside, footer{
+    border: 1px solid black;
+    margin: 0;
+}
+
+.header{
+    background-color: #5f93e8;
+    line-height: 5vh;
+}
+
+.nav{
+    background-color: aqua;
+    line-height: 5vh;
+}
+.main{
+    background-color: pink;
+    line-height: 42.5vh;
+}
+
+.aside{
+    background-color: coral;
+    line-height: 42.5vh;
+}
+
+.footer{
+    background-color: forestgreen;
+    line-height: 5vh;
+}
+
+
+@media screen and (min-width: 768px){
+    .container{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+    }
+}
+@media screen and (min-width: 1200px){
+    .grid-start{
+        display: grid;
+        grid-template-columns:1fr 3fr;
+    }
+    .container{
+    grid-template-columns: 3fr 1fr}
+}

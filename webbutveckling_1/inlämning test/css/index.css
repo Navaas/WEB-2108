@@ -1,5 +1,15 @@
 /* Mobile First */
+*{
+    box-sizing: content-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
 
+main{
+    margin-bottom: 20%;
+}
 header {
     color: white;
     text-align: center;
@@ -10,7 +20,7 @@ header {
     background-color: white;
     border: solid 1px black;
     margin: 30px;
-    padding: 0.5em;
+    padding: 1em;
     border-radius: 15px;
     grid-template-columns: repeat(0,1fr);
 }
@@ -38,6 +48,7 @@ img {
     .container {
         grid-template-columns: repeat(1fr);
         display: grid;
-        max-width: 60em;
+        margin-right: 20em;
+        margin-left: 20em;
     }
 }
