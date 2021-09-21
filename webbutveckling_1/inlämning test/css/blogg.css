@@ -3,7 +3,12 @@
     box-sizing: border-box;
 }
 
-h2, h4 {
+h2 {
+    text-align: center;
+    background-color: lightgray;
+    padding: 0.5em;
+}
+h4{
     text-align: center;
 }
 
@@ -18,7 +23,7 @@ h2, h4 {
     grid-template-columns: repeat(1, 1fr);
 }
 
-.img-matte {
+.img-matte, .img-plugga {
     text-align: center;
 }
 
