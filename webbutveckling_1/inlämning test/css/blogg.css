@@ -29,7 +29,6 @@ h2, h4 {
 
 @media only screen and (min-width: 768px) {
     .container {
-        background-color: steelblue;
         grid-template-columns: repeat(1fr);
         display: grid;
     }
@@ -37,8 +36,8 @@ h2, h4 {
 
 @media only screen and (min-width: 1200px) {
     .container {
-        background-color: steelblue;
         grid-template-columns: repeat(1fr);
         display: grid;
+        max-width: 60em;
     }
 }

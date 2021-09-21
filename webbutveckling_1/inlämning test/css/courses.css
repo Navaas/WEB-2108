@@ -20,14 +20,15 @@ table, th, td {
 }
 
 @media only screen and (min-width: 768px) {
-    .active {
+    .container {
         background-color: darkorchid;
     }
 }
 
 @media only screen and (min-width: 1200px) {
-    .active {
-        background-color: darkblue;
+    .container {
+        background-color: pink;
+        max-width: 70em;
     }
 }
 

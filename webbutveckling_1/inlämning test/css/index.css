@@ -3,10 +3,12 @@
 .container {
     display: grid;
     background-color: white;
-    margin: 30px;
     border: solid 1px black;
+    margin: 30px;
     padding: 0.5em;
     grid-template-columns: repeat(1fr);
+}
+
 }
 img {
     text-align: center;
@@ -33,5 +35,6 @@ img {
         background-color: steelblue;
         grid-template-columns: repeat(1fr);
         display: grid;
+        max-width: 60em;
     }
 }
