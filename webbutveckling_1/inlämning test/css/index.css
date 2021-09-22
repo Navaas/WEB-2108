@@ -10,11 +10,11 @@ body {
 main{
     margin-bottom: 20%;
 }
-header {
-    color: white;
-    text-align: center;
-    font-family: "Palatino Linotype", sans-serif;
+
+.header{
+
 }
+
 .container {
     display: grid;
     background-color: white;

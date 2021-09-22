@@ -7,9 +7,26 @@ background-image: url('../img/sand.jpg');
     padding-bottom: 55px;
 }
 
-h2, h3, h4, p, ul, table {
+h2{
+    color: white;
+}
+
+h3 h4, p, ul, table {
     color: black;
     font-family: "Palatino Linotype", sans-serif;
+}
+
+.header{
+    background-image: url('../img/grey.jpg');
+    width: 30em;
+    color: white;
+    text-align: center;
+    margin-right: 32em;
+    margin-left: 32em;
+    padding: 0.5px;
+    border-radius: 15px;
+    border: solid 1px black;
+    margin-top: 20px;
 }
 
 
