@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: whitesmoke;
+    background-color: lightgray;
 }
 
 .navbar-item {
@@ -22,7 +22,7 @@ body {
 
 .navbar-link {
     display: block;
-    color: grey;
+    color: black;
     text-align: center;
     /*padding: 14px 16px;*/
     padding: 0.84em 1em;
@@ -30,7 +30,7 @@ body {
 }
 
 .navbar-link:hover:not(.active) {
-    background-color: #111;
+    background-color: grey;
 }
 
 .active {
@@ -38,10 +38,6 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-    .active {
-        background-color: darkorchid;
-
-    }
 
     .navbar-item {
         display: inline-block;
@@ -53,7 +49,5 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
-    .active {
-        background-color: darkblue;
-    }
+
 }

@@ -5,12 +5,19 @@
 
 h4 {
     text-align: center;
+    background-color: lightgray;
 }
 main{
     margin-bottom: 20px;
 }
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
 .fun-fact{
-    text-align: left;
+    text-align: center;
 }
 
 .grid-container-about {

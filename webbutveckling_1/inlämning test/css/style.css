@@ -7,16 +7,12 @@ background-image: url('../img/sand.jpg');
     padding-bottom: 55px;
 }
 
-h2{
-    color: white;
-}
-
-h3 h4, p, ul, table {
+h2, h3 h4, p, ul, table {
     color: black;
     font-family: "Palatino Linotype", sans-serif;
 }
 
-.header{
+.header {
     background-image: url('../img/grey.jpg');
     width: 30em;
     color: white;
@@ -27,17 +23,21 @@ h3 h4, p, ul, table {
     border-radius: 15px;
     border: solid 1px black;
     margin-top: 20px;
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
 }
 
 
 @media only screen and (min-width: 768px) {
-    .grid-container {
-        background-color: steelblue;
+    .header {
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
     }
 }
 
-@media only screen and (min-width: 1200px) {
-    .grid-container {
-        background-color: darkred;
+@media only screen and (min-width: 1200px){
+    .header {
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
     }
 }

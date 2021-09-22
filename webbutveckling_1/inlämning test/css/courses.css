@@ -13,12 +13,17 @@
     border-radius: 15px;
 }
 
+.img-responsive {
+    width: 100%;
+    max-width: 500%;
+}
+
 .color-cell{
     background-color: lightslategray;
 }
-
-h2{
-    color: white;
+h3{
+    text-align: center;
+    background-color: lightgray;
 }
 main{
     margin-bottom: 70px;

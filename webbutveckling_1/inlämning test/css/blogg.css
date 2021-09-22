@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+h2{
+    text-align: center;
+    background-color: lightslategrey;
+    padding: 2px;
+}
 h4 {
     text-align: center;
 }

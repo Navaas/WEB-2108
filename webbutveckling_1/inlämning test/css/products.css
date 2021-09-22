@@ -3,6 +3,11 @@ main {
     margin-bottom: 20%;
 }
 
+h3{
+    text-align: center;
+    background-color: lightgray;
+}
+
 .grid-container-products {
     display: grid;
     background-color: white;
