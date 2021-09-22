@@ -28,9 +28,6 @@ table, th, td {
 }
 
 @media only screen and (min-width: 768px) {
-    .container {
-        background-color: darkorchid;
-    }
     .remove{
         display: block;
     }
@@ -38,7 +35,6 @@ table, th, td {
 
 @media only screen and (min-width: 1200px) {
     .container {
-        background-color: pink;
         margin-right: 15em;
         margin-left: 15em;
     }
