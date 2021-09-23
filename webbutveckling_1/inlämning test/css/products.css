@@ -1,4 +1,3 @@
-/* Mobile First */
 main {
     margin-bottom: 20%;
 }
@@ -18,8 +17,12 @@ h3{
     grid-template-columns: repeat(1, 1fr);
 }
 
-.imge-link {
+.links {
     text-align: center;
+}
+
+.padding-right-image-in-middle {
+    padding-right: 2em;
 }
 
 .img-responsive {
@@ -49,8 +52,6 @@ h3{
         width: 50%;
         max-width: 500px;
     }
-
-
 
     @media only screen and (min-width: 1200px) {
         .grid-container-products {

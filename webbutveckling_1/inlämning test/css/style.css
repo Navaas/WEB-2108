@@ -1,43 +1,16 @@
+/* Mobile First */
+
 * {
     box-sizing: border-box;
 }
 
 body {
 background-image: url('../img/sand.jpg');
-    padding-bottom: 55px;
+    padding: 0 0 55px 0;
+    margin: 0;
 }
 
 h2, h3 h4, p, ul, table {
     color: black;
     font-family: "Palatino Linotype", sans-serif;
-}
-
-.header {
-    background-image: url('../img/grey.jpg');
-    width: 30em;
-    color: white;
-    text-align: center;
-    margin-right: 32em;
-    margin-left: 32em;
-    padding: 0.5px;
-    border-radius: 15px;
-    border: solid 1px black;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns:repeat(1, 1fr);
-}
-
-
-@media only screen and (min-width: 768px) {
-    .header {
-        display: grid;
-        grid-template-columns:repeat(1, 1fr);
-    }
-}
-
-@media only screen and (min-width: 1200px){
-    .header {
-        display: grid;
-        grid-template-columns:repeat(1, 1fr);
-    }
 }

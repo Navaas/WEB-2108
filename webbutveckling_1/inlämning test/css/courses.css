@@ -1,6 +1,18 @@
-* {
-    box-sizing: border-box;
+h3 {
+    text-align: center;
+    background-color: lightgray;
 }
+
+main {
+    margin-bottom: 70px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5em;
+}
+
 .remove {
     display: none;
 }
@@ -18,29 +30,12 @@
     max-width: 500%;
 }
 
-.color-cell{
+.color-cell {
     background-color: lightslategray;
-}
-h3{
-    text-align: center;
-    background-color: lightgray;
-}
-main{
-    margin-bottom: 70px;
-}
-
-table{
-    width: 100%;
-}
-
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 0.5em;
 }
 
 @media only screen and (min-width: 768px) {
-    .remove{
+    .remove {
         display: block;
     }
 }
@@ -51,4 +46,3 @@ table, th, td {
         margin-left: 15em;
     }
 }
-

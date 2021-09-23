@@ -41,8 +41,6 @@ X
 (webbutveckling_1/inlämning/courses.html,4\2\4230c9c61a87c733c359b0a69d96e91215062ea0
 Y
 )webbutveckling_1/inlämning/products.html,3\b\3b5248c99ff8a1ad99dcd8b5d2ed433874700e7a
-Z
-*webbutveckling_1/inlämning test/README.md,c\7\c78d8021f023bd47016ab6dee0291f0e2ccd95fc
 V
 &webbutveckling_1/inlämning/about.html,3\3\3355a6c2b79f96f4a88ec884f95e3e938e7eb3d8
 _
@@ -73,25 +71,3 @@ _
 /webbutveckling_1/Lektioner/2021-09-21/index.css,1\f\1f23432e9847d7fc39dacf699d2c332f652283b8
 `
 0webbutveckling_1/Lektioner/2021-09-21/index.html,3\9\39b64ac2cff550ee3bf2be714d55f6bcf99399d2
-^
-.webbutveckling_1/inlämning test/css/other.css,d\a\da789f2184dde7d2409f0e2a9b26a5fcb73217f4
-`
-0webbutveckling_1/inlämning test/css/courses.css,d\1\d1332abb74a2b28ecc7bb6042dc3ae01778df2a6
-^
-.webbutveckling_1/inlämning test/css/blogg.css,f\8\f8eb9dbd3d31493d9e96703455a08e67813df09b
-_
-/webbutveckling_1/inlämning test/css/footer.css,8\4\8400d1ecd2c9bdf7560a7483e5c93b58ea6d70b7
-_
-/webbutveckling_1/inlämning test/css/navbar.css,5\5\557eb141bc4913b6c52e803dc70fa9d47f4a4d77
-^
-.webbutveckling_1/inlämning test/css/style.css,e\6\e63d62bb54b4ad3e9c7d224ba11dad492363f790
-^
-.webbutveckling_1/inlämning test/css/index.css,b\1\b19f326692df77446dd1234bcb204769eb8bfd2e
-[
-+webbutveckling_1/inlämning test/blogg.html,5\2\5298a6351b2f6c26b8ac4b47fac09a39f28b825d
-]
--webbutveckling_1/inlämning test/courses.html,c\a\cacec75e321c6843734fe92761122a095809b04d
-[
-+webbutveckling_1/inlämning test/index.html,f\7\f7fe50ba6d5d21b05cb566f53ef00f86e28384fa
-[
-+webbutveckling_1/inlämning test/other.html,9\c\9c484fa4fc45b886d25c098a72d9843bfdc9b4e0
