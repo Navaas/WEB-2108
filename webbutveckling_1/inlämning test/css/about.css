@@ -47,6 +47,11 @@ main{
     .grid-container-me {
         grid-template-columns: repeat(2, 1fr);
     }
+    .img-responsive {
+        width: 80%;
+        max-width: 500%;
+
+    }
 }
 
 @media only screen and (min-width: 1200px) {
