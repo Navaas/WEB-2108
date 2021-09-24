@@ -5,6 +5,9 @@ main {
     grid-template-columns: repeat(1, 1fr);
 }
 
+h2{
+    color: white;
+}
 .container-iframe {
     position: relative;
     overflow: hidden;

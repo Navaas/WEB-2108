@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: lightgray;
+    background-color: lightsteelblue;
 }
 
 .navbar-item {
@@ -21,11 +21,11 @@
 }
 
 .navbar-link:hover:not(.active) {
-    background-color: grey;
+    background-color: white;
 }
 
 .active {
-    background-color: navajowhite;
+    background-color: cornflowerblue;
 }
 
 @media only screen and (min-width: 768px) {
