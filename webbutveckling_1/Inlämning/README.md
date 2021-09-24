@@ -13,7 +13,7 @@ Jag kommer göra följande HTML-filer som ska slås ihop till en helhet. Alla fi
 
 Här är en grundplan som jag har tänkt. HTML filerna kommer följa samma tema med samma bakgrundsbild/fonter/färger.
 
-Jag kommer även skriva en "loggbok" i ett word-dokument om det blir förändringar samt de problem jag stöter på och hur jag löser dom.
+Jag kommer även skriva en "loggbok" i ett word-dokument om det blir förändringar samt de problem jag stöter på och hur jag löser dom. Detta kommer sammanställas i dokumentationen sen nedan.
 
 Kommer även försöka göra commit i GitHub ofta för att jag själv ska kunna följa mitt kodande och ha som dokumentation.
 
@@ -54,6 +54,7 @@ Jag har även varit inne i olika webbläsare för att se hur det ser ut, jag har
 Jag använde mig av w3 schoole för att hitta en lämplig navbar som skulle matcha det resultatet jag ville ha. Men jag stötte på problem när jag satt och designade. "Products" ville inte byta färg när jag klickade på den men man kom in i filen. Efter ett antal försök frågade jag en klasskompis om hjälp, vi delade skärm och kollade igenom min kodning. Det visade sig att jag inte hade ändrat "active" på respektive html-fil. "Products" var alltid "active" på vilken sidan jag än klickade på.
 ![img_3.png](img_3.png)
 ![img_4.png](img_4.png)
+
 Detta va den första navbaren jag gjorde. Nu har jag tagit bort den och gjort en ny som passar det nya temat jag har valt.
 
 I mobil läget så tryckte navbaren ut sig och tog plats. Så jag va tvungen att ändra till en drop lista istället för att ha den liggandes som i tex desktop.
