@@ -23,12 +23,8 @@ p
 @webbutveckling_1/Lektioner/2021-09-07/table/style-genomgång.css,e\4\e4e31f02f348dcc2015e727301ed9737696dd0f7
 e
 5webbutveckling_1/Lektioner/2021-09-07/table/style.css,6\5\65bc2c750512e1b41d0d0edf50a5517c214fd6d1
-X
-(webbutveckling_1/Läxa/Om mig/index.html,6\6\66f97e95eedf67670581905038107feb941aa04e
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-W
-'webbutveckling_1/Läxa/Om mig/README.md,e\7\e7b64d5191be2eb1b00079a404904eb2b47139f4
 q
 Awebbutveckling_1/Lektioner/2021-09-07/table/table-genomgång.html,4\2\429067930ec4ca42c035adb94064bcde76fc8779
 Y
@@ -51,10 +47,6 @@ _
 +webbutveckling_1/inlämning/css/courses.css,4\b\4badbc31484afb7eb5b13a2ba4451e23e5abc344
 Z
 *webbutveckling_1/inlämning/css/footer.css,7\f\7fd928aa287c48a232b5aff39c6b8e688e7b47f5
-]
--webbutveckling_1/inlämning/css/test-bild.css,1\1\112b9cd873f27737d443cdd01952f26b5d39c3d1
-Z
-*webbutveckling_1/inlämning/test-bild.html,8\e\8e219f6be763334570c7a01e653ee5caa076ec6e
 Y
 )webbutveckling_1/inlämning/css/index.css,1\c\1c08243f3dc5d228ea87aa6bedd8f7e4397244a8
 V
@@ -71,3 +63,5 @@ _
 /webbutveckling_1/Lektioner/2021-09-21/index.css,1\f\1f23432e9847d7fc39dacf699d2c332f652283b8
 `
 0webbutveckling_1/Lektioner/2021-09-21/index.html,3\9\39b64ac2cff550ee3bf2be714d55f6bcf99399d2
+\
+,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
