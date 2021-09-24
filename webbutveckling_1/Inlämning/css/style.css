@@ -1,0 +1,16 @@
+/* Mobile First */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+background-image: url('../img/sand.jpg');
+    padding: 0 0 55px 0;
+    margin: 0;
+}
+
+h2, h3 h4, p, ul, table {
+    color: black;
+    font-family: "Palatino Linotype", sans-serif;
+}
