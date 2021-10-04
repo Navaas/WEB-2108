@@ -65,8 +65,6 @@ _
 0webbutveckling_1/Lektioner/2021-09-21/index.html,3\9\39b64ac2cff550ee3bf2be714d55f6bcf99399d2
 \
 ,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
-S
-#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 Y
 )webbutveckling_1/Inlämning/css/style.css,0\5\05223b9627c36c97200b095eea6878e4549ba198
 \
@@ -99,13 +97,5 @@ V
 &webbutveckling_1/Inlämning/blogg.html,5\0\507d5171da7f7b55c9f4834e2eff0df12c20016a
 V
 &webbutveckling_1/Inlämning/about.html,6\c\6ccafcf61243cca3b025be54c736d6b2be66bdc7
-^
-.programmering_1/lektioner/2021-09-27/arrays.js,0\7\07c52d8149d135cba274db0a5c9e36a155d8b380
-Z
-*programmering_1/lektioner/2021-09-28/if.js,f\b\fb640ab4335ac93e488b82cba408f1d3fb5b1560
-^
-.programmering_1/lektioner/2021-09-27/script.js,0\3\03f6ff0e32cc489bc14c8184711a5b385b969c3b
-b
-2programmering_1/lektioner/2021-09-28/calculator.js,1\9\19004158bf10d24b170abf7e7f99e48d4535b6f6
 c
 3programmering_1/lektioner/2021-09-28/calculator2.js,b\2\b26f8051aad154726b85c308b3bb8f6fb126b3e4
