@@ -85,8 +85,6 @@ b
 2programmering_1/lektioner/Calculator/calculator.js,9\d\9d984c0ea04bcafcdb78b34d0d8ad5915a17e72d
 Y
 )webbutveckling_1/Inlämning/css/blogg.css,8\8\881aec4b54312d497d0a1554b7c0ead364808f27
-[
-+webbutveckling_1/Inlämning/css/courses.css,c\f\cfb85f835aa7028780d0222d99d4417f116314bb
 Z
 *webbutveckling_1/Inlämning/css/footer.css,5\c\5c99448f73c034badbe2854508b238b14c7627e9
 Y

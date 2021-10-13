@@ -1,0 +1,35 @@
+body {
+    background-color: rosybrown;
+}
+h2, h3, h4 {
+font-family: "Microsoft JhengHei Light", "Microsoft Sans Serif";
+    text-align: center;
+    color: palevioletred;
+}
+
+
+main{
+    text-align: center;
+    background-color: lightpink;
+    width: 50em;
+    margin: auto;
+    padding: 10px 10px 30px 10px;
+    margin-top: 10em;
+    border-radius: 15px;
+}
+
+input{
+border-radius: 8px;
+    padding: 10px;
+    border: 1px solid palevioletred;
+    background-color: lightyellow;
+}
+
+button {
+    border-radius: 8px;
+    padding: 10px;
+    font-family: "Microsoft JhengHei Light", "Microsoft Sans Serif";
+    background-color: palevioletred;
+    border: 1px solid white;
+    color: white;
+}
