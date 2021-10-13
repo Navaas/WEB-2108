@@ -36,7 +36,7 @@ hr()
 
 // while loop
 let j = 0
-while (j < 10) {
+while (i < 10) {
     console.log('j=', j)
     j++
 }
