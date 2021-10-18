@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+
+main {
+    width: 500px;
+    background-color: beige;
+    text-align: center;
+    margin: auto;
+}
