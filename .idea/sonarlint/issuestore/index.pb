@@ -23,8 +23,6 @@ p
 @webbutveckling_1/Lektioner/2021-09-07/table/style-genomgång.css,e\4\e4e31f02f348dcc2015e727301ed9737696dd0f7
 e
 5webbutveckling_1/Lektioner/2021-09-07/table/style.css,6\5\65bc2c750512e1b41d0d0edf50a5517c214fd6d1
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 q
 Awebbutveckling_1/Lektioner/2021-09-07/table/table-genomgång.html,4\2\429067930ec4ca42c035adb94064bcde76fc8779
 Y

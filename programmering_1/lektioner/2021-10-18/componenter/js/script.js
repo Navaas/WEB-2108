@@ -2,19 +2,28 @@ function alertSomething() {
     alert('Something')
 }
 
-function consolLogSomething() {
+function consoleLogSomething() {
     console.log('Something')
 }
 
+// Event Listener
 document.getElementById('event-listener-1')
     .addEventListener('click', function () {
-    console.log('Event listener i clicked')
-    )};
+        console.log('Event listener 1 clicked')
+    });
 
+function eventListenerTwo() {
+    console.log('Event listener 2 clicked')
+}
 
+document.getElementById('event-listener-2')
+    .addEventListener('click', eventListenerTwo);
 
-    // Hämta data från ett fält
-function nameFieldButton(){
+// Hämta data från ett fält
+function nameFieldButton() {
     let nameField = document.getElementById('name-field').value
-    console.log('nameField', nameField)
+    console.log('nameFieldButton clicked, content off input:', nameField)
+
+    let helloNameField = document.getElementById('hello-name-field').value
+    helloNameField.innerText = 'Hej'
 }
