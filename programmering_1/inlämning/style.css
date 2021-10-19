@@ -31,3 +31,19 @@ header{
 ul{
     list-style-type: none;
 }
+
+main{
+    max-width: 900px;
+    margin: auto;
+    background-color: lightblue;
+}
+
+.container-album{
+    display: grid;
+    grid-template-columns:1fr 3fr 1fr;
+}
+
+.album{
+    padding: 1em;
+    border: 1px solid black;
+}
