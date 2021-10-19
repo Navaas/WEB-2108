@@ -8,34 +8,43 @@
 </head>
 <body>
 
-
 <main>
-    <h1>Dropdown</h1>
+    <h1>Dropdown Menu</h1>
     <h2>Klickbar dropdown meny</h2>
     <p>Klicka på knappen för att få fram menyn</p>
 
-    <div class="dropdown">
-        <button class="dropdown-button" onclick="openMenu()">Open Dropdown</button>
-        <div id="dropdown" class="dropdown-content">
-            <a href="#">Home</a>
+    <div class='dropdown'>
+        <button class='dropdown-button'
+                onclick='openMenu()'>
+            Open Dropdown
+        </button>
+
+        <div id='dropdown' class='dropdown-content'>
+            <a href='#'>Home</a>
             <h2>Titel</h2>
             <p>Brödtext</p>
-            <p>Test</p>
+            <p>test</p>
 
-            <section class="grid-container3">
-                <article class="grid-item1 area-item1">side</article>
-                <article class="grid-item1 area-item2">top</article>
-                <article class="grid-item1 area-item3">bottom</article>
+            <section class='grid-container3'>
+                <article class='grid-item1 area-item1'>
+                    side
+                </article>
+                <article class='grid-item1 area-item2'>
+                    top
+                </article>
+                <article class='grid-item1 area-item3'>
+                    bottom
+                </article>
             </section>
 
-            <button onclick="closeMenu()">Close Dropdown</button>
+            <button onclick='closeMenu()'>
+                Close Dropdown
+            </button>
         </div>
     </div>
 
-
 </main>
 
-<script src="js/script.js"></script>
-
+<script src='js/script.js'></script>
 </body>
 </html>

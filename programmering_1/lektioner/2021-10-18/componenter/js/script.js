@@ -23,7 +23,4 @@ document.getElementById('event-listener-2')
 function nameFieldButton() {
     let nameField = document.getElementById('name-field').value
     console.log('nameFieldButton clicked, content off input:', nameField)
-
-    let helloNameField = document.getElementById('hello-name-field').value
-    helloNameField.innerText = 'Hej'
 }
