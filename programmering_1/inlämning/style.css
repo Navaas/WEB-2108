@@ -9,7 +9,7 @@ body {
 
 header{
     background-color: lightgray;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 5em auto 0 auto;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -19,7 +19,7 @@ header{
 
 .navbar {
     background-color: lightcyan;
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -33,7 +33,7 @@ ul{
 }
 
 main{
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     background-color: lightblue;
 }
@@ -46,4 +46,15 @@ main{
 .album{
     padding: 1em;
     border: 1px solid black;
+}
+
+.album-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.img{
+    width: 100px;
+    height: 140px;
 }
