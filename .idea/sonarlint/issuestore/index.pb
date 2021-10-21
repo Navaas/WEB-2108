@@ -177,3 +177,25 @@ k
 .programmering_1/lektioner/2021-09-27/arrays.js,0\7\07c52d8149d135cba274db0a5c9e36a155d8b380
 c
 3programmering_1/lektioner/2021-10-11/exempel16.html,3\7\3794b493af105cca2197138d0a8598983ac4a216
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+`
+0programmering_1/lektioner/2021-10-19/classRep.js,5\d\5dbae6868f8707e08942c0b60bc116f50b4692f3
+f
+6programmering_1/lektioner/2021-10-18/övning/style.css,4\c\4c78c0e17e3bfde20082734523441809f0e0dc0d
+l
+<programmering_1/lektioner/2021-10-18/centrera_sida/style.css,c\4\c409d8550817bc2d554d57da03cbcb6bd651a4cb
+j
+:programmering_1/lektioner/2021-10-18/componenter/style.css,6\7\6701f78abc2d682ebb2f33d66a1763ffb099a217
+u
+Eprogrammering_1/lektioner/2021-10-18/centrera_sida/centrera_sida.html,7\b\7b449f4a01df2720e16228ed2eac4377ddd89dc0
+r
+Bprogrammering_1/lektioner/2021-10-18/centrera_sida/grid/index.html,7\2\72622d29525575cbda8b03b8deb8ab55f142c8fa
+q
+Aprogrammering_1/lektioner/2021-10-18/centrera_sida/grid/style.css,9\e\9efc843a81eb1f928fe5365727fb4657083674f9
+^
+.programmering_1/lektioner/2021-10-19/style.css,c\1\c139b6c57180afd947ab2b84c4df01159ccb63eb
+g
+7programmering_1/lektioner/2021-10-18/övning/index.html,9\e\9e86085ef325c4a923064a24fa57340670eb0b15
+m
+=programmering_1/lektioner/2021-10-18/componenter/js/script.js,3\0\308bc5487718b3556eb7c2ac324ac9f14fba28b7

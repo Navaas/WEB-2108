@@ -5,12 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inlämning</title>
     <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="dropdown.css">
 </head>
 <body>
 <header>
-    <section class="header">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, expedita.</section>
-    <section class="header">2</section>
-    <section class="header">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, quae?</section>
+    <section class="header">
+        Lorem ipsum dolor sit amet,</section>
+    <section class="header">
+        <label id="search">Sök här:<input type="Sök.."></label>
+    </section>
+    <section class="header">
+        <img src="img/shoppingcart.JPG" alt="shoppingcart" class="shoppingcart">
+
+        <div class='dropdown'>
+            <button class='dropdown-button'
+                    onclick='openMenu()'>
+                Open Dropdown
+            </button>
+
+            <div id='dropdown' class='dropdown-content'>
+                <a href='#'>Home</a>
+                <h2>Titel</h2>
+                <p>Brödtext</p>
+                <p>test</p>
+
+                <section class='grid-container3'>
+                    <article class='grid-item1 area-item1'>
+                        side
+                    </article>
+                    <article class='grid-item1 area-item2'>
+                        top
+                    </article>
+                    <article class='grid-item1 area-item3'>
+                        bottom
+                    </article>
+                </section>
+
+                <button onclick='closeMenu()'>
+                    Close Dropdown
+                </button>
+            </div>
+        </div>
+
+    </section>
 </header>
 
 <nav>
@@ -27,67 +64,74 @@
 
 <main>
     <section class="container-album">
-        <article class="album">side</article>
+        <article class="album"></article>
         <article class="album">
-            <h1>Rubrik</h1>
+            <h1>Våra Favoriter</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aut delectus dolores
-            error, hic id itaque minus nam nulla placeat recusandae sed sequi sit temporibus veritatis! Animi atque
+                error, hic id itaque minus nam nulla placeat recusandae sed sequi sit temporibus veritatis! Animi atque
                 consectetur doloremque est harum maxime nemo nostrum sit ut veritatis. Itaque, rem?</p>
             <div class="album-img">
                 <section>
                     <img src="img/fivefingerdeathpunch.JPG" alt="five" class="img">
                     <p>Five Finger Death Punch - F8</p>
                     <p>179:-</p>
-                    <button>Bye</button>
+                    <button>Köp</button>
                 </section>
                 <section>
                     <img src="img/fivefingerdeathpunch2.JPG" alt="five2" class="img">
                     <p>Five Finger Death Punch - Got Your Six</p>
                     <p>179:-</p>
-                    <button>Bye</button>
+                    <button>Köp</button>
                 </section>
                 <section>
                     <img src="img/sabaton.JPG" alt="sabaton" class="img">
                     <p>Carolus Rex (Swedish Version)</p>
                     <p>159:-</p>
-                    <button>Bye</button>
+                    <button>Köp</button>
                 </section>
                 <section>
                     <img src="img/sabaton2.JPG" alt="sabaton2" class="img">
                     <p>Sabaton - The Great War</p>
                     <p>159:-</p>
-                    <button>Bye</button>
+                    <button>Köp</button>
                 </section>
                 <section>
                     <img src="img/nickelback.JPG" alt="nickelback" class="img">
                     <p>The Best Of Nickelback - Vol.1</p>
                     <p>169:-</p>
-                    <button>Bye</button>
+                    <button>Köp</button>
                 </section>
                 <section>
                     <img src="img/theoffspring.JPG" alt="theoffspring" class="img">
                     <p>Offspring - Americana</p>
                     <p>139:-</p>
-                    <button>Bye</button>
+                    <button>Köp</button>
                 </section>
                 <section>
                     <img src="img/hardcoresuperstar.JPG" alt="hardcoresuperstar" class="img">
                     <p>HR- Hardcore Superstar</p>
                     <p>149:-</p>
-                    <button>Bye</button>
+                    <button>Köp</button>
                 </section>
                 <section>
                     <img src="img/hammerfall.JPG" alt="hammerfall" class="img">
                     <p>Hammerfall - Masterpieces</p>
                     <p>169:-</p>
-                    <button>Bye</button>
+                    <button onclick='hammerfall()'>Köp</button>
+                    <p id="byeHammerfall"></p>
                 </section>
             </div>
 
         </article>
-        <article class="album">aside</article>
+        <article class="album"></article>
     </section>
+
+    <button onclick='alertSomething()'>Alert Button</button>
+
+
 </main>
+
+
 
 
 <script src="js/script.js"></script>
