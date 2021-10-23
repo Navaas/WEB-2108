@@ -12,7 +12,8 @@
     <section class="header">
         Lorem ipsum dolor sit amet,</section>
     <section class="header">
-        <label id="search">Sök här:<input type="Sök.."></label>
+        <label id="search">Sök:<input typ='text' value="Tex: Abba"></label>
+        <button onclick='inputButtom()'>Ok</button>
     </section>
     <section class="header">
         <img src="img/shoppingcart.JPG" alt="shoppingcart" class="shoppingcart">
@@ -20,16 +21,14 @@
         <div class='dropdown'>
             <button class='dropdown-button'
                     onclick='openMenu()'>
-                Open Dropdown
+                Varukorg
             </button>
 
             <div id='dropdown' class='dropdown-content'>
-                <a href='#'>Home</a>
-                <h2>Titel</h2>
-                <p>Brödtext</p>
-                <p>test</p>
+                <a href='#'>Varukorg</a>
+                <p>Dina produkter</p>
 
-                <section class='grid-container3'>
+                <section id='grid-container3'>
                     <article class='grid-item1 area-item1'>
                         side
                     </article>
@@ -50,15 +49,7 @@
     </section>
 </header>
 
-<nav>
-    <ul class="navbar">
-        <li>Våra Album</li>
-        <li>Erbjudanden</li>
-        <li>Nyheter</li>
-        <li>Topplista</li>
-        <li>Julklappar</li>
-        <li>Kontakt</li>
-    </ul>
+<nav id="navbar">
 </nav>
 
 
@@ -70,70 +61,18 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aut delectus dolores
                 error, hic id itaque minus nam nulla placeat recusandae sed sequi sit temporibus veritatis! Animi atque
                 consectetur doloremque est harum maxime nemo nostrum sit ut veritatis. Itaque, rem?</p>
-            <div class="album-img">
-                <section>
-                    <img src="img/fivefingerdeathpunch.JPG" alt="five" class="img">
-                    <p>Five Finger Death Punch - F8</p>
-                    <p>179:-</p>
-                    <button>Köp</button>
-                </section>
-                <section>
-                    <img src="img/fivefingerdeathpunch2.JPG" alt="five2" class="img">
-                    <p>Five Finger Death Punch - Got Your Six</p>
-                    <p>179:-</p>
-                    <button>Köp</button>
-                </section>
-                <section>
-                    <img src="img/sabaton.JPG" alt="sabaton" class="img">
-                    <p>Carolus Rex (Swedish Version)</p>
-                    <p>159:-</p>
-                    <button>Köp</button>
-                </section>
-                <section>
-                    <img src="img/sabaton2.JPG" alt="sabaton2" class="img">
-                    <p>Sabaton - The Great War</p>
-                    <p>159:-</p>
-                    <button>Köp</button>
-                </section>
-                <section>
-                    <img src="img/nickelback.JPG" alt="nickelback" class="img">
-                    <p>The Best Of Nickelback - Vol.1</p>
-                    <p>169:-</p>
-                    <button>Köp</button>
-                </section>
-                <section>
-                    <img src="img/theoffspring.JPG" alt="theoffspring" class="img">
-                    <p>Offspring - Americana</p>
-                    <p>139:-</p>
-                    <button>Köp</button>
-                </section>
-                <section>
-                    <img src="img/hardcoresuperstar.JPG" alt="hardcoresuperstar" class="img">
-                    <p>HR- Hardcore Superstar</p>
-                    <p>149:-</p>
-                    <button>Köp</button>
-                </section>
-                <section>
-                    <img src="img/hammerfall.JPG" alt="hammerfall" class="img">
-                    <p>Hammerfall - Masterpieces</p>
-                    <p>169:-</p>
-                    <button onclick='hammerfall()'>Köp</button>
-                    <p id="byeHammerfall"></p>
-                </section>
-            </div>
+            <div id="allAlbums">
 
+            </div>
         </article>
         <article class="album"></article>
     </section>
-
-    <button onclick='alertSomething()'>Alert Button</button>
-
-
 </main>
 
 
 
-
 <script src="js/script.js"></script>
+<script src="js/album.js"></script>
+<script src="js/navbar.js"></script>
 </body>
 </html>

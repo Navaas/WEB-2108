@@ -9,7 +9,7 @@ body {
 }
 
 .dropdown-button {
-    background-color: #3498DB;
+    background-color: steelblue;
     color: white;
     padding: 1em;
     font-size: 1em;
@@ -19,7 +19,7 @@ body {
 
 .dropdown-button:hover, .dropdown-button:focus {
     /*background-color: #2980B9;*/
-    background-color: orange;
+    background-color: palevioletred;
 }
 
 .dropdown {
@@ -35,6 +35,7 @@ body {
     overflow: auto;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
+    width: 400px;
 }
 
 .dropdown-content a {

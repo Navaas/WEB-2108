@@ -3,16 +3,11 @@ function openMenu() {
         .classList.toggle('show')
 }
 
-function closeMenu () {
+function closeMenu() {
     document.getElementById('dropdown')
         .classList.remove('show')
 }
 
-
-function alertSomething() {
-    alert('Something')
-}
-
-function hammerfall(){
-    document.getElementById('byeHammerfall').innerText = '169'
+function inputButtom() {
+    alert('Testa ett annat sökord')
 }
