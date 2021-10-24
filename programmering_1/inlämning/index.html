@@ -8,44 +8,30 @@
     <link rel="stylesheet" href="dropdown.css">
 </head>
 <body>
+
 <header>
     <section class="header">
-        Lorem ipsum dolor sit amet,</section>
+        <p>Lyssna och njut</p>
+    </section>
     <section class="header">
         <label id="search">Sök:<input typ='text' value="Tex: Abba"></label>
         <button onclick='inputButtom()'>Ok</button>
     </section>
     <section class="header">
         <img src="img/shoppingcart.JPG" alt="shoppingcart" class="shoppingcart">
-
         <div class='dropdown'>
-            <button class='dropdown-button'
-                    onclick='openMenu()'>
-                Varukorg
+            <button class='dropdown-button' onclick='openMenu()'>Varukorg
             </button>
-
             <div id='dropdown' class='dropdown-content'>
                 <a href='#'>Varukorg</a>
                 <p>Dina produkter</p>
-
-                <section id='grid-container3'>
-                    <article class='grid-item1 area-item1'>
-                        side
-                    </article>
-                    <article class='grid-item1 area-item2'>
-                        top
-                    </article>
-                    <article class='grid-item1 area-item3'>
-                        bottom
-                    </article>
-                </section>
-
-                <button onclick='closeMenu()'>
-                    Close Dropdown
-                </button>
+                <div id="allAddedAlbums">
+                    <button onclick='closeMenu()'>
+                        Close Dropdown
+                    </button>
+                </div>
             </div>
         </div>
-
     </section>
 </header>
 
@@ -67,7 +53,6 @@
         <article class="album"></article>
     </section>
 </main>
-
 
 
 <script src="js/script.js"></script>

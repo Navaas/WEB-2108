@@ -167,8 +167,6 @@ Aprogrammering_1/lektioner/2021-10-18/centrera_sida/grid/style.css,9\e\9efc843a
 .programmering_1/lektioner/2021-10-19/style.css,c\1\c139b6c57180afd947ab2b84c4df01159ccb63eb
 g
 7programmering_1/lektioner/2021-10-18/övning/index.html,9\e\9e86085ef325c4a923064a24fa57340670eb0b15
-m
-=programmering_1/lektioner/2021-10-18/componenter/js/script.js,3\0\308bc5487718b3556eb7c2ac324ac9f14fba28b7
 a
 1programmering_1/lektioner/2021-10-19/js/script.js,2\c\2ce6aca14c289caffd73a8c12eea48d0f4c90385
 _
@@ -185,8 +183,6 @@ c
 3programmering_1/lektioner/2021-10-11/exempel13.html,b\0\b04e580d6a25c48524ee9bea0876001936ccc617
 c
 3programmering_1/lektioner/2021-10-11/exempel16.html,3\7\3794b493af105cca2197138d0a8598983ac4a216
-q
-Aprogrammering_1/lektioner/2021-10-18/componenter/componenter.html,3\0\30a800d19cfa4f903d3beab4cc8dae4d9d04836a
 b
 2programmering_1/lektioner/2021-10-11/exempel6.html,6\e\6e43c5c20b209e0bccc1e15406727c156429ac2e
 b
@@ -209,3 +205,17 @@ c
 3programmering_1/lektioner/2021-10-11/exempel14.html,5\e\5e489f6781ed3722959c88e74cba8f78e265a72e
 c
 3programmering_1/lektioner/2021-10-11/exempel15.html,d\9\d9929de41386da297369773841de78f8b034458f
+`
+0programmering_1/lektioner/2021-10-19/classRep.js,5\d\5dbae6868f8707e08942c0b60bc116f50b4692f3
+W
+'programmering_1/inlämning/dropdown.css,8\6\860cbf1bf38b7e0666fe5837e116b16297e2fbb1
+W
+'programmering_1/inlämning/js/navbar.js,6\c\6c316481256b5f4da58371bcdf70190567b0df78
+q
+Aprogrammering_1/lektioner/2021-10-18/componenter/componenter.html,3\0\30a800d19cfa4f903d3beab4cc8dae4d9d04836a
+m
+=programmering_1/lektioner/2021-10-18/componenter/js/script.js,3\0\308bc5487718b3556eb7c2ac324ac9f14fba28b7
+Y
+)programmering_1/inlämning/test/test.html,9\f\9f1e8b914b5cf06fe901d901b5efc9ef228980a1
+Z
+*programmering_1/inlämning/test/script1.js,6\9\69c5b403cc470423cece56af2e67eff1f424059b

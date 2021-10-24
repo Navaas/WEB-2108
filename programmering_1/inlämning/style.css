@@ -23,7 +23,6 @@ header{
     color: white;
     max-width: 1000px;
     margin: auto;
-    padding: 1em;
     text-align: center;
     border: 1px solid grey;
 }
@@ -39,7 +38,7 @@ ul {
 
 main{
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto 50px auto;
     background-color: beige;
 }
 
