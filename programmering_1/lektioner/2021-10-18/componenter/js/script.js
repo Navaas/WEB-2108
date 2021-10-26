@@ -19,7 +19,7 @@ function eventListenerTwo() {
 document.getElementById('event-listener-2')
     .addEventListener('click', eventListenerTwo);
 
-// Hämta data från ett fält
+// Hämta album från ett fält
 function nameFieldButton() {
     let nameField = document.getElementById('name-field').value
     console.log('nameFieldButton clicked, content off input:', nameField)

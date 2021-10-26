@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 5px;
+    padding: 0;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin-top: 50px;
+    border: 1px solid black;
+}
+
+.img{
+    width: 70px;
+    height: 50px;
+}
+
+.imgAlbum{
+    width: 150px;
+    height: 150px;
+}
+
+#navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: blue;
+    margin: auto;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+li {
+    list-style-type: none;
+}
+
+.albums{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    border: 1px solid black;
+    margin-bottom: 100px;
+}
+
+#allAlbums{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dropdown-button {
+    background-color: #3498DB;
+    color: white;
+    padding: 1em;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-button:hover, .dropdown-button:focus {
+    /*background-color: #2980B9;*/
+    background-color: orange;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 0.75em 1em;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+/* Grid */
+.area-item1 {
+    grid-area: side;
+}
+
+.area-item2 {
+    grid-area: top;
+}
+
+.area-item3 {
+    grid-area: bottom;
+}
+
+.grid-container3 {
+    display: grid;
+    grid-template-areas:
+            'top    top    side'
+            'bottom bottom side';
+    grid-gap: 0.5em;
+    background-color: #2196F3;
+    padding: 0.5em;
+}
+
+.grid-item1 {
+    background-color: aquamarine;
+    border: 1px solid black;
+    padding: 1em;
+    text-align: center;
+}

@@ -20,7 +20,7 @@ let data = [
         price: 169
     },
     {
-        name: "Sabaton - Carolus Rex",
+        name: "Sabaton - Carolus Rex (swe version)",
         image: "img/sabaton.JPG",
         price: 159
     },
@@ -41,23 +41,33 @@ let data = [
     }
 ]
 
-//All album i HTML, skrivs ut på sidan.
-function ShowSingelAlbum(data){
+function showAlbum(data){
     return `
     <article id=albumToBy>
-            <img src=${data.image} alt=${data} class="img" id=${data}>
+            <img src=${data.image} alt=${data} class="imgAlbum" id=${data}>
             <p>${data.name}</p>
             <p>Pris: ${data.price}:-</p>
-            <button onClick="addAlbum('${data}','${data.name}','${data.image}', ${data.price})">Köp</button>
+            <button('${data.name}','${data.image}', ${data.price})">Köp</button>
     </article> 
  `;
 }
 
-
 let renderAlbums = [];
 
 for (let i = 0; i < data.length; i++) {
-    renderAlbums.push(ShowSingelAlbum(data[i]))
+    renderAlbums.push(showAlbum(data[i]))
 }
-
 document.getElementById('allAlbums').innerHTML = renderAlbums;
+
+/* Till Kundkorg */
+
+function addAlbumToCard(){
+    return `
+    <article id=albumToBy>
+            <img src=${data.image} alt=${data} class="imgAlbum" id=${data}>
+            <p>${data.name}</p>
+            <p>Pris: ${data.price}:-</p>
+            <button('${data.name}','${data.image}', ${data.price})">Köp</button>
+    </article> 
+ `;
+}

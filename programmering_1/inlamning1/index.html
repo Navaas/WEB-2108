@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inlämning</title>
     <link rel='stylesheet' href='style.css'>
-    <link rel="stylesheet" href="dropdown.css">
 </head>
 <body>
 
-<header>
-    <section class="header">
+<header class="header">
+    <section>
         <p>Lyssna och njut</p>
     </section>
-    <section class="header">
+    <section>
         <label id="search">Sök:<input typ='text' value="Tex: Abba"></label>
         <button onclick='inputButtom()'>Ok</button>
     </section>
-    <section class="header">
-        <img src="img/shoppingcart.JPG" alt="shoppingcart" class="shoppingcart">
+    <section>
+        <img src="img/shoppingcart.JPG" alt="cart" class="img">
         <div class='dropdown'>
             <button class='dropdown-button' onclick='openMenu()'>Varukorg
             </button>
@@ -50,28 +49,25 @@
     </section>
 </header>
 
-<nav id="navbar">
+<nav id="nav">
 </nav>
 
-
 <main>
-    <section class="container-album">
-        <article class="album"></article>
-        <article class="album">
+    <section class="albums">
+        <section><article>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</article></section>
+        <section><article>
             <h1>Våra Favoriter</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aut delectus dolores
-                error, hic id itaque minus nam nulla placeat recusandae sed sequi sit temporibus veritatis! Animi atque
-                consectetur doloremque est harum maxime nemo nostrum sit ut veritatis. Itaque, rem?</p>
-            <section id="allAlbums"></section>
-            </div>
-        </article>
-        <article class="album"></article>
+                error, hic id itaque minus nam nulla placeat</p>
+            <section id='allAlbums'></section>
+        </article></section>
+        <section><article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, sed?</article></section>
     </section>
 </main>
 
 
-<script src="js/script.js"></script>
 <script src="js/album.js"></script>
+<script src="js/script.js"></script>
 <script src="js/navbar.js"></script>
 </body>
 </html>

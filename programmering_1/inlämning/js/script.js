@@ -15,7 +15,7 @@ function addAlbum(albumToAddId, albumToAddName, albumToAddImage, albumToAddPrice
 }
 
 function openMenu() {
-    //Rendering av data som kan vara album
+    //Rendering av album som kan vara album
     let renderAddedAlbums = [];
     for (let i = 0; i < addedAlbums.length; i++) {
         renderAddedAlbums.push(RenderAddedAlbum(addedAlbums[i]))
@@ -50,15 +50,15 @@ function summaAlbum(price, quantity) {
     return price * quantity;
 }
 
-//Rendering av data som kan vara album function aka HTML
+// HTML som syns i varukorgen
 function RenderAddedAlbum(albumToBy) {
     return `
-    <section id=${albumToBy.id}>
-        <img src=${albumToBy.image} alt=${albumToBy.id} class="img" id=${albumToBy.id}>
+    <section id=albumToBy>
+            <img src=${albumToBy.image} alt=${albumToBy} class="img" id=${albumToBy}>
             <p>${albumToBy.name}</p>
-            <p>Pris: ${albumToBy.price}:-</p>
+            <p>Pris: ${albumToBy.price}:</p>
             <p>Summa: ${albumToBy.totalSum}</p>
-            <input id="${albumToBy.id}quantity" type="number" name="quantity" step="1" min="1" value="${albumToBy.quantity}" onclick="changeQuantity('${albumToBy.id}')" required>
+            <input id="${albumToBy}quantity" type="number" name="quantity" step="1" min="1" value="${albumToBy.quantity}" onclick="changeQuantity('${albumToBy}')" required>
     </section> 
  `;
 }
