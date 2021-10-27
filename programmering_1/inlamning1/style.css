@@ -3,49 +3,67 @@
 }
 
 body {
-    margin: 5px;
+    margin: 0;
     padding: 0;
 }
 
-.header{
+.header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
-    margin-top: 50px;
+    margin: 50px auto 0 auto;
     border: 1px solid black;
+    background-color: lightsteelblue;
+    max-width: 1200px;
 }
 
-.img{
+.img {
     width: 70px;
     height: 50px;
 }
 
-.imgAlbum{
+.imgAlbum {
     width: 150px;
     height: 150px;
 }
 
-#navbar{
+#navbar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    background-color: blue;
-    margin: auto;
+    background-color: lightpink;
+    margin: 0 auto;
     text-align: center;
     border: 1px solid grey;
+    max-width: 1200px;
+    padding: 20px;
+    color: black
 }
 
 li {
     list-style-type: none;
 }
 
-.albums{
+main {
+    max-width: 1200px;
+    background-color: lightsteelblue;
+    margin: auto;
+}
+
+.albums {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     border: 1px solid black;
     margin-bottom: 100px;
 }
 
-#allAlbums{
+button {
+    background-color: lightpink;
+    width: 150px;
+    border-radius: 10px;
+    color: black;
+}
+
+#allAlbums {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
@@ -54,9 +72,9 @@ li {
 }
 
 .dropdown-button {
-    background-color: #3498DB;
+    background-color: deeppink;
     color: white;
-    padding: 1em;
+    padding: 0.5em;
     font-size: 1em;
     border: none;
     cursor: pointer;

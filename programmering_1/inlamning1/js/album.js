@@ -1,73 +1,79 @@
-let data = [
-    {
-        name: "Five Finger Death Punch - F8",
-        image: "img/fivefingerdeathpunch.JPG",
-        price: 179
-    },
-    {
-        name: "Five Finger Death Punch - GotYour6",
-        image: "img/fivefingerdeathpunch2.JPG",
-        price: 179
-    },
-    {
-        name: "Hammerfall - Masterpieces",
-        image: "img/hammerfall.JPG",
-        price: 169
-    },
-    {
-        name: "Best Of Nickelback - Vol.1",
-        image: "img/nickelback.JPG",
-        price: 169
-    },
-    {
-        name: "Sabaton - Carolus Rex (swe version)",
-        image: "img/sabaton.JPG",
-        price: 159
-    },
-    {
-        name: "Sabaton - The Last Stand",
-        image: "img/sabaton2.JPG",
-        price: 199
-    },
-    {
-        name: "The Offspring - Americana",
-        image: "img/theoffspring.JPG",
-        price: 139
-    },
-    {
-        name: "HR - Hardcore Superstar",
-        image: "img/hardcoresuperstar.JPG",
-        price: 149
+// Klass för album som går att köpa
+// Skillnad på class och object är att klasser är typade och inte object.
+class Album {
+    constructor(id, name, image, price) {
+        this.id = id
+        this.name = name
+        this.image = image
+        this.price = price
     }
+}
+
+let data = [
+    new Album(
+        'one',
+        "Five Finger Death Punch - F8",
+        "img/fivefingerdeathpunch.JPG",
+        179
+    ),
+    new Album(
+        'two',
+        "Five Finger Death Punch - GotYour6",
+        "img/fivefingerdeathpunch2.JPG",
+        179
+    ),
+    new Album(
+        'tree',
+        "Hammerfall - Masterpieces",
+        "img/hammerfall.JPG",
+        169
+    ),
+    new Album(
+        'four',
+        "Best Of Nickelback - Vol.1",
+        "img/nickelback.JPG",
+        169
+    ),
+    new Album(
+        'five',
+        "Sabaton - Carolus Rex (swe version)",
+        "img/sabaton.JPG",
+        159
+    ),
+    new Album(
+        'six',
+        "Sabaton - The Last Stand",
+        "img/sabaton2.JPG",
+        199
+    ),
+    new Album(
+        'seven',
+        "The Offspring - Americana",
+        "img/theoffspring.JPG",
+        139
+    ),
+    new Album(
+        'eight',
+        "HR - Hardcore Superstar",
+        "img/hardcoresuperstar.JPG",
+        149
+    )
 ]
 
-function showAlbum(data){
+//visar album i html
+function showAlbum(album){
     return `
     <article id=albumToBy>
-            <img src=${data.image} alt=${data} class="imgAlbum" id=${data}>
-            <p>${data.name}</p>
-            <p>Pris: ${data.price}:-</p>
-            <button('${data.name}','${data.image}', ${data.price})">Köp</button>
+            <img src=${album.image} alt=${album.name} class="imgAlbum" id=${album.image}>
+            <p>${album.name}</p>
+            <p>Pris: ${album.price}:-</p>
+            <button onclick="buttonBye('${album.id}', '${album.name}', '${album.image}', '${album.price}')">Köp</button>
     </article> 
  `;
 }
-
+// den loopar alla album och skriver ut i html
 let renderAlbums = [];
-
-for (let i = 0; i < data.length; i++) {
-    renderAlbums.push(showAlbum(data[i]))
+for (const item of data){
+    renderAlbums.push(showAlbum(item))
 }
 document.getElementById('allAlbums').innerHTML = renderAlbums;
-
-/* Till Kundkorg */
-
-function addAlbumToCard(){
-    return `
-    <article id=albumToBy>
-            <img src=${data.image} alt=${data} class="imgAlbum" id=${data}>
-            <p>${data.name}</p>
-            <p>Pris: ${data.price}:-</p>
-            <button('${data.name}','${data.image}', ${data.price})">Köp</button>
-    </article> 
- `;
-}

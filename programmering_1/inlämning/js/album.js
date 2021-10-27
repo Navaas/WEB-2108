@@ -48,16 +48,7 @@ function ShowSingelAlbum(data){
             <img src=${data.image} alt=${data} class="img" id=${data}>
             <p>${data.name}</p>
             <p>Pris: ${data.price}:-</p>
-            <button onClick="addAlbum('${data}','${data.name}','${data.image}', ${data.price})">Köp</button>
+            <button onClick="byeAlbum('${data}','${data.name}','${data.image}', ${data.price})">Köp</button>
     </article> 
  `;
 }
-
-
-let renderAlbums = [];
-
-for (let i = 0; i < data.length; i++) {
-    renderAlbums.push(ShowSingelAlbum(data[i]))
-}
-
-document.getElementById('allAlbums').innerHTML = renderAlbums;

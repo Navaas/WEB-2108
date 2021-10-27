@@ -13,36 +13,34 @@
         <p>Lyssna och njut</p>
     </section>
     <section>
-        <label id="search">Sök:<input typ='text' value="Tex: Abba"></label>
-        <button onclick='inputButtom()'>Ok</button>
+        <label id="search">Sök:<input type="text" value="Tex: Abba"></label>
+        <button onclick="inputButton()">Ok</button>
     </section>
     <section>
         <img src="img/shoppingcart.JPG" alt="cart" class="img">
-        <div class='dropdown'>
-            <button class='dropdown-button' onclick='openMenu()'>Varukorg
+        <div class="dropdown">
+            <button class="dropdown-button" onclick="openMenu()">Varukorg
             </button>
-            <div id='dropdown' class='dropdown-content'>
-                <a href='#'>Varukorg</a>
+            <div id="dropdown" class="dropdown-content">
+                <a href="#">Varukorg</a>
                 <p>Dina produkter</p>
-                <section class='grid-container3'>
-                    <article class='grid-item1 area-item1'>
+                <section class="grid-container3">
+                    <article class="grid-item1 area-item1">
                         side
                     </article>
-                    <article class='grid-item1 area-item2'>
+                    <article class="grid-item1 area-item2">
                         top
                     </article>
-                    <article class='grid-item1 area-item3'>
+                    <article class="grid-item1 area-item3">
                         bottom
                     </article>
                 </section>
                 <div id="allAddedAlbums">
-                    <button onclick='closeMenu()'>
-                        Close Dropdown
-                    </button>
                 </div>
                 <section>
-                    <button>Stäng</button>
-                    <button>Köp</button>
+                    <button onclick="closeMenu()">
+                        Stäng
+                    </button>
                 </section>
             </div>
         </div>
@@ -54,20 +52,20 @@
 
 <main>
     <section class="albums">
-        <section><article>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</article></section>
+        <section><article></article></section>
         <section><article>
             <h1>Våra Favoriter</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aut delectus dolores
                 error, hic id itaque minus nam nulla placeat</p>
-            <section id='allAlbums'></section>
+            <section id="allAlbums"></section>
         </article></section>
-        <section><article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, sed?</article></section>
+        <section><article></article></section>
     </section>
 </main>
 
 
 <script src="js/album.js"></script>
-<script src="js/script.js"></script>
+<script src="js/cart.js"></script>
 <script src="js/navbar.js"></script>
 </body>
 </html>
