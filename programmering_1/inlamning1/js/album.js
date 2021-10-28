@@ -71,6 +71,7 @@ function showAlbum(album){
     </article> 
  `;
 }
+
 // den loopar alla album och skriver ut i html
 let renderAlbums = [];
 for (const item of data){
