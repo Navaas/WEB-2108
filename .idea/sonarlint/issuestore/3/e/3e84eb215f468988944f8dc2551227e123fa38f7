@@ -1,10 +1,0 @@
-
-\javascript:S2589"@This always evaluates to truthy. Consider refactoring this code.(Ç¿½ú
-zjavascript:S2703"^Add the "let", "const" or "var" keyword to this declaration of "greeting" to make it explicit.(ª¿þÆ
-`javascript:S2589"?This always evaluates to falsy. Consider refactoring this code.(¢¢þøúÿÿÿÿ
-1javascript:S108"Empty block statement.(­µÎ”
-\javascript:S2589"@This always evaluates to truthy. Consider refactoring this code.(Ç¿½ú
-‚javascript:S2703"aAdd the "let", "const" or "var" keyword to this declaration of "greetingTwo" to make it explicit.(¶–å”üÿÿÿÿ
-`javascript:S2589%"?This always evaluates to falsy. Consider refactoring this code.(¢¢þøúÿÿÿÿ
-jjavascript:S4524À"AMove this "default" clause to the end of this "switch" statement.(Ý–Ò˜ÿÿÿÿÿ8Ê¢·øÅ/
-ƒjavascript:S2703‹"_Add the "let", "const" or "var" keyword to this declaration of "textthree" to make it explicit.(Ïû´—8”éôøÅ/
