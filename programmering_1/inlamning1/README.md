@@ -23,7 +23,7 @@ Kommer även försöka göra commit i GitHub för att jag ska kunna följa mitt 
 
 Projektplaneringen kommer ske via Trello.
 
-##Dokumentation
+## Dokumentation
 
 Jag började med att skissa på en layout på hur sidan skulle se ut. Sedan började jag arbeta i min HTML fil. Men jag valde att hålla HTML filen relativt ren från kod.
 
