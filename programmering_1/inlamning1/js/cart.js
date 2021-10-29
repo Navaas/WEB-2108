@@ -192,4 +192,3 @@ function inputButton(){
 }
 // Kallas på globalt för att kunna skapa varukorgen när man öppnar sidan första gången.
 renderCart()
-
