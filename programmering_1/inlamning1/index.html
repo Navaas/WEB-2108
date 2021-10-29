@@ -17,25 +17,28 @@
         <button onclick="inputButton()">Ok</button>
     </section>
     <section>
-        <img src="img/shoppingcart.JPG" alt="cart" class="img">
+
         <div class="dropdown">
+            <div onclick="openMenu()">
+                <img src="img/shoppingcart.JPG" alt="cart" class="img"></div>
             <button class="dropdown-button" onclick="openMenu()">Varukorg
             </button>
             <div id="dropdown" class="dropdown-content">
-                <a href="#">Varukorg</a>
                 <p>Dina produkter</p>
-                <div id="allAddedAlbums">
-                </div>
-                <div id="totalSumOfAddedAlbums">
-                </div>
-                <div id="totalQuantityOfAddedAlbums">
-                </div>
-                <div id="totalShippingOfAddedAlbums">
-                </div>
                 <section>
-                    <button onclick="closeMenu()">
-                        Stäng
-                    </button>
+                    <article id="allAddedAlbums">
+                    </article>
+                    <article id="totalSumOfAddedAlbums">
+                    </article>
+                    <article id="totalQuantityOfAddedAlbums">
+                    </article>
+                    <article id="totalShippingOfAddedAlbums">
+                    </article>
+                    <section>
+                        <button onclick="closeMenu()">
+                            Stäng
+                        </button>
+                    </section>
                 </section>
             </div>
         </div>
@@ -47,14 +50,20 @@
 
 <main>
     <section class="albums">
-        <section><article></article></section>
-        <section><article>
-            <h1>Våra Favoriter</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aut delectus dolores
-                error, hic id itaque minus nam nulla placeat</p>
-            <section id="allAlbums"></section>
-        </article></section>
-        <section><article></article></section>
+        <section>
+            <article></article>
+        </section>
+        <section>
+            <article>
+                <h1>Våra Favoriter</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aut delectus dolores
+                    error, hic id itaque minus nam nulla placeat</p>
+                <section id="allAlbums"></section>
+            </article>
+        </section>
+        <section>
+            <article></article>
+        </section>
     </section>
 </main>
 
