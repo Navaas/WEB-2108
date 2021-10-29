@@ -93,6 +93,7 @@ function closeMenu() {
         .classList.toggle('show', false)
 }
 
+
 // Om album finns i varukorgen så lägger den till ett till album av samma sort, uppdaterar antal med 1, och retunerar om album fanns eller ej i varukorgen.
 // Finns inte denna funktion så lägger den till två likadana album under varandra istället för att uppdatera 1.
 function updateAlbumInCart(id) {
@@ -138,7 +139,7 @@ function calculateShipping() {
     if (costToFreeFreight <= 0) {
         costTest = "Grattis till fri frakt"
     } else {
-        costTest = "Behöver till " + costToFreeFreight +  " fri frakt"
+        costTest = "Behöver " + costToFreeFreight +  " kr till fri frakt"
     }
 
     document.getElementById('totalShippingOfAddedAlbums').innerHTML = showShippingCost(costTest)
@@ -182,6 +183,13 @@ function addMore(id) {
     calculateTotalQuantityInCart()
 }
 
+function pay() {
+    alert ('Tack för din betalning')
+}
+
+function inputButton(){
+    alert ('Testa ett annat sökord')
+}
 // Kallas på globalt för att kunna skapa varukorgen när man öppnar sidan första gången.
 renderCart()
 
