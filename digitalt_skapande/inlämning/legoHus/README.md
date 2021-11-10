@@ -1,6 +1,6 @@
 # Inlämning digitalt skapande 
 
-
+[Klicka för att komma till min gif](https://silly-galileo-bdbd54.netlify.app/)
 
 ### Vilka verktyg har du använt dig av och varför?
 Jag har använt mig av min digitalkamera istället för min mobil. Detta är för att jag har ett stativ till kameran som underlättat när jag tagit bilderna till min gif.
