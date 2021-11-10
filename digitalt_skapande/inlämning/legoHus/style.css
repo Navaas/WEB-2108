@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightpink;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: "Palatino Linotype", serif;
+    margin-top: 5em;
+}
+
+.gif {
+    width: 300px;
+    margin: 0 35em 0 35em;
+}

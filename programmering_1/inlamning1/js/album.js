@@ -78,3 +78,4 @@ for (const item of data){
     renderAlbums.push(showAlbum(item))
 }
 document.getElementById('allAlbums').innerHTML = renderAlbums;
+
