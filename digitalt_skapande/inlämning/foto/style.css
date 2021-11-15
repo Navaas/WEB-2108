@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: lightsteelblue;
+}
+
+h1{
+    font-family: "Century Gothic", serif;
+    font-weight: lighter;
+}
+
+.foto1{
+    width: 800px;
+
+}
+
+.foto2{
+    height: 600px;
+}
