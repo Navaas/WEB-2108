@@ -1,5 +1,7 @@
 # Inlämning digitalt skapande 
 
+[Klicka för att komma till mina foton](https://brave-bhaskara-063e77.netlify.app/)
+
 ### Vilka verktyg har du använt dig av och varför?
 Jag har valt att använda min digitalkamera istället för mobilkameran. 
 
