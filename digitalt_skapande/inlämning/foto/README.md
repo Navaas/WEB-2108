@@ -31,5 +31,4 @@ Jag hade velat göra om samma process en dag då det är klarare ute för att f�
 I det stora hela är jag ganska nöjd med resultatet. Hade velat ha mer djup i bilden som förstärker rymd och form.
 
 ### Digitala presentationsvägar:
-Hemsida, Facebook
-Jag hade kunnat lägga upp bilderna på ett forum för foto för att få spridning på mina foton eller grupper i Facebook/Instagram. Alternativet är att starta en blogg där jag kan lägga upp mina bilder och lägga upp på mina sociala medier. 
+Flickr eller Instagram är spridningsvägarna jag hade valt för mina bilder. Där jag kan lägga bilderna i kategorier och göra dom sökbara. På instagram kan man # varje bild för att göra dom sökbara.

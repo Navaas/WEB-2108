@@ -25,8 +25,11 @@ Därför valde jag:
 
 Valde inte för många ljud för att det skulle bli svårt att klippa ihop det på ett bra sätt. Sedan försökte jag välja ljud som inte låter likadant eller svåra ljud. Men ljudet från gymmet va svårt då musiken i bakgrunden hörs. Men ljudet från maskinen låter ändå högre vilket va det jag ville framhäva.
 
-Jag klippte ljudfilerna i telefonen så jag fick med det jag ville. Vissa ljud va lite långa. Sedan la jag in filerna i Reaper och la till olika effekter. 
-### Resultat/Utvärdering:
+Jag klippte ljudfilerna i telefonen så jag fick med det jag ville. Vissa ljud va lite långa. Sedan la jag in filerna i Reaper och la till olika effekter och höjde/sänkte vissa ljud som va för höga. 
+Upptäckte att ljudet från tvättmaskinen låter ungefär samma som vattenkokaren så jag valde att ta bort det helt då den inte passade in i min klipp. 
 
+### Resultat/Utvärdering:
+Det va svårt att hitta ljud som inte lät likadant i inspelningen eller att dom blev för brusiga. Ja fick solla ut de ljud som jag ville använda men fick även ta bort tex tvättmaskinen för det lät samma som vattenkokaren. Sedan försökte jag lägga ihop ljuden så de matcha hyfsat ihop. Jag fick ihop en ljudfil (mp3) men jag känner att jag har för lite kunskap för att kunna klippa ihop det bättre med effekter/brus, höga/låga ljud. Ljud är svårt att få till snyggt.
 
 ### Digitala presentationsvägar:
+Jag är inte så kunnig om spridningsvägar för ljud men jag fick till mig på lektionen att SoundCloud är en bra platform att sprida sitt ljud på. Det är en gratis sida där man kan lägga ut sitt ljud och låta andra lyssna. 

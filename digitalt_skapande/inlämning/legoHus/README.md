@@ -26,5 +26,6 @@ Totalt landade jag på 76 bilder som jag la in i Gimp. Eftersom jag ställt in b
 Det va svårt att få bitarna att stå på exakt samma ställe och det ser man lite i gif:en att det flyttar på sig. Det är något jag kan tänka på till nästa gång och försöka ha som förbättringsområde. I det stora hela så blev jag rätt nöjd med resultatet. Gif:en blev som jag hade tänkt mig, sen finns det små detaljer att jobba vidare på. 
 
 ### Digitala presentationsvägar:
-Hemsida, Facebook, Instagram. 
-Jag tror att den får störst spridning på ett forum på en hemsida som Facebook. Det är lättare att nisha och länka med tex #legohus #legogif
+Jag hade valt Giphy för att sprida min gif. Det är en sida där man kan lägga upp sin gif under olika kategorier och på så sätt få spridning eller söka efter andra gifar. Även andra kan ladda ner din gif.
+
+Alternativt är att sprida på mina egna sociala medier.
