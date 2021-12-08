@@ -1,0 +1,101 @@
+:root {
+    --dark-primary-color: #673AB7;
+    --light-primary-color: #D1C4E9;
+    --primary-color: #673AB7;
+    --text-icons: #212121;
+    --background-color: #E040FB;
+    --footer-background: #E040FB;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../font/Quicksand/static/Quicksand-Light.ttf')
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.item1 {
+    grid-area: header
+}
+
+.item2 {
+    grid-area: nav
+}
+
+.item3 {
+    grid-area: aside
+}
+
+.item4 {
+    grid-area: main
+}
+
+.item5 {
+    grid-area: menu
+}
+
+.item6 {
+    grid-area: footer
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'nav nav nav nav'
+    'menu main main aside'
+    'menu main main aside'
+    'footer footer footer footer';
+}
+
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    font-family: 'Quicksand';
+}
+
+main {
+    background-color: var(--dark-primary-color);
+    height: 70vh;
+    font-family: 'Quicksand';
+}
+
+aside {
+    background-color: var(--light-primary-color);
+    height: 70vh;
+    font-family: 'Quicksand';
+}
+
+side {
+    background-color: var(--light-primary-color);
+}
+
+footer {
+    background-color: var(--footer-background);
+    font-family: 'Quicksand';
+}
+
+nav {
+    background-color: var(--background-color);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Quicksand';
+}
+
+ul {
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+}
