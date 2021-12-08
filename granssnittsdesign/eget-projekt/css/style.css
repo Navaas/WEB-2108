@@ -1,0 +1,107 @@
+:root {
+    --header: #113F67;
+    --navbar: #226597;
+    --main: #87C0CD;
+    --footer: #226597;
+    --background-color: #E040FB;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Quicksand Light';
+    src: url('../font/Quicksand/static/Quicksand-Regular.ttf')
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: var(--header);
+    display: grid;
+    height: 20vh;
+    text-align: center;
+}
+
+nav{
+    background-color: var(--navbar);
+    text-align: center;
+    display: grid;
+}
+
+main{
+    background-color: var(--main);
+    display: grid;
+    height: 65vh;
+}
+
+footer{
+    background-color: var(--footer);
+    display: grid;
+    text-align: center;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    grid-gap: 10px;
+}
+
+li{
+    font-family: "Cinzel";
+}
+
+a {
+    color: black;
+}
+
+p {
+    font-family: "Quicksand";
+}
+.navbar-link:hover:not(.active) {
+    background-color: white;
+    color: black;
+}
+
+.active {
+    background-color: red;
+}
+
+.navbar-link {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: 0.5px solid black;
+    border-radius: 20px;
+    width: 150px;
+    padding: 10px;
+    background-color: #113F67;
+}
+
+.item1 {
+    grid-area: menu;
+}
+
+.item2 {
+    grid-area: main;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+'menu main main main main';
+}
+
+.menu {
+    margin: 10px;
+}
+
+.main {
+    margin: 10px;
+}

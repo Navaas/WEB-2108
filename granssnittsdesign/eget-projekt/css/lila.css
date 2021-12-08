@@ -1,13 +1,17 @@
 :root {
-    --header: #113F67;
-    --navbar: #226597;
-    --main: #87C0CD;
-    --footer: #226597;
-    --background-color: #E040FB;
+    --header: #C6B4CE;
+    --navbar: #FFF5DE;
+    --main:#D1C4E9;
+    --footer: #FFF5DE;
 }
 
 * {
     box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Quicksand Light';
+    src: url('../font/Quicksand/static/Quicksand-Regular.ttf')
 }
 
 body {
@@ -47,12 +51,20 @@ ul{
     grid-gap: 10px;
 }
 
-a{
-    color: white;
+li{
+    font-family: "Cinzel";
 }
 
+a {
+    color: black;
+}
+
+p {
+    font-family: "Quicksand";
+}
 .navbar-link:hover:not(.active) {
     background-color: white;
+    color: black;
 }
 
 .active {
@@ -61,14 +73,14 @@ a{
 
 .navbar-link {
     display: block;
-    color: black;
+    color: white;
     text-align: center;
     text-decoration: none;
-    border: 0.5px solid;
+    border: 0.5px solid black;
     border-radius: 20px;
     width: 150px;
     padding: 10px;
-    background-color: #113F67;
+    background-color: #9D84B7;
 }
 
 .item1 {
