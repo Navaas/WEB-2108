@@ -1,8 +1,8 @@
 :root {
-    --header: #673AB7;
-    --navbar: #D1C4E9;
-    --main: #673AB7;
-    --footer: #212121;
+    --header: #113F67;
+    --navbar: #226597;
+    --main: #87C0CD;
+    --footer: #226597;
     --background-color: #E040FB;
 }
 
@@ -31,7 +31,7 @@ nav{
 main{
     background-color: var(--main);
     display: grid;
-    height: 60vh;
+    height: 65vh;
 }
 
 footer{
@@ -44,6 +44,31 @@ ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     list-style-type: none;
+    grid-gap: 10px;
+}
+
+a{
+    color: white;
+}
+
+.navbar-link:hover:not(.active) {
+    background-color: white;
+}
+
+.active {
+    background-color: red;
+}
+
+.navbar-link {
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border: 0.5px solid;
+    border-radius: 20px;
+    width: 150px;
+    padding: 10px;
+    background-color: #113F67;
 }
 
 .item1 {
