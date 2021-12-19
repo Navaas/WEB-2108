@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #BBEAA6;
+    height: 20vh;
+}
