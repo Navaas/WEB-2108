@@ -108,4 +108,5 @@ margin: 50px
 .container-picaut-info {
     display: grid;
     grid-template-columns: 2fr;
+    margin-top: 50px;
 }
