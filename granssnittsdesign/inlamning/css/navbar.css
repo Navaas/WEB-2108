@@ -6,6 +6,7 @@
     border-radius: 10px;
     cursor: pointer;
     margin-top: 15px;
+    border-style: none;
 }
 
 .dropdown {
