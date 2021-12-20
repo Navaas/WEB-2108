@@ -19,12 +19,12 @@ body {
 
 header {
     height: 20vh;
-    background-color: #BBEAA6;
+    background-color: #9CCA82;
 }
 
 nav {
     text-align: center;
-    background-color: #9CCA82;
+    background-color: #BBEAA6;
 }
 
 .input {
@@ -65,5 +65,31 @@ padding: 5px;
 }
 
 .varukorg {
+    width: 90px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #BBEAA6;
+}
+.grid-container-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.container-navbar-right{
     margin-left: 200px;
+    margin-top: 20px;
+}
+
+input {
+    width: 300px;
+    border-radius: 10px;
+    padding: 5px;
+    border: gainsboro solid;
+    background-color: #FFFFFF;
+}
+
+.container-navbar-middle {
+    margin-top: 20px;
+
 }

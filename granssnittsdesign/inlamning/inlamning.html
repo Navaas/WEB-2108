@@ -11,38 +11,47 @@
 <body>
 
 <header>
-    Bild på logga
+
 </header>
 
 <nav>
-    <button onclick="" class="dropbtn">Nyheter</button>
-    <div class="dropdown">
-        <button class="dropbtn">Behandlingar</button>
-        <div class="dropdown-content">
-            <a href="#">Hudvård</a>
-            <a href="#">Fotvård</a>
-            <a href="#">Massage</a>
-            <a href="#">Kurer</a>
-        </div>
-    </div>
-    <div class="dropdown">
-        <button class="dropbtn">Produkter</button>
-        <div class="dropdown-content">
-            <a href="#">Hudvård</a>
-            <a href="#">Kroppsvård</a>
-            <a href="#">Makeup</a>
-        </div>
-    </div>
-    <div class="dropdown">
-        <button class="dropbtn">Varumärken</button>
-        <div class="dropdown-content">
-            <a href="#">Hjärtligt</a>
-            <a href="#">Maria Åkerberg</a>
-            <a href="#">M Picaut</a>
-        </div>
-        <button class="varukorg">Varukorg</button>
-        <label id="search"><input type="text" value="Sök"></label>
-        <button onclick="inputButton()">Ok</button>
+    <div class="grid-container-header">
+        <section class="container-header">
+            <button onclick="" class="dropbtn">Nyheter</button>
+            <div class="dropdown">
+                <button class="dropbtn">Behandlingar</button>
+                <div class="dropdown-content">
+                    <a href="#">Hudvård</a>
+                    <a href="#">Fotvård</a>
+                    <a href="#">Massage</a>
+                    <a href="#">Kurer</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Produkter</button>
+                <div class="dropdown-content">
+                    <a href="#">Hudvård</a>
+                    <a href="#">Kroppsvård</a>
+                    <a href="#">Makeup</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Varumärken</button>
+                <div class="dropdown-content">
+                    <a href="#">Hjärtligt</a>
+                    <a href="#">Maria Åkerberg</a>
+                    <a href="#">M Picaut</a>
+                </div>
+            </div>
+        </section>
+        <section class="container-navbar-middle">
+            <label id="search"><input type="text" value="Sök"></label>
+            <button onclick="inputButton()" class="button-bye">Sök</button>
+        </section>
+        <section class="container-navbar-right">
+            <button class="varukorg">Varukorg</button>
+            <button class="varukorg">Logga in</button>
+        </section>
     </div>
     <p class="free-shipping">Fri frakt vid köp över 499:-</p>
 </nav>
@@ -81,7 +90,7 @@
                 </article>
                 <article><img src="img/product-6.JPG" alt="product">
                     <p>Precious Oil (30ml)</p>
-                    <p>729</p>
+                    <p>729:-</p>
                     <button class="button-bye">Köp</button>
                 </article>
                 <article><img src="img/product-7.JPG" alt="product">
