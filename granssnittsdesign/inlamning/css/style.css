@@ -94,3 +94,8 @@ input {
     border: gainsboro solid;
     background-color: #FFFFFF;
 }
+
+.img-picaut {
+    width: 900px;
+margin: 50px
+}
