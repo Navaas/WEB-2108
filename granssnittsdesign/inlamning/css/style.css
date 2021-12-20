@@ -20,7 +20,7 @@ header {
 }
 
 nav {
-text-align: center;
+    text-align: center;
     margin-top: 15px;
 }
 
@@ -36,3 +36,14 @@ main {
     height: 90vh;
 }
 
+.grid-container {
+    display: grid;
+grid-template-columns: 1fr 4fr 1fr;
+
+}
+
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+margin-bottom: 30px;
+}
