@@ -96,6 +96,16 @@ input {
 }
 
 .img-picaut {
-    width: 900px;
+    width: 400px;
 margin: 50px
+}
+
+.container-picaut {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-picaut-info {
+    display: grid;
+    grid-template-columns: 2fr;
 }
