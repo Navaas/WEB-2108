@@ -19,18 +19,3 @@ body {
     width: 140px;
     height: 30px;
 }
-
-.grid-container-header {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-}
-
-.container-navbar-middle {
-    margin-top: 20px;
-}
-
-.container-navbar-right {
-    margin-left: 200px;
-    margin-top: 20px;
-}
