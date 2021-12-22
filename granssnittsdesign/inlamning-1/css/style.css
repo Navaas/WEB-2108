@@ -20,6 +20,10 @@ hr {
     width: 300px;
 }
 
+p {
+    font-family: Quicksand, sans-serif;
+}
+
 .free-shipping {
     background-color: #8DA778;
     height: 4vh;
@@ -74,7 +78,6 @@ width: 150px;
     border-radius: 8px;
     background-color: #9CCA82;
     border-style: none;
-
 }
 
 .text-picaut {
