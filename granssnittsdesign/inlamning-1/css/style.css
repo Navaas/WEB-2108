@@ -7,8 +7,17 @@ body {
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Cormorant_Garamond';
+    src: url('../font/Cormorant_Garamond/CormorantGaramond-Light.ttf')
+}
+@font-face {
+    font-family: 'Cinzel';
+    src: url('../font/Cinzel/static/Cinzel-Regular.ttf')
+}
+
 header {
-    height: 20vh;
+    height: 30vh;
     background-color: #BBEAA6;
 }
 
@@ -21,7 +30,15 @@ hr {
 }
 
 p {
-    font-family: Quicksand, sans-serif;
+    font-family: 'Cormorant_Garamond', sans-serif;
+    font-size: 18px;
+}
+
+input {
+    border-radius: 5px;
+    background-color: #E7E7E7;
+    border: none;
+    padding: 5px;
 }
 
 .free-shipping {
@@ -29,13 +46,16 @@ p {
     height: 4vh;
     text-align: center;
     color: #FFFFFF;
-    padding-top: 5px;
     font-weight: bold;
+    font-family: 'Cinzel', sans-serif;
+    font-size: 15px;
+padding: 5px;
 }
 
 .container-main {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    padding: 15px;
 }
 
 .container-products {
@@ -70,14 +90,28 @@ width: 150px;
     background-color: #9CCA82;
     border-style: none;
     font-family: "Quicksand Light", sans-serif;
+    color: white;
+    font-weight: bold;
 }
 
 .varukorg {
-    width: 90px;
+    width: 100px;
     padding: 5px;
     border-radius: 8px;
     background-color: #9CCA82;
     border-style: none;
+    font-family: Quicksand, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+.logo {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.container-logo{
+    text-align: center;
 }
 
 .text-picaut {
@@ -89,6 +123,7 @@ width: 150px;
     .container-main {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        padding: 15px;
     }
 
     .mobile-view {
@@ -113,7 +148,9 @@ width: 150px;
 @media only screen and (min-width: 1200px) {
     .container-main {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        width: 800px;
+        margin: auto;
     }
 
     .mobile-view {
