@@ -129,4 +129,9 @@ vill ha en strukturerar sida som ska va relativ lätt att titta på.
 Jag är egentligen en svart/vit person som gillar när det ser enkelt och stilrent ut. Att sätta färger som ska genomgå en
 hel sida har vart en utmaning. Men jag är väldigt nöjd med mitt resultat. Det har varit roligt att jobba på ett sätt som
 man gör på företag. Med en målgrupp och sen bygga utefter det. Känner själv nu i efterhand att man är lite mer
-uppmärksam på andra sidor på derar UX/UI. 
+uppmärksam på andra sidor på derar UX/UI.
+
+Upptäckte att jag har en bugg i min css. Då mobil läget ser olika ut på tex min mobil eller om man kollar i inspektorn
+på datorn. DOm ser helt olika ut.
+![mobile](img/mobile.JPG)
+![mobile](img/mobile1.jpg)
