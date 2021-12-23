@@ -8,13 +8,10 @@ body {
 }
 
 @font-face {
-    font-family: 'Cormorant_Garamond';
-    src: url('../font/Cormorant_Garamond/CormorantGaramond-Light.ttf')
-}
-@font-face {
     font-family: 'Cinzel';
     src: url('../font/Cinzel/static/Cinzel-Regular.ttf')
 }
+
 
 header {
     height: 30vh;
@@ -30,7 +27,7 @@ hr {
 }
 
 p {
-    font-family: 'Cormorant_Garamond', sans-serif;
+    font-family: Quicksand, sans-serif;
     font-size: 18px;
 }
 
@@ -89,7 +86,7 @@ width: 150px;
     border-radius: 8px;
     background-color: #9CCA82;
     border-style: none;
-    font-family: "Quicksand Light", sans-serif;
+    font-family: Quicksand, sans-serif;
     color: white;
     font-weight: bold;
 }
@@ -100,7 +97,7 @@ width: 150px;
     border-radius: 8px;
     background-color: #9CCA82;
     border-style: none;
-    font-family: Quicksand, sans-serif;
+    font-family: Cinzel, sans-serif;
     font-size: 15px;
     color: white;
 }
@@ -165,6 +162,8 @@ width: 150px;
     .container-products {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        margin-left: 210px;
+        margin-right: 200px;
     }
 
     .img-picaut-responsive {
@@ -172,6 +171,6 @@ width: 150px;
         height: 250px;
     }
     hr {
-        width: 1000px;
+        width: 1005px;
     }
 }
