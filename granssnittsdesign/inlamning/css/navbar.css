@@ -79,6 +79,7 @@ li a:hover {
     margin-top: 20px;
 }
 
+
 @media only screen and (min-width: 768px) {
     .dropbtn {
         width: 500px;
@@ -104,7 +105,4 @@ li a:hover {
         margin-left: 200px;
         margin-top: 20px;
     }
-}
-.dropbtn {
-    width: 105px;
 }
