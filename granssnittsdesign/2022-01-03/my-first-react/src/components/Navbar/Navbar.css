@@ -2,18 +2,19 @@
     background-color: #9CCA82;
     color: white;
     padding: 10px;
-    font-size: 16px;
+    font-size: 12px;
     border-radius: 10px;
     cursor: pointer;
     margin-top: 15px;
     border-style: none;
-    width: 300px;
+    width: 90px;
+    margin-left: 5px;
     font-family: Cinzel, sans-serif;
 }
 
 .dropdown {
     position: relative;
-    float: contour;
+    display: inline-block;
 }
 
 .dropdown-content {
@@ -74,35 +75,35 @@ li a:hover {
     margin-top: 20px;
 }
 
-
 .container-navbar-right {
     margin-top: 20px;
 }
 
-
-@media only screen and (min-width: 768px) {
-    .dropbtn {
-        width: 500px;
-    }
+.varukorg {
+    width: 100px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #9CCA82;
+    border-style: none;
+    font-size: 15px;
+    color: white;
+    margin-left: 5px;
+    font-family: Cinzel, sans-serif;
 }
 
+.free-shipping {
+    background-color: #8DA778;
+    height: 4vh;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px;
+}
 
-@media only screen and (min-width: 1200px) {
-    .container-navbar {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        text-align: center;
-    }
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-    .dropbtn {
-        width: 90px;
-        font-size: 12px;
-    }
-    .container-navbar-right {
-        margin-left: 200px;
-        margin-top: 20px;
-    }
+input {
+    border-radius: 5px;
+    background-color: #E7E7E7;
+    border: none;
+    padding: 5px;
 }

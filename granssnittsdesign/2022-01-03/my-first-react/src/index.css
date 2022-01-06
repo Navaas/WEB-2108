@@ -1,0 +1,8 @@
+p {
+    font-family: Quicksand, sans-serif;
+}
+
+@font-face {
+    font-family: "Cinzel";
+    src: url("./components/Fonts/Cinzel-VariableFont_wght.ttf")
+}
