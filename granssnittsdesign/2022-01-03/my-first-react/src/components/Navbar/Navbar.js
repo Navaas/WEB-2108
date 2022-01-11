@@ -2,7 +2,7 @@ import './Navbar.css'
 import logo from '../img/green.gif'
 
 function Navbar() {
-    function loggain(){
+    function loggain() {
         alert('Kom till mina sidor')
     }
 
@@ -44,9 +44,23 @@ function Navbar() {
                         <button className="varukorg">Sök</button>
                     </section>
                     <section className="container-navbar-right">
-                        <button className="varukorg">
-                            Varukorg
-                        </button>
+                        <div className="dropdown">
+                            <button className="varukorg" onClick="openMenu()">Varukorg
+                            </button>
+                            <div id="dropdown" className="dropdown-content">
+                                <p>Dina produkter</p>
+                                <section>
+                                    <section>
+                                        <button className="button-cart">
+                                            Stäng
+                                        </button>
+                                        <button onClick="pay()" className="button-cart">
+                                            Betala
+                                        </button>
+                                    </section>
+                                </section>
+                            </div>
+                        </div>
                         <button className="varukorg" onClick={loggain}>Logga in</button>
                     </section>
                 </div>
