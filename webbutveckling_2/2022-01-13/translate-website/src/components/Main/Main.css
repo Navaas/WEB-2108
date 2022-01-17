@@ -1,0 +1,34 @@
+.grid-container-main{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+    ". . . . . ."
+    ". bq bq bq bg bg"
+    ". p p p bg bg"
+    ". btns btns btns bg bg"
+    ". . . . . ."
+    ". . . . . .";
+}
+
+.item-a {
+    grid-area: bq;
+    font-size: 1.75em;
+    font-weight: 700;
+}
+
+.item-b {
+    grid-area: p;
+}
+
+.item-c {
+    grid-area: bg;
+}
+
+.item-d {
+    grid-area: btns;
+}
+
+.img-laptop {
+    width: 300px;
+}

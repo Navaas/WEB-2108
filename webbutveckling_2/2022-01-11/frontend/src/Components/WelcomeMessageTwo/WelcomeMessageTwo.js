@@ -4,8 +4,10 @@ export default function WelcomeMessageTwo(props) {
     const {name, age} = props
     return (
         <section>
-            <h1>Hello {name}</h1>
-            <h3>{name} är {age} år gammal</h3>
+            <h1>
+                Hello {name}
+            </h1>
+            <h1>{name} är {age} år gammal</h1>
         </section>
     )
 }
