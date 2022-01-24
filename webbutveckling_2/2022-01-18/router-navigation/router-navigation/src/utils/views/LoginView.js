@@ -1,4 +1,6 @@
 import {useState} from "react";
+import {useNavigate} from "react-router-dom";
+import RoutingPath from "../routing/RoutingPath";
 
 export default function LoginView() {
 
@@ -9,6 +11,8 @@ export default function LoginView() {
     const [name, setName] = useState('')
     const [password, setPassword] = useState('')
 
+    const navigate = useNavigate()
+
     function reset() {
         setName('')
         setPassword('')
@@ -16,7 +20,8 @@ export default function LoginView() {
 
     function verify() {
         if (name === logIn.username && password === logIn.password)
-            alert('Credentials correct')
+            navigate(RoutingPath.loggedInView)
+
         else
             alert('Credentials NOT correct')
     }

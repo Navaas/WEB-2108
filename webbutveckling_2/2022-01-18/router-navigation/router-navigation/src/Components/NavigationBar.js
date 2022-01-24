@@ -11,6 +11,7 @@ export default function NavigationBar(){
                 <li><Link to={RoutingPath.blogView}>Blog</Link></li>
                 <li><Link to={RoutingPath.contactView}>Contact</Link></li>
                 <li><Link to={RoutingPath.loginView}>LogIn</Link></li>
+                <li><Link to={RoutingPath.loggedInView}>LoggedIn</Link></li>
             </ul>
         </nav>
     )
