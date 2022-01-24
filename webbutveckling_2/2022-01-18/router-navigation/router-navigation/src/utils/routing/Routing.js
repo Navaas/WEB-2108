@@ -4,6 +4,7 @@ import HomeView from "../views/HomeView";
 import OtherView from "../views/OtherView";
 import ContactView from "../views/ContactView";
 import BlogView from "../views/BlogView";
+import LoginView from "../views/LoginView";
 
 export default function Routing(props){
     return(
@@ -14,6 +15,7 @@ export default function Routing(props){
                 <Route path={RoutingPath.otherView} element={<OtherView/>}/>
                 <Route path={RoutingPath.blogView} element={<BlogView/>}/>
                 <Route path={RoutingPath.contactView} element={<ContactView/>}/>
+                <Route path={RoutingPath.loginView} element={<LoginView/>}/>
             </Routes>
         </BrowserRouter>
     )

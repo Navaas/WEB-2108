@@ -2,7 +2,8 @@ const RoutingPath = {
     homeView: '/',
     otherView: '/other',
     blogView: '/blog',
-    contactView: '/contact'
+    contactView: '/contact',
+    loginView: '/login'
 }
 
 export default RoutingPath

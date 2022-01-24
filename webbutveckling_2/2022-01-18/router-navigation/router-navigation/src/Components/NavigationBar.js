@@ -10,6 +10,7 @@ export default function NavigationBar(){
                 <li><Link to={RoutingPath.otherView}>Other</Link></li>
                 <li><Link to={RoutingPath.blogView}>Blog</Link></li>
                 <li><Link to={RoutingPath.contactView}>Contact</Link></li>
+                <li><Link to={RoutingPath.loginView}>LogIn</Link></li>
             </ul>
         </nav>
     )
