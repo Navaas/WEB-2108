@@ -1,11 +1,12 @@
 .img-logo {
+    margin-top: 10px;
     width: 150px;
 }
 
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: #3D464C;
+    background-color: #fcf3ed;
 }
 
 .section-logo{

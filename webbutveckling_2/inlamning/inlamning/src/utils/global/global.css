@@ -3,13 +3,17 @@ body {
 ;
 }
 
+ul{
+  font-family: "Quicksand Light", sans-serif;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 .free-shipping {
-  background-color: #8DA778;
+  background-color: #f7b78f;
   height: 4vh;
   text-align: center;
   color: #FFFFFF;

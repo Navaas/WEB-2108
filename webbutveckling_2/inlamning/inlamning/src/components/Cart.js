@@ -22,7 +22,7 @@ export default function Cart() {
     return (
         <>
             <div className="dropdown">
-                <img className='image-cart' src={cart} alt="varukorg"/>
+                <button className='button-cart-img'><img className='image-cart' src={cart} alt="varukorg" onClick={openMenu}/></button>
             </div>
             <button className="dropdown-button" onClick={openMenu}>Varukorg
             </button>
@@ -47,8 +47,6 @@ export default function Cart() {
                     </section>
                 </section>
             </div>
-
-
         </>
     )
 }
