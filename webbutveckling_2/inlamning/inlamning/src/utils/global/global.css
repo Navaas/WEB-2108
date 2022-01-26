@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.free-shipping {
+  background-color: #8DA778;
+  height: 4vh;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-family: 'Cinzel', sans-serif;
+  font-size: 15px;
+  padding: 5px;
+  margin: 0;
+}
