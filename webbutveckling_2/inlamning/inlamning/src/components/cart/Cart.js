@@ -1,5 +1,5 @@
 import './Cart.css'
-import cart from '../utils/global/image/cart.png'
+import cart from '../../utils/global/image/cart.png'
 
 export default function Cart() {
 

@@ -1,4 +1,4 @@
-import CardList from "../components/CardList";
+import CardList from "../components/card/CardList";
 import dataProducts from "../utils/data/dataProducts";
 
 export default function ProdukterView() {

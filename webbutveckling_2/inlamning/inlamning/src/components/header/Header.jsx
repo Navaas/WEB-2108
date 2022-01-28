@@ -1,6 +1,6 @@
 import './Header.css'
-import Logo from '../utils/global/image/green.gif'
-import Cart from "./Cart";
+import Logo from '../../utils/global/image/green.gif'
+import Cart from "../cart/Cart";
 
 
 export default function Header() {

@@ -1,13 +1,16 @@
-ul {
+.nav {
+    background-color: #fcf3ed;
+}
+
+.ul {
     list-style-type: none;
     margin: 0;
     padding: 10px;
     overflow: hidden;
     background-color: #fcf3ed;
-    text-transform: uppercase;
 }
 
-li {
+.li {
     float: left;
 }
 
@@ -29,25 +32,17 @@ li a:hover:not(.active) {
     color: lightgrey;
 }
 
-.grid-container {
+.gridContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.nav-input {
+.navLinks {
     background-color: #becdd6;
     text-align: center;
     margin-left: 70px;
 }
 
-input {
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 10px;
-    border: solid 1px black;
-    width: 250px;
-}
-
-.nav-blank{
+.navBlank{
     background-color: #fcf3ed;
 }
