@@ -1,60 +1,60 @@
-import productOne from '../global/image/product-1.JPG'
-import productTwo from '../global/image/product-2.JPG'
-import productsThree from '../global/image/product-3.JPG'
-import productFour from '../global/image/product-4.JPG'
-import productFive from '../global/image/product-5.JPG'
-import productSix from '../global/image/product-6.JPG'
-import productSeven from '../global/image/product-7.JPG'
-import productsEight from '../global/image/product-8.JPG'
+import albumOne from '../global/image/fivefingerdeathpunch.JPG'
+import albumTwo from '../global/image/fivefingerdeathpunch2.JPG'
+import albumThree from '../global/image/hammerfall.JPG'
+import albumFour from '../global/image/nickelback.JPG'
+import albumFive from '../global/image/sabaton.JPG'
+import albumSix from '../global/image/sabaton2.JPG'
+import albumSeven from '../global/image/theoffspring.JPG'
+import albumEight from '../global/image/hardcoresuperstar.JPG'
 
 const dataProducts = [
     {
         id: 'one',
-        name: "Glorius Foaming Cleanser (150ml)",
-        image: productOne,
-        price: 379
+        name: "Five Finger Death Punch - F8",
+        image: albumOne,
+        price: 69
     },
     {
         id: 'two',
-        name: "Hydrating Water (100ml)",
-        image: productTwo,
-        price: 329
+        name: "Five Finger Death Punch - GotYour6",
+        image: albumTwo,
+        price: 79
     },
     {
         id: 'tree',
-        name: "Exfoliating Peel Mask (50ml)",
-        image: productsThree,
-        price: 399
+        name: "Hammerfall - Masterpieces",
+        image: albumThree,
+        price: 69
     },
     {
         id: 'four',
-        name: "Hydra Lagoon Overnight Mask (50ml)",
-        image: productFour,
-        price: 699
+        name: "Best Of Nickelback - Vol.1",
+        image: albumFour,
+        price: 69
     },
     {
-        id:'five',
-        name: "Ruby Probiotic Lifting Serum (30ml)",
-        image: productFive,
-        price: 999
+        id: 'five',
+        name: "Sabaton - Carolus Rex (swe version)",
+        image: albumFive,
+        price: 59
     },
     {
         id: 'six',
-        name: "Precious Oil (30ml)",
-        image: productSix,
-        price: 729
+        name: "Sabaton - The Last Stand",
+        image: albumSix,
+        price: 59
     },
     {
         id: 'seven',
-        name: "Precious Eye Cream (15ml)",
-        image: productSeven,
-        price: 599
+        name: "The Offspring - Americana",
+        image: albumSeven,
+        price: 39
     },
     {
         id: 'eight',
-        name: "Skin Perfect Moisturiser (50ml)",
-        image: productsEight,
-        price: 649
+        name: "HR - Hardcore Superstar",
+        image: albumEight,
+        price: 49
     }
 ]
 

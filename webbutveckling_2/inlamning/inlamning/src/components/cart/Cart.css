@@ -1,4 +1,4 @@
-.dropdown-button {
+.dropdownButton {
     background-color: #f7b78f;
     color: white;
     padding: 0.5em;
@@ -19,7 +19,7 @@
     display: inline-block;
 }
 
-.dropdown-content {
+.dropdownContent {
     display: none;
     position: absolute;
     background-color: white;
@@ -34,11 +34,11 @@
     display: block;
 }
 
-.image-cart{
+.imageCart{
     width: 18px;
 }
 
-.button-cart-img {
+.buttonCartImg {
     background-color: #f7b78f;
     color: white;
     padding: 0.5em;

@@ -1,21 +1,22 @@
-import './Header.css'
+import css from './Header.module.css'
 import Logo from '../../utils/global/image/green.gif'
 import Cart from "../cart/Cart";
+import SearchBox from "../scarchBox/SearchBox";
 
 
 export default function Header() {
+
+
     return (
         <header>
-            <div className='grid-container'>
-                <section className='section-logo'>
-                    <img className='img-logo' src={Logo} alt="logo"/>
+            <div className={css.gridContainer}>
+                <section className={css.sectionLogo}>
+                    <img className={css.imgLogo} src={Logo} alt="logo"/>
                 </section>
-                <section className='section-search'>
-                    <input type='search'
-                           placeholder='Sök produkt'
-                           onChange={(event) => (event.target.value)}/>
+                <section>
+                    <SearchBox/>
                 </section>
-                <section className='section-cart'>
+                <section className={css.sectionCart}>
                     <Cart/>
                 </section>
             </div>

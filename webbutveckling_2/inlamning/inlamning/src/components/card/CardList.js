@@ -9,8 +9,8 @@ export default function CardList({dataProducts}) {
                     return (
                         <Card key={ index }
                               id={ dataProducts[index].id }
-                              name={ dataProducts[index].name }
                               image={ dataProducts[index].image }
+                              name={ dataProducts[index].name }
                               price={ dataProducts[index].price }/>
                     )
                 })

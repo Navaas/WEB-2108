@@ -4,7 +4,8 @@ import RoutingPath from "../../utils/routing/RoutingPath";
 
 
 export default function NavigationBar() {
-    return(
+
+    return (
         <nav className={css.nav}>
             <div className={css.gridContainer}>
                 <section className={css.navBlank}>
@@ -12,10 +13,11 @@ export default function NavigationBar() {
                 <section className={css.navLinks}>
                     <ul className={css.ul}>
                         <li className={css.li}><Link to={RoutingPath.nyheter}>Nyheter</Link></li>
-                        <li className={css.li}><Link to={RoutingPath.produkter}>Produkter</Link></li>
+                        <li className={css.li}><Link to={RoutingPath.produkter}>Album</Link></li>
                         <li className={css.li}><Link to={RoutingPath.varumarken}>Varumärken</Link></li>
                         <li className={css.li}><Link to={RoutingPath.kontakt}>Kontakt</Link></li>
-                        <button>Logga in</button>
+                        <div className="dropdown">
+                        </div>
                     </ul>
                 </section>
                 <section className={css.navBlank}>

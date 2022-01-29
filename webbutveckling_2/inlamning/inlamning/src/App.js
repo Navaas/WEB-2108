@@ -1,6 +1,6 @@
 import NavigationBar from './components/navigationBar/NavigationBar';
 import Routing from "./utils/routing/Routing";
-import './utils/global/global.css'
+import './utils/global/css/global.css'
 import Header from "./components/header/Header";
 
 

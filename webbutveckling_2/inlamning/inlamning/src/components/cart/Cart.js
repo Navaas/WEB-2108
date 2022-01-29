@@ -1,4 +1,4 @@
-import './Cart.css'
+import css from './Cart.css'
 import cart from '../../utils/global/image/cart.png'
 
 export default function Cart() {
@@ -21,12 +21,11 @@ export default function Cart() {
 
     return (
         <>
-            <div className="dropdown">
-                <button className='button-cart-img'><img className='image-cart' src={cart} alt="varukorg" onClick={openMenu}/></button>
+            <div className='dropdown'>
+                <button className='buttonCartImg'><img className='imageCart' src={cart} alt="varukorg" onClick={openMenu}/></button>
             </div>
-            <button className="dropdown-button" onClick={openMenu}>Varukorg
-            </button>
-            <div id="dropdown" className="dropdown-content">
+            <button onClick={openMenu} className='dropdownButton'>Varukorg</button>
+            <div id='dropdown' className='dropdownContent'>
                 <p>Dina produkter</p>
                 <section>
                     <article id="allAddedAlbums">

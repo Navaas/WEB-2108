@@ -1,7 +1,7 @@
 import {BrowserRouter, Router, Route, Routes} from "react-router-dom";
 import RoutingPath from "./RoutingPath";
 import NyheterView from "../../views/NyheterView";
-import ProdukterView from "../../views/ProdukterView";
+import ProdukterView from "../../views/Products/ProdukterView";
 import VarumarkenView from "../../views/VarumarkenView";
 import KontaktView from "../../views/KontaktView";
 
