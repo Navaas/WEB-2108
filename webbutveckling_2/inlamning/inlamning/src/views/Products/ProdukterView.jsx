@@ -3,7 +3,8 @@ import dataProducts from "../../utils/data/dataProducts";
 import css from './ProdukterView.module.css'
 
 export default function ProdukterView() {
-    return(
+
+    return (
         <main className={css.containerGrid}>
             <section>
             </section>

@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #edeeef;
 ;
 }
 
@@ -19,19 +20,17 @@ ul{
   text-transform: uppercase;
 }
 
-h1, h2, p, button {
-  font-family: "Open Sans Light",sans-serif;
+h2, button {
+  font-family: Cinzel, sans-serif;
   font-size: 14px;
 }
 
-.free-shipping {
-  background-color: #f7b78f;
-  height: 4vh;
-  text-align: center;
-  color: #FFFFFF;
-  font-weight: bold;
-  font-family: 'Cinzel', sans-serif;
-  font-size: 15px;
-  padding: 5px;
-  margin: 0;
+h1{
+  font-size: 20px;
+  font-family: Cinzel, sans-serif;
+  color: #111111;
+}
+
+p {
+  font-family: Quicksand, sans-serif;
 }

@@ -1,5 +1,5 @@
 .nav {
-    background-color: #fcf3ed;
+    background-color: #788A96;
 }
 
 .ul {
@@ -7,7 +7,8 @@
     margin: 0;
     padding: 10px;
     overflow: hidden;
-    background-color: #fcf3ed;
+    background-color: #788A96;
+    font-family: Cinzel, sans-serif;
 }
 
 .li {
@@ -16,15 +17,15 @@
 
 li a {
     display: block;
-    color: #ff7926;
+    color: white;
     text-align: center;
     padding: 10px 5px;
     text-decoration: none;
 }
 
 li a:hover:not(.active) {
-    border-bottom: 1px solid grey;
-    color: #f7b78f;
+    border-bottom: 1px solid white;
+    color: darkslategrey;
 }
 
 .active {
@@ -44,5 +45,5 @@ li a:hover:not(.active) {
 }
 
 .navBlank{
-    background-color: #fcf3ed;
+    background-color: #788a96;
 }

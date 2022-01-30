@@ -1,0 +1,20 @@
+h1 {
+    font-family: Cinzel, sans-serif;
+    color: #859372;
+}
+
+.containerFooter {
+    background-color: #9BA9B2;
+    height: 20vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.footerImage {
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 80px;
+    height: 60px;
+}

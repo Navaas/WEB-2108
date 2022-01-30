@@ -1,12 +1,13 @@
 .imgLogo {
     margin-top: 10px;
-    width: 150px;
+    width: 250px;
+    background-color: #9ba9b2;
 }
 
 .gridContainer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: #fcf3ed;
+    background-color: #9ba9b2;
 }
 
 .sectionLogo{

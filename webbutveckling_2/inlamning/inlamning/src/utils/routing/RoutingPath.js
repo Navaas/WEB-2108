@@ -1,7 +1,7 @@
 const RoutingPath = {
-    nyheter: '/',
+    hem: '/',
+    nyheter: '/nyheter',
     produkter: '/produkter',
-    varumarken: '/varumarken',
     kontakt: '/kontakt',
 
 }

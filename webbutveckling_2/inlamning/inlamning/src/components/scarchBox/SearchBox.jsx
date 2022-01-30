@@ -1,6 +1,6 @@
 import css from './SearchBox.module.css'
 
-const searchBox=({setSearchField}) => {
+export default function SearchBox({setSearchField}){
     return(
         <section className={css.section}>
             <input className={css.input}
@@ -11,4 +11,3 @@ const searchBox=({setSearchField}) => {
     )
 }
 
-export default searchBox

@@ -1,10 +1,12 @@
 import css from './Header.module.css'
-import Logo from '../../utils/global/image/green.gif'
+import Logo from '../../utils/global/image/skallebank.gif'
 import Cart from "../cart/Cart";
 import SearchBox from "../scarchBox/SearchBox";
+import {useState} from "react";
 
 
 export default function Header() {
+    const [searchField, setSearchField] = useState()
 
 
     return (
@@ -14,7 +16,8 @@ export default function Header() {
                     <img className={css.imgLogo} src={Logo} alt="logo"/>
                 </section>
                 <section>
-                    <SearchBox/>
+                    {searchField}
+                    <SearchBox setSearchField={setSearchField}/>
                 </section>
                 <section className={css.sectionCart}>
                     <Cart/>
