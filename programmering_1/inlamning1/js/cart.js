@@ -1,14 +1,14 @@
-//album till varukorgen
-class AlbumToBye {
-    constructor(id, name, image, price) {
-        this.id = id
-        this.name = name
-        this.image = image
-        this.price = price
-        this.quantity = 1
-        this.totalSum = price
-    }
-}
+// //album till varukorgen
+// class AlbumToBye {
+//     constructor(id, name, image, price) {
+//         this.id = id
+//         this.name = name
+//         this.image = image
+//         this.price = price
+//         this.quantity = 1
+//         this.totalSum = price
+//     }
+// }
 
 //Tom varukorg, antal i varukorg, summan i varukorg
 let myCart = []
@@ -27,14 +27,14 @@ function buttonBye(id, name, image, price) {
     renderCart()
 }
 
-// lägger till album i html i korgen
-function renderCart() {
-    let renderCartAlbums = [];
-    for (const item of myCart) {
-        renderCartAlbums.push(showAlbum(item))
-    }
-
-    document.getElementById('allAddedAlbums').innerHTML = renderCartAlbums
+// // lägger till album i html i korgen
+// function renderCart() {
+//     let renderCartAlbums = [];
+//     for (const item of myCart) {
+//         renderCartAlbums.push(showAlbum(item))
+//     }
+//
+//     document.getElementById('allAddedAlbums').innerHTML = renderCartAlbums
 
     calculateTotalSumInCart()
     calculateShipping()
@@ -81,17 +81,17 @@ function showShippingCost(shippingText) {
  `;
 }
 
-//visar varukorg
-function openMenu() {
-    document.getElementById('dropdown')
-        .classList.toggle('show')
-}
-
-//stänger korgen
-function closeMenu() {
-    document.getElementById('dropdown')
-        .classList.toggle('show', false)
-}
+// //visar varukorg
+// function openMenu() {
+//     document.getElementById('dropdown')
+//         .classList.toggle('show')
+// }
+//
+// //stänger korgen
+// function closeMenu() {
+//     document.getElementById('dropdown')
+//         .classList.toggle('show', false)
+// }
 
 
 // Om album finns i varukorgen så lägger den till ett till album av samma sort, uppdaterar antal med 1, och retunerar om album fanns eller ej i varukorgen.
