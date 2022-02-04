@@ -4,7 +4,6 @@ import Cart from "../cart/Cart";
 import SearchBox from "../scarchBox/SearchBox";
 import {useState} from "react";
 
-
 export default function Header() {
     const [searchField, setSearchField] = useState()
 
@@ -21,6 +20,7 @@ export default function Header() {
                 </section>
                 <section className={css.sectionCart}>
                     <Cart/>
+
                 </section>
             </div>
         </header>

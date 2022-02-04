@@ -4,6 +4,7 @@ export default function NyheterView() {
     return (
         <main className={css.continerGrid}>
             <section>
+
             </section>
             <section className={css.continerGridNyheter}>
                 <article className={css.article}>

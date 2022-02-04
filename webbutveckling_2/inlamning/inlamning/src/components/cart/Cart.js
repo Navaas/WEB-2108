@@ -1,40 +1,42 @@
 import css from './Cart.css'
 import cart from '../../utils/global/image/cart.png'
-import {useState} from "react";
+import {useState, useContext} from "react";
 import Card from "../card/Card";
+import AlbumContext from "../../context/AlbumContext";
+
 
 export default function Cart() {
-
+    const albumToCart = useContext(AlbumContext);
     const [isOpen, setIsOpen] = useState(false);
     let productsCart = []
+
 
     function pay() {
         alert('Tack för din betalning')
     }
 
     function addToCart(id, name, image, price) {
-
     }
 
-    function CartList({test}) {
-        return (
-            <>
-                {
-                    if (test !== undifiend)
-                        {
-                        test.map((user, index) => {
-                        return (
-                        <Card key={index}
-                        id={test[index].id}
-                        image={test[index].image}
-                        name={test[index].name}
-                        price={test[index].price}/>
-                        )
-                    })
-                }}
-                }
-            </>
-        )
+    function CartList() {
+        const albumOnCart = useContext(AlbumContext);
+        if (albumToCart!== undefined && albumToCart !== null && albumToCart.length > 0) {
+            return (
+                <div>
+                    {
+                        albumOnCart.albumToCart.map((user, index) => {
+                            return (
+                                <Card key={index}
+                                      id={albumOnCart.albumToCart[index].id}
+                                      image={albumOnCart.albumToCart[index].image}
+                                      name={albumOnCart.albumToCart[index].name}
+                                      price={albumOnCart.albumToCart[index].price}/>
+                            )
+                        })
+                    }
+                </div>
+            )
+        }
     }
 
     return (
