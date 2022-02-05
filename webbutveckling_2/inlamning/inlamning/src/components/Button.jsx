@@ -21,6 +21,6 @@ export default function Button(props){
         }
     }
     return(
-        <button>Köp</button>
+        <button className={ css.byeButton }>Köp</button>
     )
 }
