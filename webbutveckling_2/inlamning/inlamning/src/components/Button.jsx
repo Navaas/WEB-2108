@@ -21,6 +21,6 @@ export default function Button(props){
         }
     }
     return(
-        <button className={css.byeButton} onClick={toggleProductOnCart}>{albumIsOnCart ? 'Remove from Cart' : 'Köp'}</button>
+        <button>Köp</button>
     )
 }

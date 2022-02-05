@@ -1,9 +1,9 @@
-import css from './Cart.css'
+import css from './Cart.module.css'
 import cart from '../../utils/global/image/cart.png'
 import {useState, useContext} from "react";
 import Card from "../card/Card";
 import AlbumContext from "../../context/AlbumContext";
-
+import remove from '../../utils/global/image/trash.png';
 
 export default function Cart() {
     const albumToCart = useContext(AlbumContext);
@@ -15,59 +15,73 @@ export default function Cart() {
         alert('Tack för din betalning')
     }
 
-    function addToCart(id, name, image, price) {
-    }
 
-    function CartList() {
-        const albumOnCart = useContext(AlbumContext);
-        if (albumToCart!== undefined && albumToCart !== null && albumToCart.length > 0) {
-            return (
-                <div>
-                    {
-                        albumOnCart.albumToCart.map((user, index) => {
-                            return (
-                                <Card key={index}
-                                      id={albumOnCart.albumToCart[index].id}
-                                      image={albumOnCart.albumToCart[index].image}
-                                      name={albumOnCart.albumToCart[index].name}
-                                      price={albumOnCart.albumToCart[index].price}/>
-                            )
-                        })
-                    }
-                </div>
-            )
-        }
-    }
+    // // function CartList() {
+    // //     const albumToCartCtx = useContext(AlbumContext);
+    // //     {
+    // //         albumToCartCtx.albumIsOnCart.map((user, index) => {
+    // //             return (
+    // //                 <div>
+    // //                     <CartList
+    // //                         key={index}
+    // //                         id={albumToCartCtx.albumIsOnCart[index].id}
+    // //                         image={albumToCartCtx.albumIsOnCart[index].image}
+    // //                         artist={albumToCartCtx.albumIsOnCart[index].artist}
+    // //                         album={albumToCartCtx.albumIsOnCart[index].album}
+    // //                         price={albumToCartCtx.albumIsOnCart[index].price}
+    // //                     />
+    // //                     )
+    // //                     }
+    // //                     }
+    // //                 </div>
+    //             )
+    //         })
+    //     }
+    // }
 
     return (
         <>
-            <div className='dropdown'>
-                <button onClick={() => setIsOpen(!isOpen)} className='buttonCartImg'><img className='imageCart'
-                                                                                          src={cart} alt="varukorg"/>
+            <div className={css.dropdown}>
+                <button onClick={() => setIsOpen(!isOpen)} className={css.buttonCartImg}><img className={css.imageCart}
+                                                                                              src={cart}
+                                                                                              alt="varukorg"/>
                 </button>
             </div>
-            <button onClick={() => setIsOpen(!isOpen)} className='dropdownButton'>Varukorg</button>
+            <button onClick={() => setIsOpen(!isOpen)} className={css.dropdownButton}>Varukorg</button>
             {isOpen === true ? (
-                <div className='dropdownContent'>
+                <div className={css.dropdownContent}>
                     <p>Dina produkter</p>
-                    <section>
-                        <article id="allAddedAlbums">
-                            {CartList(productsCart)}
+                    <hr className={css.hr}/>
+                    <section className={css.gridContainer}>
+                        <article>
+                            <img className={css.imageRemove}
+                                         src={remove}
+                                         alt="remove"/>
                         </article>
-                        <article id="totalSumOfAddedAlbums">
+                        <article>
+                            <h4>bild</h4>
                         </article>
-                        <article id="totalQuantityOfAddedAlbums">
+                        <article>
+                            <input className={css.input}
+                                   type="number"
+                                   min='0'/>
                         </article>
-                        <article id="totalShippingOfAddedAlbums">
+                        <article>
+                            <h4>summa</h4>
                         </article>
-                        <section>
-                            <button onClick={() => setIsOpen(false)}>
-                                X
-                            </button>
-                            <button onClick={pay}>
-                                Betala
-                            </button>
-                        </section>
+                    </section>
+                    <section >
+                        <hr className={ css.hr }/>
+                        <h4 className={ css.totalSum}>Total Summa</h4>
+                        <p>xx kvar till fri frakt</p>
+                    </section>
+                    <section className={ css.endButton}>
+                        <button className={ css.closeButton } onClick={() => setIsOpen(false)}>
+                            X
+                        </button>
+                        <button className={ css.payButton} onClick={pay}>
+                            Betala
+                        </button>
                     </section>
                 </div>
             ) : (
