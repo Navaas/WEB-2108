@@ -6,7 +6,8 @@ import css from './ShoppingCartList.module.css'
 
 export default function ShoppingCartList(props) {
     const productOnCartCtx = useContext(AlbumContext);
-    function cancelHandler(){
+
+    function cancelHandler(test){
         props.onCancel();
     }
 
@@ -33,6 +34,8 @@ export default function ShoppingCartList(props) {
                                     image={ productOnCartCtx.productOnCart[index].image }
                                     name={ productOnCartCtx.productOnCart[index].name }
                                     price={ productOnCartCtx.productOnCart[index].price }
+                                    quantity={ productOnCartCtx.productOnCart[index].quantity }
+                                    totalSum={ productOnCartCtx.productOnCart[index].totalSum }
                                 />
                             )
                         })

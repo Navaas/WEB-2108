@@ -2,45 +2,94 @@ import css from './Cart.module.css'
 import cart from '../../utils/global/image/cart.png'
 import {useState, useContext} from "react";
 import Card from "../card/Card";
-import AlbumContext from "../../context/AlbumContext";
+import {AddAlbumToCart, AlbumContext, AlbumInCart} from "../../context/AlbumContext";
 import remove from '../../utils/global/image/trash.png';
 
 export default function Cart() {
-    const albumToCart = useContext(AlbumContext);
+    const [selectedItem, setSelectedItem] = useContext(AlbumContext);
     const [isOpen, setIsOpen] = useState(false);
     let productsCart = []
 
 
     function pay() {
         alert('Tack för din betalning')
+
+        // let testAlbum = new AlbumInCart('one', 'Five Finger Death Punch - F8', 'albumOne', 69);
+        // localStorage.setItem('album', testAlbum);
+        // console.log(testAlbum);
+        // if (testAlbum) {
+        //     setSelectedItem(testAlbum)
+        // }
+        let test =
+            {
+                albumToCart: [],
+                totalAlbumToCart: 0
+            };
+        console.log(test);
+
+        setSelectedItem(test);
+        let testAlbum = new AlbumInCart('one', 'Five Finger Death Punch - F8', 'albumOne', 69);
+
+        let existInCart = false
+
+        // for (const item of selectedItem.albumToCart) {
+        //     if (item.id == testAlbum.id) {
+        //         item.quantity += 1
+        //         item.totalSum = item.price * item.quantity;
+        //         existInCart = true;
+        //     }
+        // }
+
+        if (existInCart === false) {
+            test.albumToCart.push(testAlbum)
+        }
+
+        setSelectedItem(test)
+        //AddAlbumToCart('one', 'Five Finger Death Punch - F8', 'albumOne', 69);
+        console.log(selectedItem);
+        console.log(test);
+
+
     }
 
-
-    // // function CartList() {
-    // //     const albumToCartCtx = useContext(AlbumContext);
-    // //     {
-    // //         albumToCartCtx.albumIsOnCart.map((user, index) => {
-    // //             return (
-    // //                 <div>
-    // //                     <CartList
-    // //                         key={index}
-    // //                         id={albumToCartCtx.albumIsOnCart[index].id}
-    // //                         image={albumToCartCtx.albumIsOnCart[index].image}
-    // //                         artist={albumToCartCtx.albumIsOnCart[index].artist}
-    // //                         album={albumToCartCtx.albumIsOnCart[index].album}
-    // //                         price={albumToCartCtx.albumIsOnCart[index].price}
-    // //                     />
-    // //                     )
-    // //                     }
-    // //                     }
-    // //                 </div>
-    //             )
-    //         })
-    //     }
+    // function CartList() {
+    //      {
+    //          selectedItem.albumIsOnCart.map((user, index) => {
+    //              return (
+    //                  <div>
+    //                      <CartList
+    //                          key={index}
+    //                          id={albumToCartCtx.albumIsOnCart[index].id}
+    //                          image={albumToCartCtx.albumIsOnCart[index].image}
+    //                          artist={albumToCartCtx.albumIsOnCart[index].artist}
+    //                          album={albumToCartCtx.albumIsOnCart[index].album}
+    //                          price={albumToCartCtx.albumIsOnCart[index].price}
+    //                      />
+    //                      )
+    //                      }
+    //                      }
+    //                  </div>
+    //                 )
+    //          })
+    //      }
     // }
 
     return (
         <>
+            {selectedItem.albumToCart !== undefined && selectedItem.albumToCart !== null && selectedItem.albumToCart.length > 0 ? (
+                selectedItem.albumToCart.map((user, index) => {
+                    return (
+                        <p> {index}
+                            {selectedItem.albumToCart[index].id}
+                            {selectedItem.albumToCart[index].image}
+                            {selectedItem.albumToCart[index].name}
+                            {selectedItem.albumToCart[index].price}
+                        </p>
+                    )
+                })
+            ) : (
+                <div>Test</div>
+            )}
             <div className={css.dropdown}>
                 <button onClick={() => setIsOpen(!isOpen)} className={css.buttonCartImg}><img className={css.imageCart}
                                                                                               src={cart}

@@ -9,18 +9,18 @@ export default function CardItem(props) {
 
     function toggleProductOnCartStatusHandler(){
         if (itemIsOnCart) {
-            productOnCartCtx.removeProduct(props.id)
+            productOnCartCtx.updateProduct(props.id)
         } else {
             productOnCartCtx.addProduct({
                 id: props.id,
                 image: props.image,
-                artist: props.artist,
-                album: props.album,
+                name: props.name,
                 price: props.price,
+                quantity: 1,
+                totalSum: props.price
             });
         }
     }
-
 
     return (
         <article>
@@ -32,7 +32,7 @@ export default function CardItem(props) {
                 <p>{props.price} Kr</p>
             </div>
             <div>
-                <button id={props.id} onClick={toggleProductOnCartStatusHandler}>{itemIsOnCart ? 'Remove from Cart' : 'BUY'}</button>
+                <button className={ css.byeButton } id={props.id} onClick={toggleProductOnCartStatusHandler}>BUY</button>
             </div>
         </article>
     )
