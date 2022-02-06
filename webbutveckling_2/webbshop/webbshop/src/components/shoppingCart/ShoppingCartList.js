@@ -1,8 +1,7 @@
 import { useContext } from "react";
 import ShoppingCartItem from './ShoppingCartItem'
-
 import AlbumContext from "../../context/albumContext";
-
+import css from './ShoppingCartList.module.css'
 
 
 export default function ShoppingCartList(props) {
@@ -15,13 +14,16 @@ export default function ShoppingCartList(props) {
         props.onConfirm();
     }
 
+    function pay (){
+        alert('Tack för din betalning!')
+    }
+
     return (
         <div>
-
-            <div  >
-                <h2>My shop cart information</h2>
-                <hr/>
-                <div className='tc bg-blue' >
+            <div>
+                <div className={ css.dropdownContent}>
+                    <h2>Dina produkter</h2>
+                    <hr className={ css.hr }/>
                     {
                         productOnCartCtx.productOnCart.map((user, index) => {
                             return (
@@ -35,13 +37,24 @@ export default function ShoppingCartList(props) {
                             )
                         })
                     }
+                    <section className={css.totalSum}>
+                        <p>Antal i varukorgen: {productOnCartCtx.totalAlbumInCart}</p>
+                    </section>
+                    <section className={css.totalSum}>
+                        <p>Totalsumma: {productOnCartCtx.totalSumInCart}</p>
+                    </section>
+                    <article>
+                        <p>{productOnCartCtx.totalSumInCart >= 259 ? 'Fri Frakt!' : (259 - productOnCartCtx.totalSumInCart) + 'kr kvar till fri frakt' }</p>
+                    </article>
+                    <section className={css.endButton}>
+                        <button className={css.closeButton} onClick={cancelHandler}>
+                            X
+                        </button>
+                        <button className={css.payButton} onClick={ pay }>
+                            Betala
+                        </button>
+                    </section>
                 </div>
-                <article  >
-                    <p>SUMMARY:</p>
-                    <p >  free freight!</p>
-                </article>
-                <button  onClick={ cancelHandler }>Close</button>
-                <button  onClick={ paymentHandler }>Checkout</button>
             </div>
         </div>
     )

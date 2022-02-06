@@ -1,0 +1,52 @@
+.imgLogo {
+    margin-top: 10px;
+    width: 250px;
+    background-color: #9ba9b2;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #9ba9b2;
+}
+
+.sectionLogo{
+    margin-left: 150px;
+}
+
+.sectionSearch{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.sectionCart{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.dropdownButton {
+    background-color: #54626b;
+    color: white;
+    padding: 0.5em;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: Cinzel, sans-serif;
+    margin: 10px;
+}
+
+.imageCart{
+    width: 18px;
+}
+
+.buttonCartImg {
+    background-color: #54626b;
+    color: white;
+    padding: 0.5em;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 80px;
+}

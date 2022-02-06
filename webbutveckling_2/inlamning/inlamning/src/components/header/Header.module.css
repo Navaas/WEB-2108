@@ -1,8 +1,4 @@
-.imgLogo {
-    margin-top: 10px;
-    width: 250px;
-    background-color: #9ba9b2;
-}
+
 
 .gridContainer{
     display: grid;
@@ -22,4 +18,8 @@
 .sectionCart{
     margin-top: 50px;
     text-align: center;
+}
+
+.imageCart{
+    width: 18px;
 }

@@ -1,7 +1,6 @@
 import { useContext} from "react";
-
 import AlbumContext from "../../context/albumContext";
-
+import css from './CardItem.module.css'
 
 export default function CardItem(props) {
     const productOnCartCtx = useContext(AlbumContext);
@@ -20,18 +19,17 @@ export default function CardItem(props) {
                 price: props.price,
             });
         }
-
     }
 
 
     return (
-        <article  >
-            <div  className='tc bg-washed-yellow br3 pa3 ma2 dib bw2 shadow-5  '>
-                <img src={props.image} alt={props.name}/>
+        <article>
+            <div>
+                <img className={ css.image } src={props.image} alt={props.name}/>
             </div>
             <div>
                 <h3>{props.name}</h3>
-                <p>Price:{props.price} Kr</p>
+                <p>{props.price} Kr</p>
             </div>
             <div>
                 <button id={props.id} onClick={toggleProductOnCartStatusHandler}>{itemIsOnCart ? 'Remove from Cart' : 'BUY'}</button>
