@@ -1,6 +1,7 @@
 import css from './ShoppingCartItem.module.css'
 import {useContext, useState} from "react";
 import AlbumContext from "../../context/albumContext";
+import remove from '../../utils/global/image/trash.png'
 
 
 export default function ShoppingCartItem(props) {
@@ -10,13 +11,13 @@ export default function ShoppingCartItem(props) {
 
     const itemIsOnCart = productOnCartCtx.itemIsOnCart(props.id);
 
-    function removeProductInCartHandler(){
+    function removeProductInCartHandler() {
         if (itemIsOnCart) {
             productOnCartCtx.removeProduct(props.id)
         }
     }
 
-    function updateProductInCartHandler(newValue){
+    function updateProductInCartHandler(newValue) {
         console.log(newValue);
         if (itemIsOnCart) {
             productOnCartCtx.updateProductOnCartWithNewValue(props.id, newValue);
@@ -29,22 +30,28 @@ export default function ShoppingCartItem(props) {
     return (
         <div>
             <ul>
-                <li>
-                    <section className={css.gridContainer}>
-                        <button onClick={removeProductInCartHandler}>x</button>
+                <section className={css.gridContainer}>
+                    <article>
+                        <img src={remove} alt="remove" className={css.remove} onClick={removeProductInCartHandler}/>
+                    </article>
+                    <article>
                         <img
                             src={props.image}
                             alt={props.name}
                             className={css.imageCart}/>
-                        <p>Namn: <span>{props.name}</span></p>
-                        <input onChange={(e)=>updateProductInCartHandler(Number(e.target.value))}
+                        <h3>Namn: {props.name}</h3>
+                    </article>
+                    <article>
+                        <input onChange={(e) => updateProductInCartHandler(Number(e.target.value))}
                                className={css.input}
                                type="number"
                                min='0'
                                value={inputValue}/>
-                        <p>Pris: <span>{totalSumValue}</span> :- </p>
-                    </section>
-                </li>
+                    </article>
+                    <article>
+                        <h3>Pris: {totalSumValue} :- </h3>
+                    </article>
+                </section>
             </ul>
         </div>
     )

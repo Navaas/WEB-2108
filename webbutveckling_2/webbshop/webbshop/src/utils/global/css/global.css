@@ -17,12 +17,16 @@ body {
 
 ul{
   font-family: "Quicksand Light", sans-serif;
-  text-transform: uppercase;
 }
 
-h2, button, h3 {
+button, h3 {
   font-family: "Quicksand Light", sans-serif;
   font-size: 14px;
+}
+
+h2 {
+  font-family: "Quicksand Light", sans-serif;
+  font-size: 20px;
 }
 
 h1{

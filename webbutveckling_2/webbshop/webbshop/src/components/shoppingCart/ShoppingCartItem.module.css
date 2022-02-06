@@ -17,3 +17,8 @@
 .hr {
     width: 400px;
 }
+
+.remove {
+    width: 25px;
+    cursor: pointer;
+}
