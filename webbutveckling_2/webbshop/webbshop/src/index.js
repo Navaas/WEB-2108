@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './utils/global/css/global.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {AlbumContextProvider} from "./context/albumContext";
+import {AlbumContextProvider} from "./context/AlbumContext";
 
 ReactDOM.render(
   <React.StrictMode>

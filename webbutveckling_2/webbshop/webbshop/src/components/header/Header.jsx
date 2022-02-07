@@ -5,8 +5,6 @@ import Logo from '../../utils/global/image/skallebank.png';
 import cart from '../../utils/global/image/cart.png';
 import SearchBox from "../searchBox/SearchBox";
 
-;
-
 
 function Header(props) {
     const [cartIsOpen, setCartIsOpen] = useState(false);
@@ -36,7 +34,7 @@ function Header(props) {
                 <section>
                     <SearchBox/>
                 </section>
-                <section className={ css.sectionCart }>
+                <section className={css.sectionCart}>
                     <button onClick={() => {
                         cartHandler()
                         closeCartHandler()
@@ -44,18 +42,18 @@ function Header(props) {
                                                           src={cart}
                                                           alt="cart"/>
                     </button>
-                    <button className={css.dropdownButton}
-                            onClick={() => {
-                                cartHandler()
-                                closeCartHandler()
-                            }}><span>Varukorg</span></button>
-
+                    <button
+                        className={css.dropdownButton}
+                        onClick={() => {
+                            cartHandler()
+                            closeCartHandler()
+                        }}>Varukorg
+                    </button>
                     {cartIsOpen && <ShoppingCartList onCancel={closeCartHandler} onConfirm={messageExitPayment}/>}
                 </section>
             </div>
         </header>
     )
-
 }
 
 export default Header
