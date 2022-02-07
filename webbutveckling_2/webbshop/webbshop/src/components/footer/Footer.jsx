@@ -14,7 +14,7 @@ export default function Footer() {
                 <a href="https://www.instagram.com/" target="_blank"><img className={css.footerImage}
                                                                           src={imageInstagram}
                                                                           alt="instagram"/></a>
-                <p data-testid="footertext">Copyright © 2022 by Michaela Andreasson </p>
+                <p data-testid='footertext'>Copyright © 2022 by Michaela Andreasson</p>
             </section>
             <section>
             </section>

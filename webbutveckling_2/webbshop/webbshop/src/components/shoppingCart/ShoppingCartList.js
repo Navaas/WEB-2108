@@ -19,7 +19,7 @@ export default function ShoppingCartList(props) {
         <div>
             <div>
                 <div className={css.dropdownContent}>
-                    <h2>Dina produkter</h2>
+                    <h2 data-testid='products'>Dina produkter</h2>
                     <hr className={css.hr}/>
                     {
                         productOnCartCtx.productOnCart.map((user, index) => {
@@ -50,7 +50,7 @@ export default function ShoppingCartList(props) {
                         <button className={css.closeButton} onClick={cancelHandler}>
                             X
                         </button>
-                        <button className={css.payButton} onClick={pay}>
+                        <button data-testid='pay' className={css.payButton} onClick={pay}>
                             Betala
                         </button>
                     </section>

@@ -1,10 +1,13 @@
-import { fireEvent, render } from '@testing-library/react';
-import Header from '../header/Header'
+import {fireEvent, render} from '@testing-library/react';
 import Footer from "../footer/Footer";
 
+let getByTestId
 
-test('check if the footer contains the right className', () => {
-    const components = render(<Footer/>)
-    const footerElement = components.getByTestId('footertext')
-    expect(footerElement.textContent).toBe('Copyright © 2022 by Michaela Andreasson')
+beforeEach(() => {
+    const component = render(<Footer/>)
+    getByTestId = component.getByTestId
+})
+
+test('header renders with correct text 4', () => {
+    expect(getByTestId('footertext').textContent).toBe('Copyright © 2022 by Michaela Andreasson')
 })

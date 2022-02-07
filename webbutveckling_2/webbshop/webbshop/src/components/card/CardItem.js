@@ -29,10 +29,13 @@ export default function CardItem(props) {
             </div>
             <div>
                 <h3>{props.name}</h3>
-                <p>{props.price} Kr</p>
+                <p data-testid='name'>{props.price}Kr</p>
             </div>
             <div>
-                <button className={ css.byeButton } id={props.id} onClick={toggleProductOnCartStatusHandler}>BUY</button>
+                <button data-testid='buy'
+                        className={ css.byeButton }
+                        id={props.id}
+                        onClick={toggleProductOnCartStatusHandler}>Köp</button>
             </div>
         </article>
     )

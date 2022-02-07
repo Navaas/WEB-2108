@@ -12,7 +12,7 @@ export default function NavigationBar() {
                 </section>
                 <section className={css.navLinks}>
                     <ul className={css.ul}>
-                        <li className={css.li}><Link to={RoutingPath.hem}>Hem</Link></li>
+                        <li className={css.li} ><Link to={RoutingPath.hem}>Hem</Link></li>
                         <li className={css.li}><Link to={RoutingPath.nyheter}>Nyheter</Link></li>
                         <li className={css.li}><Link to={RoutingPath.album}>Album</Link></li>
                         <li className={css.li}><Link to={RoutingPath.kontakt}>Kontakt</Link></li>
