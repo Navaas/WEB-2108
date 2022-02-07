@@ -6,7 +6,7 @@ En skiss på hur min varukorg.
 Förslag på tre lämpliga personas till webbshopen.
 ![](src/utils/global/image/Personas.JPG)
 
-Länk till min projektplanering i Trello finns [Här]('https://trello.com/b/FZWIMc2l/webbutveckling-2')
+Länk till min projektplanering i Trello finns [Här](URL 'https://trello.com/b/FZWIMc2l/webbutveckling-2')
 
 ### Beskriv lite olika lösningar du gjort.
 
