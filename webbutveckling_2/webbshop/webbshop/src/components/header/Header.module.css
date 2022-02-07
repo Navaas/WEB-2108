@@ -4,22 +4,22 @@
     background-color: #9ba9b2;
 }
 
-.gridContainer{
+.gridContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color: #9ba9b2;
 }
 
-.sectionLogo{
+.sectionLogo {
     margin-left: 150px;
 }
 
-.sectionSearch{
+.sectionSearch {
     margin-top: 50px;
     text-align: center;
 }
 
-.sectionCart{
+.sectionCart {
     margin-top: 50px;
     text-align: center;
 }
@@ -36,17 +36,7 @@
     margin: 10px;
 }
 
-.imageCart{
-    width: 18px;
-}
-
-.buttonCartImg {
-    background-color: #54626b;
-    color: white;
-    padding: 0.5em;
-    font-size: 1em;
-    border: none;
+.imageCart {
+    width: 30px;
     cursor: pointer;
-    border-radius: 10px;
-    width: 80px;
 }

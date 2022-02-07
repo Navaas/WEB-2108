@@ -35,13 +35,13 @@ function Header(props) {
                     <SearchBox/>
                 </section>
                 <section className={css.sectionCart}>
-                    <button onClick={() => {
+                    <img className={css.imageCart}
+                         src={cart}
+                         alt="cart" onClick={() => {
                         cartHandler()
                         closeCartHandler()
-                    }} className={css.buttonCartImg}><img className={css.imageCart}
-                                                          src={cart}
-                                                          alt="cart"/>
-                    </button>
+                    }}/>
+
                     <button
                         className={css.dropdownButton}
                         onClick={() => {
