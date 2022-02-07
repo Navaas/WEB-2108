@@ -1,6 +1,6 @@
 import css from './ShoppingCartItem.module.css'
 import {useContext, useState} from "react";
-import AlbumContext from "../../context/albumContext";
+import AlbumContext from "../../context/AlbumContext";
 import remove from '../../utils/global/image/trash.png'
 
 

@@ -1,18 +1,14 @@
 import {useContext} from "react";
 import ShoppingCartItem from './ShoppingCartItem'
-import AlbumContext from "../../context/albumContext";
+import AlbumContext from "../../context/AlbumContext";
 import css from './ShoppingCartList.module.css'
 
 
 export default function ShoppingCartList(props) {
     const productOnCartCtx = useContext(AlbumContext);
 
-    function cancelHandler(test) {
+    function cancelHandler() {
         props.onCancel();
-    }
-
-    function paymentHandler() {
-        props.onConfirm();
     }
 
     function pay() {

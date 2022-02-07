@@ -1,5 +1,5 @@
 import { useContext} from "react";
-import AlbumContext from "../../context/albumContext";
+import AlbumContext from "../../context/AlbumContext";
 import css from './CardItem.module.css'
 
 export default function CardItem(props) {

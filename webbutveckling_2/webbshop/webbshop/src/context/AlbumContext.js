@@ -23,6 +23,7 @@ export function AlbumContextProvider(props) {
             return currentItems;
         });
 
+        //Räknar ut antalet
         setTotalAlbum(prevTotalAlbum => {
             prevTotalAlbum = 0;
             for (const product of currentItems) {
@@ -31,6 +32,7 @@ export function AlbumContextProvider(props) {
             return prevTotalAlbum;
         })
 
+        //Räknar ut totalsumman
         setTotalSumInCart(prevTotalSumInCart => {
             prevTotalSumInCart = 0;
             for (const product of currentItems) {
@@ -40,6 +42,7 @@ export function AlbumContextProvider(props) {
         })
     }
 
+    //Tar bort album/antal/pris/totalsumma i varukorg
     function removeProductOnCartHandler(productId) {
         let currentItems = [];
 
@@ -65,6 +68,7 @@ export function AlbumContextProvider(props) {
         })
     }
 
+    //uppdaterar album med pris och antal, ökar även i antal och totalsumma.
     function updateProductOnCartHandler(productId) {
         let currentItems = [];
 
@@ -96,6 +100,7 @@ export function AlbumContextProvider(props) {
         })
     }
 
+    //Får album ett nytt värde, så uppdateras pris/antal/totalsumma
     function updateProductOnCartWithNewValueHandler(productId, newValue) {
         let currentItems = [];
 
