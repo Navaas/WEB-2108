@@ -10,7 +10,6 @@ export default function AlbumView() {
             </section>
             <div className={css.gridContainer}>
                 <CardList dataAlbum={dataAlbum}/>
-                <h1>Hej</h1>
             </div>
             <section>
             </section>

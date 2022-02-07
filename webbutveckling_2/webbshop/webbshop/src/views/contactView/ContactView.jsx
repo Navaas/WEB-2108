@@ -45,7 +45,7 @@ export default function ContactView() {
                         </div>
                         <div className={css.flipCardBack}>
                             <h2>Frågor om leverans</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut corporis eius
+                            <p>LLorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut corporis eius
                                 error est mollitia?</p>
                         </div>
                     </div>
