@@ -6,10 +6,12 @@ export default function CardItem(props) {
     const productOnCartCtx = useContext(AlbumContext);
 
     const itemIsOnCart = productOnCartCtx.itemIsOnCart(props.id);
+    const itemInCart = productOnCartCtx.itemInCart(props.id);
 
     function toggleProductOnCartStatusHandler(){
         if (itemIsOnCart) {
-            productOnCartCtx.updateProduct(props.id)
+            const increasedByOne = itemInCart.quantity + 1;
+            productOnCartCtx.updateProduct(props.id, increasedByOne)
         } else {
             productOnCartCtx.addProduct({
                 id: props.id,

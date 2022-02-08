@@ -9,11 +9,16 @@ beforeEach(() => {
 })
 
 test('change input', () => {
+    //Arrange
     const inputElement = getByTestId('input')
+
+    //Act
     fireEvent.change(inputElement, {
         target: {
             value: '5'
         }
     })
+
+//Assert
     expect(inputElement.value).toBe('5')
 })

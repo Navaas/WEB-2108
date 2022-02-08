@@ -1,13 +1,11 @@
 import css from './ShoppingCartItem.module.css'
-import {useContext, useState} from "react";
+import {useContext} from "react";
 import AlbumContext from "../../context/AlbumContext";
 import remove from '../../utils/global/image/trash.png'
 
 
 export default function ShoppingCartItem(props) {
     const productOnCartCtx = useContext(AlbumContext);
-    const [inputValue, setInputValue] = useState(props.quantity)
-    const [totalSumValue, setTotalSumValue] = useState(props.totalSum)
 
     const itemIsOnCart = productOnCartCtx.itemIsOnCart(props.id);
 
@@ -20,10 +18,7 @@ export default function ShoppingCartItem(props) {
     function updateProductInCartHandler(newValue) {
         console.log(newValue);
         if (itemIsOnCart) {
-            productOnCartCtx.updateProductOnCartWithNewValue(props.id, newValue);
-            const currentProduct = productOnCartCtx.productOnCart.find(prevItemsSelected => prevItemsSelected.id === props.id);
-            setInputValue(currentProduct.quantity);
-            setTotalSumValue(currentProduct.totalSum);
+            productOnCartCtx.updateProduct(props.id, newValue);
         }
     }
 
@@ -47,10 +42,10 @@ export default function ShoppingCartItem(props) {
                                className={css.input}
                                type="number"
                                min='0'
-                               value= {inputValue}/>
+                               value= {props.quantity}/>
                     </article>
                     <article>
-                        <h3>Pris: {totalSumValue} :- </h3>
+                        <h3>Pris: {props.totalSum} :- </h3>
                     </article>
                 </section>
             </ul>
