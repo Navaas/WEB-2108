@@ -32,7 +32,7 @@ export function AlbumContextProvider(props) {
             return prevTotalAlbum;
         })
 
-        //Räknar ut totalsumman
+  //Räknar ut total summa
         setTotalSumInCart(prevTotalSumInCart => {
             prevTotalSumInCart = 0;
             for (const product of currentItems) {
