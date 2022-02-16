@@ -1,10 +1,14 @@
-import express, {response} from 'express'
+// const express = require('express');
+// const {response} = require("express");
+import express from 'express'
+import dotenv from 'dotenv'
 
-const port = 3001
+dotenv.config()
+const port = process.env.SERVER_PORT
 const app = express()
 
 app.get('/', (req, res) => {
-    response.send('API Alive')
+    res.send('API Alive!')
 })
 
 app.listen(port, () => {

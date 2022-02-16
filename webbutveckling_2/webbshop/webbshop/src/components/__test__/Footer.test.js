@@ -1,3 +1,4 @@
+
 import {fireEvent, render} from '@testing-library/react';
 import Footer from "../footer/Footer";
 
@@ -8,6 +9,6 @@ beforeEach(() => {
     getByTestId = component.getByTestId
 })
 
-test('header renders with correct text 4', () => {
+test('footer renders with correct text 4', () => {
     expect(getByTestId('footertext').textContent).toBe('Copyright © 2022 by Michaela Andreasson')
 })

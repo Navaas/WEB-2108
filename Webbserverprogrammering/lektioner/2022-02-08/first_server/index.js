@@ -1,14 +1,15 @@
+const express = require('express')
+
 const port = 3001
 const app = express()
 
-// CRUD   = Create Read Update Delete
-// Method = POST   GET  PUT    DELETE
+// CRUD = Create Read Update Delete
+// Method = POST, GET, PUT, DELETE
 
 // Read
 app.get('/', (req, res) => {
-    res.send('Välkommen till mitt API!')
     console.log('GET Method')
-    res.send(`Välkommen till mitt API på port: ${port}!`)
+    res.send(`Välkommen till mitt API på port:${port}!`)
 })
 
 // Create
@@ -29,9 +30,8 @@ app.delete('/', (req, res) => {
     res.send(`Got a DELETE request!`)
 })
 
-app.listen(3001, () => {
-    app.listen(port, () => {
-        // console.log('Server running on port 3001')
-        console.log('Server running on port http://localhost:3001')
-        console.log(`Server running on port http://localhost:${port}`)
-    })}
+app.listen(port, () => {
+    // console.log('Server running on port 3001')
+    console.log(`Server running on port http://localhost:${port}`)
+})
+
