@@ -28,6 +28,10 @@ const fullName = (forname, lastname) =>{
     return http.post (`name/${forname} / ${lastname}`)
 }
 
+const array = () =>{
+    return http.post(`/array`)
+}
+
 export default {
     Alive,
     name,
@@ -36,4 +40,5 @@ export default {
     multiplication,
     division,
     fullName,
+    array,
 }

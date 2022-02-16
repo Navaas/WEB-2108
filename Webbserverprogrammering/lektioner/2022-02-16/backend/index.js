@@ -56,4 +56,10 @@ app.post('/calc/div/:num1/:num2', (req, res) => {
     res.send(`Summan av talen ${num1} / ${num2} = ${sum}`)
 })
 
+app.post('/array', (req, res) =>{
+    let array = ['Michaela, Christoffer, Aram']
+    res.send(`${array}`)
+})
+
+
 app.listen(port)
