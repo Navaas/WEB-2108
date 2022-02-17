@@ -24,7 +24,7 @@ const Addition = () => {
         <>
             <h1>Addition</h1>
             Enter your numbers: <input type="number" value={numOne} onChange={event => setNumOne(event.target.value)}/>
-            <input type="number" value={numTwo} onChange={event => setNumTwo(event.target.value)}/>
+            <input type="number" value={numTwo} onChange={event => setNumTwo(Number(event.target.value))}/>
             <button onClick={()=> fetchDataFromExternalApi()}>Make Api call</button>
             {displayData()}
         </>

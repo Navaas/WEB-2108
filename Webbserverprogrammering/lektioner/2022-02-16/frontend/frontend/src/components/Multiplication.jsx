@@ -23,8 +23,8 @@ const Multiplication = () => {
     return(
         <>
         <h1>Multiplication</h1>
-            Enter your number here: <input type="number" value={numOne} onChange={event => setNumOne(event.target.value)}/>
-            <input type="number" value={numTwo} onChange={event => setNumTow(event.target.value)}/>
+            Enter your number here: <input type="number" value={numOne} onChange={event => setNumOne(Number(event.target.value))}/>
+            <input type="number" value={numTwo} onChange={event => setNumTow(Number(event.target.value))}/>
             <button onClick={() => fetchDataFromExternalApi()}>Make Api call</button>
             {displayData()}
         </>
