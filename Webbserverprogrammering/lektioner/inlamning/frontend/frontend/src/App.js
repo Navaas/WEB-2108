@@ -1,8 +1,15 @@
+import Alive from "./components/Alive";
+import ToDoList from "./components/ToDoList";
+
 function App() {
     return (
         <>
-            <h1>App</h1></>
-    );
+            <ToDoList/>
+            <Alive/>
+        </>
+
+)
+    ;
 }
 
 export default App;
