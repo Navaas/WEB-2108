@@ -15,7 +15,7 @@ const app = express()
 app.use(cors(cors_option))
 app.use(express.json())
 
-const hej = [
+const toDoList = [
     {
         id: 'one',
         toDo: 'Handla',
@@ -25,12 +25,23 @@ const hej = [
         id: 'two',
         toDo: 'Hämta barn',
         name: 'Filip',
+    },
+    {
+        id: 'three',
+        toDo: 'Frisören 17.00',
+        name: 'Michaela'
+    },
+    {
+        id: 'four',
+        toDo: 'Yoga 19.00',
+        name: 'Filip',
     }
 ]
 
-const getUserByName = (id) => {
-    let object = `Could not find "${id}" in database`
-    hej.forEach(user => {
+
+const getToDoById = (id) => {
+    let object = `Could not find "${id}"  in database`
+    toDoList.forEach(user => {
         if (id === user.id)
         {
             object = user
@@ -43,13 +54,13 @@ app.get('/', (req, res) => {
     res.send('Api is Alive')
 })
 
-app.get('/fruit', (req, res) => {
-    res.send([hej])
+app.get('/toDo', (req, res) => {
+    res.send(toDoList)
 })
 
 app.get('/user/:name', (req, res) => {
     const name = req.params.name
-    const responseFromDb = getUserByName(name)
+    const responseFromDb = getToDoById(name)
     res.send(responseFromDb)
 })
 

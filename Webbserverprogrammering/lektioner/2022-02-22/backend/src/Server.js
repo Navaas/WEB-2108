@@ -1,23 +1,12 @@
 import express from 'express'
-import cors from 'cors'
-
-
-
-// Config stuff
-const allowedRequestOrigins = '*'
-const allowedRequestMethods = ['GET', 'POST', 'PUT', 'DELETE']
-
-const cors_options = {
-    origin: allowedRequestOrigins,
-    methods: allowedRequestMethods
-}
+import Configuration from "./configurations/Configuration.js";
+import ApplyMiddlewares from "./configurations/ApplyMiddlewares.js";
+import AliveController from "./controller/AliveController.js";
 
 // Initiate ExpressAPP
 const app = express()
+ApplyMiddlewares(app)
 
-// Middleware
-app.use(cors(cors_options))
-app.use(express.json())
 
 // Database
 const userDatabase = [
@@ -95,9 +84,11 @@ const deleteUserByName = (name) => {
 }
 
 // Endpoint + Business Logic
-app.get('/', (req, res) => {
-    res.send('API is Alive')
-})
+// app.get('/', (req, res) => {
+//     // res.send('API is Alive')
+//
+// })
+app.get('/', AliveController.alive)
 
 // CRUD
 // CREATE
@@ -146,3 +137,5 @@ app.delete('/user/:name', (req, res) => {
     res.status(200).send(responseFromDB)
 })
 
+//Start Server
+Configuration.connectToPort(app)
