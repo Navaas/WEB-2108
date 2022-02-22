@@ -1,23 +1,23 @@
-import toDoDate from '../data/toDoData.js'
+import toDoData from '../data/toDoData.js'
 
 const creatToDoObject = (req, res) => {
     const {name, todo,} = req.body
     const newObject = {
+        id: toDoData.length,
         name: name,
         todo: todo,
-        id: toDoDate.length
     }
-    toDoDate.push(newObject)
-    res.status(201).send(toDoDate)
+    toDoData.push(newObject)
+    res.status(201).send(toDoData)
 }
 
 const getAllToDo = (req, res) => {
-    res.status(200).send(toDoDate)
+    res.status(200).send(toDoData)
 }
 
 const toDoNames = () => {
     const names = []
-    toDoDate.forEach(user => {
+    toDoData.forEach(user => {
         names.push({
             name: user.name
         })
@@ -32,7 +32,7 @@ const getToDoNames = (req, res) => {
 
 const searchToDoByName = (name) => {
     let object = `Could not find "${name}" in database`
-    toDoDate.forEach(user => {
+    toDoData.forEach(user => {
         if (name === user.name) {
             object = user
             return user
@@ -49,7 +49,7 @@ const getToDoByName = (req, res) => {
 
 const modifyToDoByName = (name, newName, todo) => {
     let object = `Could not find "${name}" in database`
-    toDoDate.forEach(user => {
+    toDoData.forEach(user => {
         if (name === user.name) {
             user.name = newName
             user.todo = todo
@@ -69,10 +69,10 @@ const updateToDoByName = (req, res) => {
 const removeToDoByName = (name) => {
     let text = `User with name: "${name}" `
 
-    for (let i = 0; i < toDoDate.length; i++) {
-        if (name === toDoDate[i].name) {
+    for (let i = 0; i < toDoData.length; i++) {
+        if (name === toDoData[i].name) {
             text += `was deleted from database!`
-            toDoDate.splice(i, 1)
+            toDoData.splice(i, 1)
             return text
         }
     }
