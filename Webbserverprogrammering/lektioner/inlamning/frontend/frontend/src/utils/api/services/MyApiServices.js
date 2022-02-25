@@ -5,7 +5,7 @@ const Alive = () => {
 }
 
 const ToDoList = (name) => {
-    return http.get(`/user/:${name}`)
+    return http.get(`/allTodo/:${name}`)
 }
 
 export default {

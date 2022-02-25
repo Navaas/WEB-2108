@@ -1,7 +1,7 @@
 import toDoData from '../data/toDoData.js'
 
 const creatToDoObject = (req, res) => {
-    const {name, todo,} = req.body
+    const {name, todo} = req.body
     const newObject = {
         id: toDoData.length,
         name: name,

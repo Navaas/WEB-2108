@@ -1,5 +1,5 @@
 .toDoContent {
-    background-color: #61dafb;
+    background-color: #b6bfc6;
     margin: 150px 500px;
     width: 600px;
     text-align: center;
@@ -12,6 +12,7 @@
     padding: 10px;
     width: 350px;
     border: solid 1px grey;
+    margin-bottom: 10px;
 }
 
 .button {
@@ -24,4 +25,28 @@
 
 .toDoText{
     padding-top: 2em;
+}
+
+.ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+.ulli {
+    cursor: pointer;
+    padding: 6px 8px 6px 10px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    text-align: left;
+}
+
+.ulli:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.ulli:hover {
+    background: #ddd;
 }
