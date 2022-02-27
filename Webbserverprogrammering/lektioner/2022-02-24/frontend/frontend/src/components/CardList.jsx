@@ -1,4 +1,4 @@
-import Card from './Card'
+import DataCard from './DataCard'
 
 const CardList = ({ users }) => {
     return(
@@ -6,7 +6,7 @@ const CardList = ({ users }) => {
             {
                 users.map((user, index) =>{
                     return (
-                        <Card key={ index}
+                        <DataCard key={ index}
                               name={ user.name }
                               age={ user.age }
                               gender={ user.gender}/>

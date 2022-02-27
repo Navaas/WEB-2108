@@ -1,12 +1,12 @@
 import { useState } from "react";
-import MyApiServices from "../utils/api/services/MyApiServices";
+import AliveService from '../utils/api/services/AliveService';
 
 
 const Alive = () => {
     const [data, setData] = useState('')
 
     function fetchDataFromExternalApi() {
-        MyApiServices.Alive()
+        AliveService.alive()
             .then(response => {
                 setData(response.data)
             })

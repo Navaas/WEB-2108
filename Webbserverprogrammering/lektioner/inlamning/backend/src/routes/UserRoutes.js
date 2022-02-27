@@ -6,9 +6,9 @@ const routes = (app) => {
     app.post('/newTodoObject/', UserController.creatToDoObject)
 
     // READ
-    app.get('/allTodo', UserController.getAllToDo)
+    app.get('/todo', UserController.getAllToDo)
     app.get('/todo/name', UserController.getToDoNames)
-    app.get('/todo/:name', UserController.getToDoByName)
+    app.get('/oneTodoByName/:name', UserController.getToDoByName)
 
     // UPDATE
     app.put('/updateTodo/', UserController.updateToDoByName)

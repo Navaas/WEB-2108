@@ -1,5 +1,5 @@
 import css from './ToDoList.module.css'
-import MyApiServices from '../utils/api/services/MyApiServices';
+import TodoService from "../utils/api/services/TodoService";
 import {useState} from "react";
 
 
@@ -8,7 +8,7 @@ export default function ToDoList() {
     const [name, setName] = useState([])
 
     function fetchDataFromExternalApi() {
-        MyApiServices.ToDoList(name)
+        TodoService.getAllTodo(name)
             .then((response) => {
                 setData(response.data)
             })
