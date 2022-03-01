@@ -4,7 +4,7 @@ import GetAllTodos from "./GetAllTodos";
 
 const DeleteTodo = () => {
     const [data, setData] = useState('')
-    const [name, setName] = useState('Christoffer')
+    const [name, setName] = useState('')
 
     const sendDataToApi = () => {
         TodoService.deleteTodo(name)
@@ -16,11 +16,11 @@ const DeleteTodo = () => {
     return (
         <>
             <article>
-                <h1>Delete Todo</h1>
-                <input type="text"
+                <h2>Ta bort en Todo</h2>
+                <span>Namn:</span><input type="text"
                        value={name}
                        onChange={event => setName(event.target.value)}/>
-                <button onClick={sendDataToApi}>Delete Todo</button>
+                <button onClick={sendDataToApi}>Ta Bort</button>
                 <h3>{data}</h3>
             </article>
         </>

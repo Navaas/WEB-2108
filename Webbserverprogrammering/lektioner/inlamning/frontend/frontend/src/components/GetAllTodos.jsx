@@ -16,8 +16,8 @@ const GetAllTodos = () => {
     return (
         <>
             <article>
-        <h1>Get All Todo</h1>
-            <button onClick={() => fetchDataFromExternalApi()}>Get All</button>
+        <h2>HÄMTA HELA LISTAN</h2>
+            <button onClick={() => fetchDataFromExternalApi()}>Hämta Lista</button>
             <DataList todo={data}/>
             </article>
         </>

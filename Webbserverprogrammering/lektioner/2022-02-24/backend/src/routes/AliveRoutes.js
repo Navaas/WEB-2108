@@ -1,6 +1,6 @@
-import AliveController from "../controller/AliveController.js";
+import AliveController from '../controller/AliveController.js'
 
-// Endpoiont + Business Logic
+// Endpoint + Business Logic
 const routes = (app) => {
     app.get('/', AliveController.alive)
 }

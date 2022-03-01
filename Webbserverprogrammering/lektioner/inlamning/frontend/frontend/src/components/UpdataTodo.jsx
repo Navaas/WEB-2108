@@ -4,8 +4,8 @@ import DataCard from "./DataCard";
 
 const UpdataTodo = () => {
     const [data, setData] = useState([])
-    const [name, setName] = useState('Carina')
-    const [newName, setNewName] = useState('Christoffer')
+    const [name, setName] = useState('')
+    const [newName, setNewName] = useState('')
     const [todo, setTodo] = useState('')
 
     const setDataFromApi = () => {
@@ -23,17 +23,20 @@ const UpdataTodo = () => {
     return (
         <>
             <article>
-                <h1>UpdateTodo</h1>
-                <input type="text"
-                       value={name}
-                       onChange={event => setName(event.target.value)}/>
-                <input type="text"
-                       value={newName}
-                       onChange={event => setNewName(event.target.value)}/>
-                <input type="text"
-                       value={todo}
-                       onChange={event => setTodo(event.target.value)}/>
-                <button onClick={setDataFromApi}>Uppdate New Todo</button>
+                <h2>Uppdatera en todo</h2>
+                <span>Namn:</span><input type="text"
+                            value={name}
+                            onChange={event => setName(event.target.value)}/>
+<br/>
+                <span>Nytt namn:</span><input type="text"
+                                 value={newName}
+                                 onChange={event => setNewName(event.target.value)}/>
+                <br/>
+                <span>Att göra:</span><input type="text"
+                                value={todo}
+                                onChange={event => setTodo(event.target.value)}/>
+                <br/>
+                <button onClick={setDataFromApi}>Uppdatera</button>
 
                 {data.name ? <DataCard name={data.name}
                                        todo={data.todo}/>

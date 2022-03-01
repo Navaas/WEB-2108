@@ -4,7 +4,7 @@ import DataList from "./DataList";
 
 const CreateTodo = () => {
     const [data, setData] = useState([])
-    const [name, setName] = useState('Carina')
+    const [name, setName] = useState('')
     const [todo, setTodo] = useState('')
 
     const sendDataToApi = () => {
@@ -21,14 +21,14 @@ const CreateTodo = () => {
     return (
         <>
             <article>
-            <h1>CreateTodo</h1>
-            <input type="text"
+            <h2>Skapa todo</h2>
+                <span>Namn:</span><input type="text"
                    value={name}
                    onChange={event => setName(event.target.value)}/>
-            <input type="text"
+                <span>Todo:</span><input type="text"
                    value={todo}
                    onChange={event => setTodo(event.target.value)}/>
-            <button onClick={sendDataToApi}>Create New Task</button>
+            <button onClick={sendDataToApi}>Skapa Ny</button>
             <DataList todo={data}/>
             </article>
         </>

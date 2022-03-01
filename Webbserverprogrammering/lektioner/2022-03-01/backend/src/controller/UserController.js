@@ -1,4 +1,4 @@
-import userDatabase from '../data/UserDatabase.js'
+import userDatabase from '../data/userDatabase.js'
 
 const creatUser = (req, res) => {
     const { name, age, gender } = req.body

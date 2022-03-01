@@ -2,26 +2,22 @@ const userDatabase = [
     {
         name: 'Aram',
         age: 30,
-        gender: 'Male',
-        id: 0
+        gender: 'Male'
     },
     {
         name: 'Bengtina',
         age: 19,
-        gender: 'Female',
-        id: 1
+        gender: 'Female'
     },
     {
         name: 'Carin',
         age: 29,
-        gender: 'Female',
-        id: 2
+        gender: 'Female'
     },
     {
         name: 'Emil',
         age: 32,
-        gender: 'Male',
-        id: 3
+        gender: 'Male'
     }
 ]
 

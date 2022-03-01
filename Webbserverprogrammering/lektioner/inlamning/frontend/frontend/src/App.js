@@ -1,5 +1,4 @@
 import Alive from "./components/Alive";
-import ToDoList from "./components/ToDoList";
 import GetAllTodos from "./components/GetAllTodos";
 import './utils/global/css/global.css'
 import CreateTodo from "./components/CreateTodo";
@@ -11,7 +10,6 @@ function App() {
     return (
         <>
             <Alive/>
-            <ToDoList/>
             <GetAllTodos/>
             <CreateTodo/>
             <UpdataTodo/>

@@ -1,15 +1,15 @@
 import express from 'express'
-import Configuration from "./configurations/Configuration.js";
-import ApplyMiddlewares from "./configurations/ApplyMiddlewares.js";
-import AliveRouts from "./routes/AliveRouts.js";
-import UserRotes from "./routes/UserRotes.js";
+import Configuration from './configurations/configuration.js'
+import ApplyMiddlewares from './configurations/ApplyMiddlewares.js'
+import AliveRoutes from './routes/AliveRoutes.js'
+import UserRoutes from './routes/UserRoutes.js'
 
 // Initiate ExpressAPP
 const app = express()
 ApplyMiddlewares(app)
 
-AliveRouts.routes(app)
-UserRotes.routes(app)
+AliveRoutes.routes(app)
+UserRoutes.routes(app)
 
-//Start Server
+// Start Server
 Configuration.connectToPort(app)

@@ -17,10 +17,11 @@ const GetOneTodoByName = () => {
     return (
         <>
             <article>
-                Name: <input type="text"
+                <h2>Hämta ett namn i listan</h2>
+                <span>Namn:</span> <input type="text"
                              value={name}
                              onChange={event => setName(event.target.value)}/>
-                <button onClick={sendDataToApi}>Get Singel Todo</button>
+                <button onClick={sendDataToApi}>Hämta</button>
                 {data.name ? <DataCard name={data.name}
                                        todo={data.todo}/>
                     : <h3>{data}</h3>
