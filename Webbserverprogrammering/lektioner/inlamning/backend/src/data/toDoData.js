@@ -2,7 +2,7 @@ const toDoData = [
     {
         id: 0,
         name: 'Filip',
-        todo: 'Tvätta fönster'
+        todo: 'Köper bil'
     },
     {
         id: 1,
@@ -11,18 +11,18 @@ const toDoData = [
     },
     {
         id: 2,
-        name: 'Filip',
-        todo: 'Jogging runda i skogen'
+        name: 'Hugo',
+        todo: 'Djungelgympa 15.00'
     },
     {
         id: 3,
-        name: 'Michaela',
-        todo: 'Föräldramöte'
+        name: 'Lucas',
+        todo: 'Simskola'
     },
     {
         id: 4,
-        name: 'Filip',
-        todo: 'Klippa gräset'
+        name: 'Loa',
+        todo: 'Kalas 11.00'
     },
 ]
 
