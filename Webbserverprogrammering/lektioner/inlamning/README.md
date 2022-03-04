@@ -64,3 +64,8 @@ manuella och automatiska tester i Insomnia.
 Jag ser att det är en god kunskap för att kunna bygga en egen webbsida. Här har jag fått grunden till hur man ska bygga
 ihop backend/frontend. Att ha kunskap om båda sidorna är nog bra ute i arbetslivet, att man iallafall har sett och kan
 läsa vad som händer (till viss del).
+
+### Motivera varför du valt en specifik lösning.
+### Lämna förslag på förbättringar av din kod.
+### Lämna exempel på lösningar du valde att inte implementera
+### ämna förslag på förbättringar av din UI/UX design eller reflektera över den.
