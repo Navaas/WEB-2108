@@ -21,7 +21,7 @@ const Alive = () => {
 
     return(
         <>
-        <h2>Alive</h2>
+        <h2 data-testid='headerText'>Alive</h2>
             <button onClick={() => fetchDataFromExternalApi()}>Make API call</button>
             {displayData()}
         </>

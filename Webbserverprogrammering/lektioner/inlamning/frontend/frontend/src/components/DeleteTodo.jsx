@@ -16,7 +16,7 @@ const DeleteTodo = () => {
     return (
         <>
             <article>
-                <h2>Ta bort en Todo</h2>
+                <h2 data-testid='headerText'>Ta bort en Todo</h2>
                 <span>Namn:</span><input type="text"
                        value={name}
                        onChange={event => setName(event.target.value)}/>

@@ -21,7 +21,7 @@ const CreateTodo = () => {
     return (
         <>
             <article>
-            <h2>Skapa todo</h2>
+            <h2 data-testid='headerText'>Skapa todo</h2>
                 <span>Namn:</span><input type="text"
                    value={name}
                    onChange={event => setName(event.target.value)}/>
