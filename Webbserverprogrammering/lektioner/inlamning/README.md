@@ -66,6 +66,22 @@ ihop backend/frontend. Att ha kunskap om båda sidorna är nog bra ute i arbetsl
 läsa vad som händer (till viss del).
 
 ### Motivera varför du valt en specifik lösning.
+
+Jag valde att ha kvar Alive funktionen. Klickar man på knappen så ser man direkt om backend svarar. Det blev ett enkelt
+sätt mig mig att se om jag glömt att starta min server eller inte.
+
 ### Lämna förslag på förbättringar av din kod.
-### Lämna exempel på lösningar du valde att inte implementera
-### ämna förslag på förbättringar av din UI/UX design eller reflektera över den.
+
+I min backend så har jag följt det vi har gått igenom på lektionerna. Så jag tror att utbrytningar och sånt stämmer. Det
+är på min frontend som jag kan förbättre min kod. Genom att lägga ihop allt istället ör att ha dom utbrutna. Jag känner
+inte att jag har den kunskapen att få ihop det.
+
+### Lämna exempel på lösningar du valde att inte implementera.
+
+Etersom min css inte skulle skilja sig i design så valde jag att lägga den global. Hade jag däremot fått ihop det som
+jag hade tänkt så hade jag använt mig av css.module istället för att css inte ska läcka igeonm i andra filer.
+
+### Lämna förslag på förbättringar av din UI/UX design eller reflektera över den.
+
+Det är inte den snyggaste designen jag har skapat. Det är mest i brist på att funktionalliteten inte är ihop satt
+som jag tänkt. Annars hade jag lägt mer tid på att få en renare design.
