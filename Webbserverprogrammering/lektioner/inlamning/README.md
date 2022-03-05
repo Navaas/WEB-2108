@@ -5,9 +5,9 @@ enklare tester i Insomnia/Postman. Api:t innehåller en todo-list och ska skapas
 
 Jag har valt att använda Trello till min projektplanering.
 
-![](src/utils/global/image/todo.JPG)
-
-
+![bild](frontend/frontend/src/utils/global/image/Todo-w3.JPG)
+![bild](frontend/frontend/src/utils/global/image/todo.JPG)
+![bild](frontend/frontend/src/utils/global/image/testInsomnia.JPG)
 
 
 ### Beskriv lite olika lösningar du gjort.
