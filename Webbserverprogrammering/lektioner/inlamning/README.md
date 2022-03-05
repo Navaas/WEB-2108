@@ -7,8 +7,10 @@ Jag har valt att använda Trello till min projektplanering.
 
 ![bild](frontend/frontend/src/utils/global/image/Todo-w3.JPG)
 Min tanke var att skapa något liknande som w3 hade.
+
 ![bild](frontend/frontend/src/utils/global/image/todo.JPG)
 Men jag lyckades bara komma fram till detta, där funktionerna ligger försig.
+
 ![bild](frontend/frontend/src/utils/global/image/TestInsomnia.JPG)
 Här ser man att testerna i Insomnia är godkända.
 
