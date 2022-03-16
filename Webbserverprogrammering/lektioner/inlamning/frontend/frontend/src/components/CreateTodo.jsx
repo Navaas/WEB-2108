@@ -21,15 +21,15 @@ const CreateTodo = () => {
     return (
         <>
             <article>
-            <h2 data-testid='headerText'>Skapa todo</h2>
+                <h2 data-testid='headerText'>Skapa todo</h2>
                 <span>Namn:</span><input type="text"
-                   value={name}
-                   onChange={event => setName(event.target.value)}/>
+                                         value={name}
+                                         onChange={event => setName(event.target.value)}/>
                 <span>Todo:</span><input type="text"
-                   value={todo}
-                   onChange={event => setTodo(event.target.value)}/>
-            <button onClick={sendDataToApi}>Skapa Ny</button>
-            <DataList todo={data}/>
+                                         value={todo}
+                                         onChange={event => setTodo(event.target.value)}/>
+                <button onClick={sendDataToApi}>Skapa Ny</button>
+                <DataList todo={data}/>
             </article>
         </>
     )

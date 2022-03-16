@@ -3,6 +3,7 @@ import toDoData from '../data/toDoData.js'
 const creatToDoObject = (req, res) => {
     const {name, todo} = req.body
     const newObject = {
+        doneTodo: false,
         id: toDoData.length,
         name: name,
         todo: todo,
@@ -17,9 +18,9 @@ const getAllToDo = (req, res) => {
 
 const toDoNames = () => {
     const names = []
-    toDoData.forEach(user => {
+    toDoData.forEach(task => {
         names.push({
-            name: user.name
+            name: task.name
         })
     })
     return names
@@ -32,10 +33,10 @@ const getToDoNames = (req, res) => {
 
 const searchToDoByName = (name) => {
     let object = `Could not find "${name}" in database`
-    toDoData.forEach(user => {
-        if (name === user.name) {
-            object = user
-            return user
+    toDoData.forEach(task => {
+        if (name === task.name) {
+            object = task
+            return task
         }
     })
     return object
@@ -49,12 +50,12 @@ const getToDoByName = (req, res) => {
 
 const modifyToDoByName = (name, newName, todo) => {
     let object = `Could not find "${name}" in database`
-    toDoData.forEach(user => {
-        if (name === user.name) {
-            user.name = newName
-            user.todo = todo
-            object = user
-            return user
+    toDoData.forEach(task => {
+        if (name === task.name) {
+            task.name = newName
+            task.todo = todo
+            object = task
+            return task
         }
     })
     return object
@@ -87,6 +88,13 @@ const deleteToDoByName = (req, res) => {
     res.status(200).send(responseFromDB)
 }
 
+const toggleToFalse = (req, res) => {
+    const id = Number(req.params.id)
+    toDoData[id].doneTodo = !toDoData[id].doneTodo
+    res.status(202).send(toDoData[id])
+}
+
+
 export default {
     creatToDoObject,
     getAllToDo,
@@ -94,5 +102,6 @@ export default {
     getToDoNames,
     getToDoByName,
     updateToDoByName,
-    deleteToDoByName
+    deleteToDoByName,
+    toggleToFalse,
 }

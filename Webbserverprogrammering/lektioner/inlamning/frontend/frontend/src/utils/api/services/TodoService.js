@@ -20,10 +20,15 @@ const oneTodoByName = (name) => {
     return http.get(`/oneTodoByName/${name}`)
 }
 
+const toggleToFalse = (id) => {
+    return http.put(`/todoDone/${id}`)
+}
+
 export default {
     getAllTodo,
     createTodo,
     updateTodo,
     deleteTodo,
     oneTodoByName,
+    toggleToFalse,
 }

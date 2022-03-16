@@ -4,17 +4,23 @@ import css from './DataCard.module.css'
 import TodoService from "../utils/api/services/TodoService";
 
 
-const DataCard = ({name, todo}) => {
-    const [done, setDone] = useState(false)
+const DataCard = ({name, todo, id, doneTodo}) => {
+    const [done, setDone] = useState(doneTodo)
 
     function toggleDone() {
-        setDone(!done)
-
-
+        TodoService.toggleToFalse(id)
+            .then(response => {
+                setDone(response.data.doneTodo)
+                console.log(response.data)
+            })
+            .catch(error => console.log(error))
     }
 
+
     return (
-        <p className={done ? css.doneTodo : null} onClick={toggleDone}> {todo} - {name}</p>
+        <div>
+            <p className={done ? css.doneTodo : null} onClick={toggleDone}> {todo} - {name}</p>
+        </div>
     )
 
 }
