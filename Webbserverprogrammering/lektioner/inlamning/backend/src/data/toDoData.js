@@ -1,6 +1,6 @@
 const toDoData = [
     {
-        doneTodo: false,
+        doneTodo: true,
         id: 0,
         name: 'Filip',
         todo: 'Köper bil'
