@@ -1,9 +1,9 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/windows,dotenv,node
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,dotenv,node
+# Created by https://www.toptal.com/developers/gitignore/api/node,windows,dotenv
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,windows,dotenv
 
 ### dotenv ###
-.env
+Laxa_Arasto/.env
 
 ### Node ###
 # Logs
@@ -170,4 +170,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,dotenv,node
+# End of https://www.toptal.com/developers/gitignore/api/node,windows,dotenv
