@@ -20,7 +20,7 @@ function isServerInDevelopmentMode() {
 const connectToPort = (app) => {
     app.listen(port, () => {
         isServerInDevelopmentMode()
-        Logger.info(`Server started ah http://localhost:${ port }`)
+        Logger.info(`Server started at http://localhost:${ port }`)
     })
 }
 

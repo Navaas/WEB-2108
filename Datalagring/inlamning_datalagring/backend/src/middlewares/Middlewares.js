@@ -9,7 +9,7 @@ const notFound = (req, res, next) => {
     next(error)
 }
 
-const errorHandler = (req, res, next, error) => {
+const errorHandler = (error, req, res, next) => {
     const statusCode = res.statusCode === StatusCode.OK ? StatusCode.INTERNAL_SERVER_ERROR : res.statusCode
     res.status(statusCode)
     res.json({

@@ -2,8 +2,8 @@ import TodoController from '../controller/TodoController.js'
 
 const todoRoutes = (app) => {
     const todoUrl = '/todo'
-    const todoUrlById = `${todoUrl}/todoId`  // userid på git?
-    const searchTodo = `searchTodo`
+    const todoUrlById = `${todoUrl}/:userId`
+    const searchTodo = `/searchTodo`
 
     app.post(todoUrl, TodoController.createTodo)
     app.get(todoUrl, TodoController.getAllTodo)

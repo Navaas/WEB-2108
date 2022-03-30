@@ -32,11 +32,11 @@ const getAllTodo = async (req, res) => {
 
 const getTodoById = async (req, res) => {
     try {
-        const response = await TodoModel.findById(req.params.todo)   // UserId på git?
+        const response = await TodoModel.findById(req.params.userId)
         res.status(StatusCode.OK).send(response)
     } catch (error) {
         res.status(StatusCode.INTERNAL_SERVER_ERROR.send({
-            message: 'Error occurred while trying to retrieve user with id:' + req.params.todo
+            message: 'Error occurred while trying to retrieve user with id:' + req.params.userId
         }))
     }
 }
@@ -49,7 +49,7 @@ const getTodoWithName = async (req, res) => {
             : res.status(StatusCode.NOT_FOUND).send({message: 'Could not find todo by name:' + req.params.name})
     } catch (error) {
         res.status(StatusCode.INTERNAL_SERVER_ERROR).send({
-            message: 'Error while trying to retrieve todo with name:' + req.params.todo,  // userId på git?
+            message: 'Error while trying to retrieve todo with name:' + req.params.userId,
             error: error.message
         })
     }
@@ -60,14 +60,14 @@ const updateTodo = async (req, res) => {
         if (!req.body) {
             return res.status(StatusCode.BAD_REQUEST).send({message: 'Cannot update emty values'})
         }
-        const response = await TodoModel.findByIdAndUpdate(req.params.todo, {
+        const response = await TodoModel.findByIdAndUpdate(req.params.userId, {
             todo: req.body.todo,
-            name: res.body.names
+            name: req.body.name
         }, {new: true})
         res.status(StatusCode.OK).send(response)
     } catch (error) {
-        res.status(StatusCode.INTERNAL_SERVER_ERROR.send)({
-            message: 'Error occurred while trying to update value of the todo with ID:' + req.params.todo, // userid på git?
+        res.status(StatusCode.INTERNAL_SERVER_ERROR).send({
+            message: 'Error occurred while trying to update value of the todo with ID:' + req.params.userId,
             error: error.message
         })
     }
@@ -75,20 +75,20 @@ const updateTodo = async (req, res) => {
 
 const deleteTodo = async (req, res) => {
     try {
-        const response = await TodoModel.findByIdAndDelete(req.params.todo) // userid på git?
+        const response = await TodoModel.findByIdAndDelete(req.params.userId)
         res.status(StatusCode.OK).send({
-            message: `Successfully deleted the todo: ${response.todo} and ID: ${response.todo}`  // userid på git?
+            message: `Successfully deleted the todo: ${response.todo} and ID: ${response.userId}`
         })
     } catch (error) {
         res.status(StatusCode.INTERNAL_SERVER_ERROR).send({
-            message: 'Error while trying to delete the todo with ID:' + req.params.todo, // userId på git?
+            message: 'Error while trying to delete the todo with ID:' + req.params.userId,
             error: error.message
         })
     }
 }
 
 const todoIsDoneToggle = (req, res) => {
-    const id = Number(req.params.todo) // userid på git?
+    const id = Number(req.params.userId)
     TodoModel[id].Done = !TodoModel[id].Done
     res.status(StatusCode.ACCEPTED).send(TodoModel[id])
 }
