@@ -8,12 +8,12 @@ const environment = process.env.ENVIRONMENT
 const mongodb_url = process.env.MONGODB_URL
 const dbName = process.env.MONGODB_DB_NAME
 
-function isServerInDevelopmentMode() {
+const isServerInDevelopmentMode = () => {
     const devEnv = 'development'
-    const env = environment|| devEnv
+    const env = environment || devEnv
     const isDevelopment = env === devEnv
     if (isDevelopment) {
-        Logger.warn('server is in development mode!'.toUpperCase())
+        Logger.warn(`server is in development mode!`.toUpperCase())
     }
 }
 
@@ -25,7 +25,7 @@ const connectToPort = (app) => {
 }
 
 // Mongoose
-const connectToDatabase = async () => {
+const connectToDatabase = async (app) => {
     const url = mongodb_url + dbName
     try {
         await mongoose.connect(url)

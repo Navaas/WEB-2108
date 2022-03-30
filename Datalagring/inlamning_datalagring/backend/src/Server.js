@@ -6,16 +6,19 @@ import Middlewares from "./middlewares/Middlewares.js"
 import Configurations from "./configuration/Configuration.js"
 import TodoRoutes from "./routes/TodoRoutes.js"
 import MiddlewaresApply from './configuration/MiddlewaresApply.js'
+import AliveRoute from "./routes/AliveRoute.js";
 
 dotenv.config()
 const app = express()
 
-app.use(MiddlewaresApply.MiddlewaresApply)
+MiddlewaresApply.MiddlewaresApply
 app.use(helmet())
-app.use(express.urlencoded())
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
 app.use(morgan('common'))
 
-TodoRoutes.TodoRoutes(app)
+AliveRoute.aliveRoute(app)
+TodoRoutes.todoRoutes(app)
 app.use(Middlewares.notFound)
 app.use(Middlewares.errorHandler)
 
