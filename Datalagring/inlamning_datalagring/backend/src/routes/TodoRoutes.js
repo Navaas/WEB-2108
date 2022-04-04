@@ -4,6 +4,7 @@ const todoRoutes = (app) => {
     const todoUrl = '/todo'
     const todoUrlById = `${todoUrl}/:userId`
     const searchTodo = `/searchTodo`
+    const toggleToFalse = `/todoIsDoneToggle/:id`
 
     app.post(todoUrl, TodoController.createTodo)
     app.get(todoUrl, TodoController.getAllTodo)
@@ -11,6 +12,7 @@ const todoRoutes = (app) => {
     app.get(searchTodo, TodoController.getTodoWithName)
     app.put(todoUrlById, TodoController.updateTodo)
     app.delete(todoUrlById, TodoController.deleteTodo)
+    app.put(toggleToFalse, TodoController.todoIsDoneToggle)
 }
 
 export default {
