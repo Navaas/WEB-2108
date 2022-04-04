@@ -13,6 +13,6 @@ const TodoSchema = new mongoose.Schema({
     timestamps: true
 })
 
-const TodoModel = new mongoose.model('databaseCollection', TodoSchema)
+const TodoModel = new mongoose.model(databaseCollection, TodoSchema)
 
 export default TodoModel
