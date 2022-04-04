@@ -18,7 +18,7 @@ const getTodoById = (_id) => {
 }
 
 const getTodoWithName = (name) => {
-    return http.get(`/searchTodo?name${name}`)
+    return http.get(searchTodo)
 }
 
 const updateTodo = (_id) => {
@@ -40,5 +40,5 @@ export default {
     getTodoWithName,
     updateTodo,
     deleteTodo,
-    toggleToFalse
+    toggleDone
 }

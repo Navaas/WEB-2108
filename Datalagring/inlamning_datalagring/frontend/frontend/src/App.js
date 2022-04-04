@@ -1,6 +1,7 @@
 import Alive from "./components/Alive";
 import GetAllTodo from "./components/GetAllTodo";
 import CreateTodo from "./components/CreateTodo";
+import GetTodoByName from "./components/GetTodoByName";
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
             <Alive/>
             <GetAllTodo/>
             <CreateTodo/>
+            <GetTodoByName/>
         </>
     );
 }
