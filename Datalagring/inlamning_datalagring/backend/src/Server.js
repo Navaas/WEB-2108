@@ -11,10 +11,9 @@ import AliveRoute from "./routes/AliveRoute.js";
 dotenv.config()
 const app = express()
 
-MiddlewaresApply.MiddlewaresApply
+MiddlewaresApply(app)
 app.use(helmet())
 app.use(express.urlencoded({ extended: true }))
-app.use(express.json())
 app.use(morgan('common'))
 
 AliveRoute.aliveRoute(app)
