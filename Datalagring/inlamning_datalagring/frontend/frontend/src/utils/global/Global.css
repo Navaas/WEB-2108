@@ -27,3 +27,12 @@ p {
 p:hover {
     background-color: lightgrey;
 }
+
+section {
+    background-color: #CEAB93;
+    margin: 150px 500px;
+    width: 600px;
+    text-align: center;
+    border: 4px ridge whitesmoke;
+    border-radius: 10px;
+}

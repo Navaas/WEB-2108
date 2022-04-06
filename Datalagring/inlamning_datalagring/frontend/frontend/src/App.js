@@ -7,17 +7,19 @@ import GetTodoById from "./components/GetTodoById";
 import DeleteTodo from "./components/DeleteTodo";
 
 
-
 function App() {
     return (
         <>
+            <section>
+                <GetAllTodo/>
+                <DeleteTodo/>
+            </section>
             <Alive/>
-            <GetAllTodo/>
             <CreateTodo/>
             <GetTodoByName/>
             <UpdateTodo/>
             <GetTodoById/>
-            <DeleteTodo/>
+
         </>
     );
 }

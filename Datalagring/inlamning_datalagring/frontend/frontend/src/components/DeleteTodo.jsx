@@ -23,26 +23,24 @@ const DeleteTodo = () => {
 
     return (
         <>
-            <article>
-                <button onClick={toggleModal}>Ta bort</button>
-                {modal && (
-                    <div className={css.popup}>
-                        <div className={css.popup.content}>
-                            <img src={close} alt="close" className={css.close}/>
-                            <h2>Ta bort en Todo via Id</h2>
-                            Id: <input type="text"
-                                       value={userId}
-                                       onChange={event => setUserId(event.target.value)}/>
-                            <button onClick={sendDataToApi}>Hämta id</button>
-                            {data.name ? <DataCard name={data.name}
-                                                   todo={data.todo}
-                                                   _id={data._id}/>
-                                : <h2>{data}</h2>}
-                            <button onClick={toggleModal}>Close</button>
-                        </div>
+            <button onClick={toggleModal}>Ta bort</button>
+            {modal && (
+                <div className={css.popup}>
+                    <div className={css.popup.content}>
+                        <img src={close} alt="close" className={css.close} onClick={toggleModal}/>
+                        <h2>Ta bort en Todo via Id</h2>
+                        Id: <input type="text"
+                                   value={userId}
+                                   onChange={event => setUserId(event.target.value)}/>
+                        <button onClick={sendDataToApi}>Hämta id</button>
+                        {data.name ? <DataCard name={data.name}
+                                               todo={data.todo}
+                                               _id={data._id}/>
+                            : <h2>{data}</h2>}
+                        <button onClick={toggleModal}>Close</button>
                     </div>
-                )}
-            </article>
+                </div>
+            )}
         </>
     )
 }
