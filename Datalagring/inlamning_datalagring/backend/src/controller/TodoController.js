@@ -43,13 +43,13 @@ const getTodoById = async (req, res) => {
 
 const getTodoWithName = async (req, res) => {
     try {
-        const response = await TodoModel.find({name: req.query.name})
+        const response = await TodoModel.find({name: req.params.name})
         response.length !== 0
             ? res.status(StatusCode.OK).send(response)
             : res.status(StatusCode.NOT_FOUND).send({message: 'Could not find todo by name:' + req.params.name})
     } catch (error) {
         res.status(StatusCode.INTERNAL_SERVER_ERROR).send({
-            message: 'Error while trying to retrieve todo with name:' + req.params.userId,
+            message: 'Error while trying to retrieve todo with name:' + req.params.name,
             error: error.message
         })
     }

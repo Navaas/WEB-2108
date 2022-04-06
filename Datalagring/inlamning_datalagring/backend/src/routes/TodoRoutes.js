@@ -3,7 +3,7 @@ import TodoController from '../controller/TodoController.js'
 const todoRoutes = (app) => {
     const todoUrl = '/todo'
     const todoUrlById = `${todoUrl}/:userId`
-    const searchTodo = '/searchTodo'
+    const searchTodo = '/searchTodo/:name'
     const toggleToFalse = `/todoIsDoneToggle/:id`
 
     app.post(todoUrl, TodoController.createTodo)

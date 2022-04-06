@@ -1,8 +1,8 @@
 import http from '../TodoApi'
 
 const todoUrl = '/todo'
-const todoUrlById = `${todoUrl}/:userId`
-const searchTodo = `/searchTodo`
+const todoUrlById = `${todoUrl}/:id`
+const searchTodo = `/searchTodo/`
 const toggleToFalse = `/todoIsDoneToggle/:id`
 
 const createTodo = (newTodo) => {
@@ -14,23 +14,23 @@ const getAllTodo = () => {
 }
 
 const getTodoById = (_id) => {
-    return http.get(todoUrlById)
+    return http.get(`/todo/${_id}`)
 }
 
 const getTodoWithName = (name) => {
-    return http.get(searchTodo)
+    return http.get(searchTodo+name)
 }
 
-const updateTodo = (_id) => {
-    return http.put(todoUrlById)
+const updateTodo = (_id, changesTodo) => {
+    return http.put(`/todo/${_id}`, changesTodo)
 }
 
 const deleteTodo = (_id) => {
-    return http.delete(todoUrlById)
+    return http.delete(`/todo/${_id}`)
 }
 
 const toggleDone = (_id) => {
-    return http.put(toggleToFalse)
+    return http.put(`/todoIsDoneToggle/:id`)
 }
 
 export default {

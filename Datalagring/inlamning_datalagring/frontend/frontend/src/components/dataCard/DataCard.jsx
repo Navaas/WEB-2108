@@ -6,7 +6,7 @@ const DataCard = ({name, todo, _id, done}) => {
     const [isDone, setIsDone] = useState(done)
 
     function toggleDone() {
-        TodoService.toggleToFalse(_id)
+        TodoService.toggleDone(_id)
             .then(response => {
                 setIsDone(response.data.done)
                 console.log(response.data)
