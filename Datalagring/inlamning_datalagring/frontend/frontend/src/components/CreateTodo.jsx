@@ -21,14 +21,14 @@ const CreateTodo = () => {
     return (
         <>
             <article>
-                <h2>Skapa todo</h2>
+                <h2>Skapa ny Todo</h2>
                 <span>Namn:</span><input type="text"
                                          value={name}
                                          onChange={event => setName(event.target.value)}/>
                 <span>Todo:</span><input type="text"
                                          value={todo}
                                          onChange={event => setTodo(event.target.value)}/>
-                <button onClick={sendDataToApi}>Skapa Ny</button>
+                <button onClick={sendDataToApi}>Skapa</button>
                 {data.name ? <DataCard name={data.name}
                                        todo={data.todo}/>
                     : ''}

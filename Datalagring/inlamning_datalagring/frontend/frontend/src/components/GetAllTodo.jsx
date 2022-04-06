@@ -18,7 +18,8 @@ const GetAllTodo = () => {
             <article>
                 <h2>Hämta hela listan</h2>
                 <button onClick={() => sendToApi()}>Hämta hela listan</button>
-                <DataList todo={data}/>
+                <DataList todo={data}
+                />
             </article>
         </>
     )

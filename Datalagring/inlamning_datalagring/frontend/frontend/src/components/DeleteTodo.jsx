@@ -1,10 +1,17 @@
 import TodoService from "../utils/api/services/TodoService"
 import {useState} from "react"
 import DataCard from "./dataCard/DataCard";
+import css from './DeleteTodo.module.css'
+import close from '../utils/global/image/close.png'
 
 const DeleteTodo = () => {
     const [data, setData] = useState([])
     const [userId, setUserId] = useState('')
+    const [modal, setModal] = useState(false)
+
+    const toggleModal = () => {
+        setModal(!modal);
+    }
 
     const sendDataToApi = () => {
         TodoService.deleteTodo(userId)
@@ -17,15 +24,24 @@ const DeleteTodo = () => {
     return (
         <>
             <article>
-                <h2>Delete by id</h2>
-                Id: <input type="text"
-                           value={userId}
-                           onChange={event => setUserId(event.target.value)}/>
-                <button onClick={sendDataToApi}>Hämta id</button>
-                {data.name ? <DataCard name={data.name}
-                                       todo={data.todo}
-                                       _id={data._id}/>
-                    : <h2>{data}</h2>}
+                <button onClick={toggleModal}>Ta bort</button>
+                {modal && (
+                    <div className={css.popup}>
+                        <div className={css.popup.content}>
+                            <img src={close} alt="close" className={css.close}/>
+                            <h2>Ta bort en Todo via Id</h2>
+                            Id: <input type="text"
+                                       value={userId}
+                                       onChange={event => setUserId(event.target.value)}/>
+                            <button onClick={sendDataToApi}>Hämta id</button>
+                            {data.name ? <DataCard name={data.name}
+                                                   todo={data.todo}
+                                                   _id={data._id}/>
+                                : <h2>{data}</h2>}
+                            <button onClick={toggleModal}>Close</button>
+                        </div>
+                    </div>
+                )}
             </article>
         </>
     )

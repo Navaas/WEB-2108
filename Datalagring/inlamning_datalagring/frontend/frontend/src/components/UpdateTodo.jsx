@@ -22,7 +22,7 @@ const UpdateTodo = () => {
     return (
         <>
             <article>
-                <h2>Uppdatera en todo</h2>
+                <h2>Uppdatera en Todo</h2>
                 <span>Id:</span><input type="text"
                                        value={_id}
                                        onChange={event => set_Id(event.target.value)}/>

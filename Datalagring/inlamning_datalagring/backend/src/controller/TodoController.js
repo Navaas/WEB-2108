@@ -44,12 +44,13 @@ const getTodoById = async (req, res) => {
 const getTodoWithName = async (req, res) => {
     try {
         const response = await TodoModel.find({name: req.params.name})
+        Logger.debug(response)
         response.length !== 0
             ? res.status(StatusCode.OK).send(response)
-            : res.status(StatusCode.NOT_FOUND).send({message: 'Could not find todo by name:' + req.params.name})
+            : res.status(StatusCode.NOT_FOUND).send({message: `Could not find user with name:` + req.params.name})
     } catch (error) {
         res.status(StatusCode.INTERNAL_SERVER_ERROR).send({
-            message: 'Error while trying to retrieve todo with name:' + req.params.name,
+            message: `Error while trying to retrieve user with name:` + req.params.userId,
             error: error.message
         })
     }
@@ -58,7 +59,7 @@ const getTodoWithName = async (req, res) => {
 const updateTodo = async (req, res) => {
     try {
         if (!req.body) {
-            return res.status(StatusCode.BAD_REQUEST).send({message: 'Cannot update emty values'})
+            return res.status(StatusCode.BAD_REQUEST).send('Cannot update emty values')
         }
         const response = await TodoModel.findByIdAndUpdate(req.params.userId, {
             todo: req.body.todo,
@@ -76,12 +77,11 @@ const updateTodo = async (req, res) => {
 const deleteTodo = async (req, res) => {
     try {
         const response = await TodoModel.findByIdAndDelete(req.params.userId)
-        res.status(StatusCode.OK).send({
-            message: `Successfully deleted the todo: ${response.todo} and ID: ${response.userId}`
-        })
+        res.status(StatusCode.OK).send(`Todo: ${response.name} - ${response.todo} is deleted from database!  `
+        )
     } catch (error) {
         res.status(StatusCode.INTERNAL_SERVER_ERROR).send({
-            message: 'Error while trying to delete the todo with ID:' + req.params.userId,
+            message: `Error while trying to delete the todo with ID: ${req.params.userId}`,
             error: error.message
         })
     }

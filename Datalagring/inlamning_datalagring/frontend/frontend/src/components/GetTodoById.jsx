@@ -17,14 +17,13 @@ const GetTodoById = () => {
     return (
         <>
             <article>
-                <h1>Get Todo By Id</h1>
+                <h1>Hämta en Todo via ett Id</h1>
                 Id: <input type="text"
                            value={userId}
                            onChange={event => setUserId(event.target.value)}/>
                 <button onClick={sendDataToApi}>Hämta Id</button>
                 {data.name ? <DataCard name={data.name}
-                                       todo={data.todo}
-                                       _id={data._id}/>
+                                       todo={data.todo}/>
                     : <h2>{data}</h2>}
             </article>
         </>

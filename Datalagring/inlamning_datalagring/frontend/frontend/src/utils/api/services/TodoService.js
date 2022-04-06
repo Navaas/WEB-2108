@@ -3,7 +3,7 @@ import http from '../TodoApi'
 const todoUrl = '/todo'
 const todoUrlById = `${todoUrl}/:id`
 const searchTodo = `/searchTodo/`
-const toggleToFalse = `/todoIsDoneToggle/:id`
+// const toggleToFalse = `/todoIsDoneToggle/:id`
 
 const createTodo = (newTodo) => {
     return http.post(todoUrl, newTodo)
@@ -18,7 +18,7 @@ const getTodoById = (_id) => {
 }
 
 const getTodoWithName = (name) => {
-    return http.get(searchTodo+name)
+    return http.get(`/searchTodo/${name}`)
 }
 
 const updateTodo = (_id, changesTodo) => {
@@ -29,9 +29,9 @@ const deleteTodo = (_id) => {
     return http.delete(`/todo/${_id}`)
 }
 
-const toggleDone = (_id) => {
-    return http.put(`/todoIsDoneToggle/:id`)
-}
+// const toggleDone = (_id) => {
+//     return http.put(`/todoIsDoneToggle/:id`)
+// }
 
 export default {
     createTodo,
@@ -40,5 +40,5 @@ export default {
     getTodoWithName,
     updateTodo,
     deleteTodo,
-    toggleDone
+    // toggleDone
 }
