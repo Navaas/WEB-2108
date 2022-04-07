@@ -1,10 +1,10 @@
-import TodoService from "../utils/api/services/TodoService"
+import TodoService from "../../utils/api/services/TodoService"
 import {useState} from "react"
-import DataCard from "./dataCard/DataCard";
-import css from './DeleteTodo.module.css'
-import close from '../utils/global/image/close.png'
+import DataCard from "../dataCard/DataCard";
+import css from "../deleteTodo/DeleteTodo.module.css";
+import close from "../../utils/global/image/close.png";
 
-const DeleteTodo = () => {
+const GetTodoById = () => {
     const [data, setData] = useState([])
     const [userId, setUserId] = useState('')
     const [modal, setModal] = useState(false)
@@ -12,9 +12,8 @@ const DeleteTodo = () => {
     const toggleModal = () => {
         setModal(!modal);
     }
-
     const sendDataToApi = () => {
-        TodoService.deleteTodo(userId)
+        TodoService.getTodoById(userId)
             .then(response => {
                 setData(response.data)
             })
@@ -23,19 +22,18 @@ const DeleteTodo = () => {
 
     return (
         <>
-            <button onClick={toggleModal}>Ta bort</button>
+            <button onClick={toggleModal}>Hämta med Id</button>
             {modal && (
                 <div className={css.popup}>
                     <div className={css.popup.content}>
                         <img src={close} alt="close" className={css.close} onClick={toggleModal}/>
-                        <h2>Ta bort en Todo via Id</h2>
+                        <h1>Hämta en Todo via ett Id</h1>
                         Id: <input type="text"
                                    value={userId}
                                    onChange={event => setUserId(event.target.value)}/>
-                        <button onClick={sendDataToApi}>Hämta id</button>
+                        <button onClick={sendDataToApi}>Hämta Id</button>
                         {data.name ? <DataCard name={data.name}
-                                               todo={data.todo}
-                                               _id={data._id}/>
+                                               todo={data.todo}/>
                             : <h2>{data}</h2>}
                         <button onClick={toggleModal}>Close</button>
                     </div>
@@ -45,4 +43,4 @@ const DeleteTodo = () => {
     )
 }
 
-export default DeleteTodo
+export default GetTodoById

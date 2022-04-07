@@ -1,8 +1,8 @@
-import TodoService from "../utils/api/services/TodoService"
+import TodoService from "../../utils/api/services/TodoService"
 import {useState} from "react"
-import DataList from "./dataList/DataList";
+import DataList from "../dataList/DataList";
 import css from "./GetAllTodo.module.css";
-import close from "../utils/global/image/close.png";
+import close from "../../utils/global/image/close.png";
 
 const GetAllTodo = () => {
     const [data, setData] = useState([])

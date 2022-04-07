@@ -1,24 +1,24 @@
 import Alive from "./components/Alive";
-import GetAllTodo from "./components/GetAllTodo";
+import GetAllTodo from "./components/getAllTodo/GetAllTodo";
 import CreateTodo from "./components/CreateTodo";
-import GetTodoByName from "./components/GetTodoByName";
-import UpdateTodo from "./components/UpdateTodo";
-import GetTodoById from "./components/GetTodoById";
-import DeleteTodo from "./components/DeleteTodo";
+import GetTodoByName from "./components/getTodoByName/GetTodoByName";
+import UpdateTodo from "./components/updateTodo/UpdateTodo";
+import GetTodoById from "./components/getTodoById/GetTodoById";
+import DeleteTodo from "./components/deleteTodo/DeleteTodo";
 
 
 function App() {
     return (
         <>
-            <section>
-                <GetAllTodo/>
-                <DeleteTodo/>
-            </section>
             <Alive/>
             <CreateTodo/>
-            <GetTodoByName/>
-            <UpdateTodo/>
-            <GetTodoById/>
+            <section>
+                <GetAllTodo/>
+                <UpdateTodo/>
+                <GetTodoByName/>
+                <GetTodoById/>
+                <DeleteTodo/>
+            </section>
 
         </>
     );
