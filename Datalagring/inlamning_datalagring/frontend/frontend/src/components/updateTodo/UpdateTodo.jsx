@@ -9,7 +9,7 @@ const UpdateTodo = () => {
     const [name, setName] = useState('')
     const [_id, set_Id] = useState('')
     const [todo, setTodo] = useState('')
-    const [modal, setModal] = useState(false)
+    const [modal, setModal] = useState(autoToggle)
 
     const toggleModal = () => {
         setModal(!modal);
@@ -27,7 +27,7 @@ const UpdateTodo = () => {
     }
     return (
         <>
-            <button onClick={toggleModal}>Uppdatera Todo</button>
+            <button onClick={toggleModal} data-testid='headerText'>Uppdatera Todo</button>
             {modal && (
                 <div className={css.popup}>
                     <div className={css.overlay}>
@@ -58,5 +58,7 @@ const UpdateTodo = () => {
         </>
     )
 }
+
+let autoToggle = false
 
 export default UpdateTodo

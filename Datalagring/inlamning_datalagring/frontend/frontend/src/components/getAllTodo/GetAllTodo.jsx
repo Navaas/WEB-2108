@@ -21,14 +21,14 @@ const GetAllTodo = () => {
 
     return (
         <>
-            <button onClick={toggleModal}>Hämta hela listan</button>
+            <button onClick={toggleModal} data-testid='buttonText'>Hämta hela listan</button>
             {modal && (
                 <div className={css.popup}>
                     <div className={css.overlay}>
                         <div className={css.content}>
                             <img src={close} alt="close" className={css.close} onClick={toggleModal}/>
                             <h2>Hämta hela listan</h2>
-                            <button onClick={sendToApi}>Hämta hela listan</button>
+                            <button onClick={sendToApi} >Hämta hela listan</button>
                             <DataList todo={data}/>
                         </div>
                     </div>

@@ -21,7 +21,7 @@ const Alive = () => {
 
     return (
         <>
-            <h2>Alive</h2>
+            <h2 data-testid='headerText'>Yey, api is Alive!</h2>
             <button onClick={() => lookIfApiIsAlive()}>Make API call</button>
             {displayData()}
         </>

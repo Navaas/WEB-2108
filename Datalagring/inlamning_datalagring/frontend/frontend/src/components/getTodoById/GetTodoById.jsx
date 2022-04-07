@@ -22,13 +22,13 @@ const GetTodoById = () => {
 
     return (
         <>
-            <button onClick={toggleModal}>Hämta med Id</button>
+            <button onClick={toggleModal} data-testid='buttonText'>Hämta med Id</button>
             {modal && (
                 <div className={css.popup}>
                     <div className={css.overlay}>
                         <div className={css.content}>
                             <img src={close} alt="close" className={css.close} onClick={toggleModal}/>
-                            <h1>Hämta en Todo via ett Id</h1>
+                            <h1 data-testid='text'>Hämta en Todo via ett Id</h1>
                             Id: <input type="text"
                                        value={userId}
                                        onChange={event => setUserId(event.target.value)}/>
