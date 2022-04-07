@@ -24,12 +24,14 @@ const GetAllTodo = () => {
             <button onClick={toggleModal}>Hämta hela listan</button>
             {modal && (
                 <div className={css.popup}>
-                    <div className={css.popup.content}>
-                        <img src={close} alt="close" className={css.close} onClick={toggleModal}/>
-                        <h2>Hämta hela listan</h2>
-                        <button onClick={sendToApi}>Hämta hela listan</button>
-                        <DataList todo={data}/>
-                        <button onClick={toggleModal}>Close</button>
+                    <div className={css.overlay}>
+                        <div className={css.content}>
+                            <img src={close} alt="close" className={css.close} onClick={toggleModal}/>
+                            <h2>Hämta hela listan</h2>
+                            <button onClick={sendToApi}>Hämta hela listan</button>
+                            <DataList todo={data}/>
+                            <button onClick={toggleModal}>Close</button>
+                        </div>
                     </div>
                 </div>
             )}

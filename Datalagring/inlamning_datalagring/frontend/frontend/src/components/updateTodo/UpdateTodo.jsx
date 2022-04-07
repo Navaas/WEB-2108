@@ -30,27 +30,29 @@ const UpdateTodo = () => {
             <button onClick={toggleModal}>Uppdatera Todo</button>
             {modal && (
                 <div className={css.popup}>
-                    <div className={css.popup.content}>
-                        <img src={close} alt="close" className={css.close} onClick={toggleModal}/>
-                        <h2>Uppdatera en Todo</h2>
-                        <span>Id:</span><input type="text"
-                                               value={_id}
-                                               onChange={event => set_Id(event.target.value)}/>
-                        <br/>
-                        <span>Namn:</span><input type="text"
-                                                 value={name}
-                                                 onChange={event => setName(event.target.value)}/>
-                        <br/>
-                        <span>Att göra:</span><input type="text"
-                                                     value={todo}
-                                                     onChange={event => setTodo(event.target.value)}/>
-                        <br/>
-                        <button onClick={sendDataFromApi}>Uppdatera</button>
-                        {data.name ? <DataCard name={data.name}
-                                               todo={data.todo}
-                                               _id={data._id}/>
-                            : <h3>{data}</h3>}
-                        <button onClick={toggleModal}>Close</button>
+                    <div className={css.overlay}>
+                        <div className={css.content}>
+                            <img src={close} alt="close" className={css.close} onClick={toggleModal}/>
+                            <h2>Uppdatera en Todo</h2>
+                            <span>Id:</span><input type="text"
+                                                   value={_id}
+                                                   onChange={event => set_Id(event.target.value)}/>
+                            <br/>
+                            <span>Namn:</span><input type="text"
+                                                     value={name}
+                                                     onChange={event => setName(event.target.value)}/>
+                            <br/>
+                            <span>Att göra:</span><input type="text"
+                                                         value={todo}
+                                                         onChange={event => setTodo(event.target.value)}/>
+                            <br/>
+                            <button onClick={sendDataFromApi}>Uppdatera</button>
+                            {data.name ? <DataCard name={data.name}
+                                                   todo={data.todo}
+                                                   _id={data._id}/>
+                                : <h3>{data}</h3>}
+                            <button onClick={toggleModal}>Close</button>
+                        </div>
                     </div>
                 </div>
             )}

@@ -27,15 +27,17 @@ const GetTodoByName = () => {
             <button onClick={toggleModal}>Hämta ett namn</button>
             {modal && (
                 <div className={css.popup}>
-                    <div className={css.popup.content}>
-                        <img src={close} alt="close" className={css.close} onClick={toggleModal}/>
-                        <h2>Hämta namn i listan</h2>
-                        <span>Namn:</span> <input type="text"
-                                                  value={name}
-                                                  onChange={event => setName(event.target.value)}/>
-                        <button onClick={sendDataToApi}>Hämta</button>
-                        <DataList todo={data}/>
-                        <button onClick={toggleModal}>Close</button>
+                    <div className={css.overlay}>
+                        <div className={css.content}>
+                            <img src={close} alt="close" className={css.close} onClick={toggleModal}/>
+                            <h2>Hämta namn i listan</h2>
+                            <span>Namn:</span> <input type="text"
+                                                      value={name}
+                                                      onChange={event => setName(event.target.value)}/>
+                            <button onClick={sendDataToApi}>Hämta</button>
+                            <DataList todo={data}/>
+                            <button onClick={toggleModal}>Close</button>
+                        </div>
                     </div>
                 </div>
             )}

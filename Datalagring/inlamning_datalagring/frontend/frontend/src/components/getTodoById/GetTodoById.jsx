@@ -25,17 +25,19 @@ const GetTodoById = () => {
             <button onClick={toggleModal}>Hämta med Id</button>
             {modal && (
                 <div className={css.popup}>
-                    <div className={css.popup.content}>
-                        <img src={close} alt="close" className={css.close} onClick={toggleModal}/>
-                        <h1>Hämta en Todo via ett Id</h1>
-                        Id: <input type="text"
-                                   value={userId}
-                                   onChange={event => setUserId(event.target.value)}/>
-                        <button onClick={sendDataToApi}>Hämta Id</button>
-                        {data.name ? <DataCard name={data.name}
-                                               todo={data.todo}/>
-                            : <h2>{data}</h2>}
-                        <button onClick={toggleModal}>Close</button>
+                    <div className={css.overlay}>
+                        <div className={css.content}>
+                            <img src={close} alt="close" className={css.close} onClick={toggleModal}/>
+                            <h1>Hämta en Todo via ett Id</h1>
+                            Id: <input type="text"
+                                       value={userId}
+                                       onChange={event => setUserId(event.target.value)}/>
+                            <button onClick={sendDataToApi}>Hämta Id</button>
+                            {data.name ? <DataCard name={data.name}
+                                                   todo={data.todo}/>
+                                : <h2>{data}</h2>}
+                            <button onClick={toggleModal}>Close</button>
+                        </div>
                     </div>
                 </div>
             )}
