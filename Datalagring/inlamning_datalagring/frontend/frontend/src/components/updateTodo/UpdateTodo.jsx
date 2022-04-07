@@ -51,7 +51,6 @@ const UpdateTodo = () => {
                                                    todo={data.todo}
                                                    _id={data._id}/>
                                 : <h3>{data}</h3>}
-                            <button onClick={toggleModal}>Close</button>
                         </div>
                     </div>
                 </div>

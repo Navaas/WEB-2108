@@ -30,7 +30,6 @@ const GetAllTodo = () => {
                             <h2>Hämta hela listan</h2>
                             <button onClick={sendToApi}>Hämta hela listan</button>
                             <DataList todo={data}/>
-                            <button onClick={toggleModal}>Close</button>
                         </div>
                     </div>
                 </div>

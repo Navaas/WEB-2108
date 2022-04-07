@@ -36,7 +36,6 @@ const GetTodoById = () => {
                             {data.name ? <DataCard name={data.name}
                                                    todo={data.todo}/>
                                 : <h2>{data}</h2>}
-                            <button onClick={toggleModal}>Close</button>
                         </div>
                     </div>
                 </div>

@@ -36,7 +36,6 @@ const GetTodoByName = () => {
                                                       onChange={event => setName(event.target.value)}/>
                             <button onClick={sendDataToApi}>Hämta</button>
                             <DataList todo={data}/>
-                            <button onClick={toggleModal}>Close</button>
                         </div>
                     </div>
                 </div>

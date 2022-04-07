@@ -38,7 +38,6 @@ const DeleteTodo = () => {
                                                    todo={data.todo}
                                                    _id={data._id}/>
                                 : <h2>{data}</h2>}
-                            <button onClick={toggleModal}>Close</button>
                         </div>
                     </div>
                 </div>
