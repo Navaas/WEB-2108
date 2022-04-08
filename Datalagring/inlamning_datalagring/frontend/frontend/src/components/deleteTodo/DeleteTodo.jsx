@@ -23,13 +23,13 @@ const DeleteTodo = () => {
 
     return (
         <>
-            <button onClick={toggleModal}>Ta bort</button>
+            <button onClick={toggleModal} data-testid='buttonText'>Ta bort</button>
             {modal && (
                 <div className={css.popup}>
                     <div className={css.overlay}>
                         <div className={css.content}>
                             <img src={close} alt="close" className={css.close} onClick={toggleModal}/>
-                            <h2>Ta bort en Todo via Id</h2>
+                            <h2 data-testid='text'>Ta bort en Todo via Id</h2>
                             Id: <input type="text"
                                        value={userId}
                                        onChange={event => setUserId(event.target.value)}/>

@@ -9,7 +9,7 @@ const UpdateTodo = () => {
     const [name, setName] = useState('')
     const [_id, set_Id] = useState('')
     const [todo, setTodo] = useState('')
-    const [modal, setModal] = useState(autoToggle)
+    const [modal, setModal] = useState(false)
 
     const toggleModal = () => {
         setModal(!modal);
@@ -27,7 +27,7 @@ const UpdateTodo = () => {
     }
     return (
         <>
-            <button onClick={toggleModal} data-testid='headerText'>Uppdatera Todo</button>
+            <button onClick={toggleModal} data-testid='spanText'>Uppdatera Todo</button>
             {modal && (
                 <div className={css.popup}>
                     <div className={css.overlay}>
@@ -38,9 +38,9 @@ const UpdateTodo = () => {
                                                    value={_id}
                                                    onChange={event => set_Id(event.target.value)}/>
                             <br/>
-                            <span>Namn:</span><input type="text"
-                                                     value={name}
-                                                     onChange={event => setName(event.target.value)}/>
+                            <span data-testid='text'>Namn:</span><input type="text"
+                                                                        value={name}
+                                                                        onChange={event => setName(event.target.value)}/>
                             <br/>
                             <span>Att göra:</span><input type="text"
                                                          value={todo}

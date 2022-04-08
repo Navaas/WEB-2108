@@ -1,5 +1,5 @@
 import UpdateTodo from "../updateTodo/UpdateTodo";
-import {render} from '@testing-library/react'
+import {fireEvent, render} from '@testing-library/react'
 
 let getByTestId
 
@@ -8,6 +8,12 @@ beforeEach(() => {
     getByTestId = component.getByTestId
 })
 
-test('Check text in button', () => {
-    expect(getByTestId('headerText').textContent).toBe('Uppdatera Todo')
+test('Check text in span', () => {
+    const button = getByTestId('spanText')
+    fireEvent.click(button)
+    const text = getByTestId('text')
+    expect(text.textContent).toBe('Namn:')
+    expect(text).toBeInTheDocument()
+    fireEvent.click(button)
+    expect(text).not.toBeInTheDocument()
 })
