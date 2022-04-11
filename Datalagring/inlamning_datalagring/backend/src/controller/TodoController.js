@@ -138,12 +138,12 @@ const deleteTodo = (req, res) => {
                 Logger.info(todos)
                 res.status(StatusCode.OK).send(
                     todos
-                        ? {
-                            message: `Todo with id '${req.params.userId}' was deleted from database!`
-                        }
-                        : {
-                            message: `Todo with id '${req.params.userId}' not found`
-                        })
+                        ?
+                        `Todo with id '${req.params.userId}' was deleted from database!`
+
+                        :
+                        `Todo with id '${req.params.userId}' not found`
+                )
             }
         })
     } catch (error) {
