@@ -16,10 +16,8 @@ const GetTodoByName = () => {
     const sendDataToApi = () => {
         TodoService.getTodoWithName(name)
             .then(response => {
-                const dataArray = []
-                dataArray.push(response.data)
-                setData(dataArray)
-                console.log(dataArray)
+                setData(response.data)
+                console.log(response.data)
             })
             .catch(error => console.log(error))
     }

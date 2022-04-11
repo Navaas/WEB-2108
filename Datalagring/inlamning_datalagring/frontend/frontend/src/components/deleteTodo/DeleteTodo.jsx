@@ -16,7 +16,7 @@ const DeleteTodo = () => {
     const sendDataToApi = () => {
         TodoService.deleteTodo(userId)
             .then(response => {
-                setData(response.data.message)
+                setData(response.data)
             })
             .catch(error => {
                 setData((error.response.data.message))
@@ -36,10 +36,7 @@ const DeleteTodo = () => {
                                        value={userId}
                                        onChange={event => setUserId(event.target.value)}/>
                             <button onClick={sendDataToApi}>Hämta id</button>
-                            {data.name ? <DataCard name={data.name}
-                                                   todo={data.todo}
-                                                   _id={data._id}/>
-                                : <h2>{data}</h2>}
+                            <h2>{data}</h2>
                         </div>
                     </div>
                 </div>
