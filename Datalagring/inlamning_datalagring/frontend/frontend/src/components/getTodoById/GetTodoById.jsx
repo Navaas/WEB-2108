@@ -3,6 +3,7 @@ import {useState} from "react"
 import DataCard from "../dataCard/DataCard";
 import css from "../deleteTodo/DeleteTodo.module.css";
 import close from "../../utils/global/image/close.png";
+import DataList from "../dataList/DataList";
 
 const GetTodoById = () => {
     const [data, setData] = useState([])
@@ -15,9 +16,14 @@ const GetTodoById = () => {
     const sendDataToApi = () => {
         TodoService.getTodoById(userId)
             .then(response => {
-                setData(response.data)
+                const dataArray = []
+                dataArray.push(response.data)
+                console.log(dataArray)
+                setData(dataArray)
             })
-            .catch(error => console.log(error))
+            .catch(error => {
+                console.log(error)
+            })
     }
 
     return (
@@ -30,12 +36,15 @@ const GetTodoById = () => {
                             <img src={close} alt="close" className={css.close} onClick={toggleModal}/>
                             <h1 data-testid='text'>Hämta en Todo via ett Id</h1>
                             Id: <input type="text"
+                                       id={userId}
                                        value={userId}
                                        onChange={event => setUserId(event.target.value)}/>
                             <button onClick={sendDataToApi}>Hämta Id</button>
-                            {data.name ? <DataCard name={data.name}
-                                                   todo={data.todo}/>
-                                : <h2>{data}</h2>}
+                            <button onClick={ () => setData([]) }>clear</button>
+
+                            { data.length > 0 && data[0].message
+                                ? <p>{ data[0].message }</p>
+                                : <DataList todo={ data }/> }
                         </div>
                     </div>
                 </div>

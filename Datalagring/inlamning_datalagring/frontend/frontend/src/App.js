@@ -19,7 +19,6 @@ function App() {
                 <GetTodoById/>
                 <DeleteTodo/>
             </section>
-
         </>
     );
 }

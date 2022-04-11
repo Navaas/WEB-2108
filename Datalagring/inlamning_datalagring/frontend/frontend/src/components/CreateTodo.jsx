@@ -30,7 +30,8 @@ const CreateTodo = () => {
                                          onChange={event => setTodo(event.target.value)}/>
                 <button onClick={sendDataToApi}>Skapa</button>
                 {data.name ? <DataCard name={data.name}
-                                       todo={data.todo}/>
+                                       todo={data.todo}
+                                       _id={data._id}/>
                     : ''}
             </article>
         </>

@@ -4,6 +4,7 @@
 const OK = 200
 const CREATED = 201
 const ACCEPTED = 202
+const NO_CONTENT = 204
 
 // 3xx Omdirigering, ytterliggare åtgärd måste vidtas för att slutföra.
 
@@ -26,5 +27,6 @@ export default {
     FORBIDDEN,
     NOT_FOUND,
     METHOD_NOT_ALLOWED,
-    INTERNAL_SERVER_ERROR
+    INTERNAL_SERVER_ERROR,
+    NO_CONTENT
 }

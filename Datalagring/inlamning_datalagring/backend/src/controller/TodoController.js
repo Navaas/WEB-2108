@@ -3,86 +3,153 @@ import Logger from '../utils/Logger.js'
 import StatusCode from '../configuration/StatusCode.js'
 
 const createTodo = async (req, res) => {
+    Logger.info('createTodo()')
     Logger.http(req.body)
+    const {name, todo} = req.body
+    if (name && todo) {
+        const newObject = {
+            name: name,
+            todo: todo,
+        }
+        Logger.debug(newObject)
 
-    const todo = new TodoModel({
-        name: req.body.name,
-        todo: req.body.todo,
-        done: false
-    })
-    Logger.debug(todo)
-
-    try {
-        const response = await todo.save()
-        Logger.debug(response)
-        res.status(StatusCode.CREATED).send(response)
-    } catch (error) {
-        res.status(StatusCode.INTERNAL_SERVER_ERROR).send({message: error.message})
+        try {
+            const todos = new TodoModel(newObject)
+            const response = await todos.save()
+            Logger.debug(response)
+            res.status(StatusCode.CREATED).send(response)
+        } catch (error) {
+            Logger.error(error)
+            res.status(StatusCode.BAD_REQUEST).send({
+                error: 'Error creating user'
+            })
+        }
+    } else {
+        Logger.error('name, todo failed')
+        res.status(StatusCode.NO_CONTENT).send('No body')
     }
 }
 
+
 const getAllTodo = async (req, res) => {
     try {
-        const response = await TodoModel.find()
-        res.status(StatusCode.OK).send(response)
+        TodoModel.find({}, (error, todos) => {
+            if (error) {
+                Logger.error(error)
+                res.status(StatusCode.BAD_REQUEST).send({
+                    error: 'Error getting todos'
+                })
+            } else {
+                Logger.info(todos)
+                res.status(StatusCode.OK).send(todos)
+            }
+        })
     } catch (error) {
-        res.status(StatusCode.INTERNAL_SERVER_ERROR).send({message: error.message})
+        res.status(StatusCode.BAD_REQUEST).send({
+            error: 'Error getting todos'
+        })
     }
 }
 
 const getTodoById = async (req, res) => {
     try {
-        const response = await TodoModel.findById(req.params.userId)
-        res.status(StatusCode.OK).send(response)
+        TodoModel.findById(req.params.userId, (error, todos) => {
+            if (error) {
+                Logger.error(error)
+                res.status(StatusCode.BAD_REQUEST).send({
+                    error: 'Error getting todo'
+                })
+            } else {
+                Logger.info(todos)
+                res.status(StatusCode.OK).send(todos ? todos : {
+                    message: `Todo with id '${req.params.userId} not found`
+                })
+            }
+        })
     } catch (error) {
-        res.status(StatusCode.INTERNAL_SERVER_ERROR).send({
-            message: 'Error occurred while trying to retrieve user with id:' + req.params.userId
+        Logger.error(error)
+        res.status(StatusCode.BAD_REQUEST).send({
+            error: 'Error getting todo'
         })
     }
 }
 
 const getTodoWithName = async (req, res) => {
     try {
-        const response = await TodoModel.find({name: req.params.name})
-        Logger.debug(response)
-        response.length !== 0
-            ? res.status(StatusCode.OK).send(response)
-            : res.status(StatusCode.NOT_FOUND).send({message: `Could not find user with name:` + req.params.name})
+        TodoModel.find({name: req.params.name}, (error, todos) => {
+            if (error) {
+                Logger.error(error)
+                res.status(StatusCode.BAD_REQUEST).send({
+                    error: 'Error getting todos'
+                })
+            } else {
+                Logger.info(todos)
+                res.status(StatusCode.OK).send(todos.length > 0 ? todos :
+                    `Todo with name '${req.params.name}' not found`
+                )
+            }
+        })
     } catch (error) {
-        res.status(StatusCode.INTERNAL_SERVER_ERROR).send({
-            message: `Error while trying to retrieve user with name:` + req.params.userId,
-            error: error.message
+        Logger.error(error)
+        res.status(StatusCode.BAD_REQUEST).send({
+            error: 'Error getting todos'
         })
     }
 }
 
 const updateTodo = async (req, res) => {
     try {
-        if (!req.body) {
-            return res.status(StatusCode.BAD_REQUEST).send('Cannot update emty values')
+        const updateTodos = {
+            name: req.body.name,
+            todo: req.body.todo
         }
-        const response = await TodoModel.findByIdAndUpdate(req.params.userId, {
-            todo: req.body.todo,
-            name: req.body.name
-        }, {new: true})
-        res.status(StatusCode.OK).send(response)
+        Logger.debug(req.params.userId)
+        Logger.debug(updateTodos)
+        TodoModel.findByIdAndUpdate(req.params.userId, updateTodos, {new: true}, (error, todo) => {
+            if (error) {
+                Logger.error(error)
+                res.status(StatusCode.BAD_REQUEST).send({
+                    error: 'Error updating todo with id' + req.params.userId
+                })
+            } else {
+                Logger.info(todo)
+                res.status(StatusCode.OK).send(todo ? todo : {
+                    message: `User with id '${req.params.userId}' not found`
+                })
+            }
+        })
     } catch (error) {
-        res.status(StatusCode.INTERNAL_SERVER_ERROR).send({
-            message: 'Error occurred while trying to update value of the todo with ID:' + req.params.userId,
-            error: error.message
+        Logger.error(error)
+        res.status(StatusCode.BAD_REQUEST).send({
+            error: 'Error updating todo'
         })
     }
 }
 
-const deleteTodo = async (req, res) => {
+const deleteTodo = (req, res) => {
     try {
-        const response = await TodoModel.findByIdAndDelete(req.params.userId)
-        res.status(StatusCode.OK).send(`Todo: ${response.name} - ${response.todo} is deleted from database!  `
-        )
+        TodoModel.findByIdAndRemove(req.params.userId, (error, todos) => {
+            if (error) {
+                Logger.error(error)
+                res.status(StatusCode.BAD_REQUEST).send({
+                    error: 'Error deleting todo'
+                })
+            } else {
+                Logger.info(todos)
+                res.status(StatusCode.OK).send(
+                    todos
+                        ? {
+                            message: `Todo with id '${req.params.userId}' was deleted from database!`
+                        }
+                        : {
+                            message: `Todo with id '${req.params.userId}' not found`
+                        })
+            }
+        })
     } catch (error) {
-        res.status(StatusCode.INTERNAL_SERVER_ERROR).send({
-            message: `Error while trying to delete the todo with ID: ${req.params.userId}`,
-            error: error.message
+        Logger.error(error)
+        res.status(StatusCode.BAD_REQUEST).send({
+            error: 'Error deleting todo'
         })
     }
 }

@@ -16,9 +16,11 @@ const DeleteTodo = () => {
     const sendDataToApi = () => {
         TodoService.deleteTodo(userId)
             .then(response => {
-                console.log(response)
+                setData(response.data.message)
             })
-            .catch(error => console.log(error))
+            .catch(error => {
+                setData((error.response.data.message))
+            })
     }
 
     return (

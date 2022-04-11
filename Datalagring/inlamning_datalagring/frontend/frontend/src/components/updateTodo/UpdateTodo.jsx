@@ -3,6 +3,7 @@ import TodoService from "../../utils/api/services/TodoService"
 import DataCard from "../dataCard/DataCard";
 import css from "../deleteTodo/DeleteTodo.module.css";
 import close from "../../utils/global/image/close.png";
+import DataList from "../dataList/DataList";
 
 const UpdateTodo = () => {
     const [data, setData] = useState([])
@@ -14,16 +15,20 @@ const UpdateTodo = () => {
     const toggleModal = () => {
         setModal(!modal);
     }
-    const sendDataFromApi = () => {
+    const updateTodo = () => {
         const changesTodo = {
             'name': name,
             'todo': todo
         }
         TodoService.updateTodo(_id, changesTodo)
             .then(response => {
-                setData(response.data)
+                const dataArray = []
+                dataArray.push(response.data)
+                setData(dataArray)
             })
-            .catch(error => console.log(error))
+            .catch(error => {
+                console.log(error)
+            })
     }
     return (
         <>
@@ -46,11 +51,10 @@ const UpdateTodo = () => {
                                                          value={todo}
                                                          onChange={event => setTodo(event.target.value)}/>
                             <br/>
-                            <button onClick={sendDataFromApi}>Uppdatera</button>
-                            {data.name ? <DataCard name={data.name}
-                                                   todo={data.todo}
-                                                   _id={data._id}/>
-                                : <h3>{data}</h3>}
+                            <button onClick={updateTodo}>Uppdatera</button>
+                            {data.length > 0 && data[0].message
+                                ? <p>{data[0].message}</p>
+                                : <DataList todo={data}/> }
                         </div>
                     </div>
                 </div>
@@ -58,7 +62,5 @@ const UpdateTodo = () => {
         </>
     )
 }
-
-let autoToggle = false
 
 export default UpdateTodo

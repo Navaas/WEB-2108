@@ -16,8 +16,10 @@ const GetTodoByName = () => {
     const sendDataToApi = () => {
         TodoService.getTodoWithName(name)
             .then(response => {
-                setData(response.data)
-                console.log(response.data)
+                const dataArray = []
+                dataArray.push(response.data)
+                setData(dataArray)
+                console.log(dataArray)
             })
             .catch(error => console.log(error))
     }
@@ -35,7 +37,9 @@ const GetTodoByName = () => {
                                                       value={name}
                                                       onChange={event => setName(event.target.value)}/>
                             <button onClick={sendDataToApi}>Hämta</button>
-                            <DataList todo={data}/>
+                            {data.length > 0 && data[0].message
+                                ? <p>{data[0].message}</p>
+                                : <DataList todo={data}/>}
                         </div>
                     </div>
                 </div>
