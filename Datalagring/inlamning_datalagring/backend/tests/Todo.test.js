@@ -2,10 +2,10 @@ import Chai from 'chai'
 import ChaiHTTP from "chai-http"
 import {describe, it} from "mocha"
 import app from '../src/Server.js';
-import {response} from "express";
+
 
 Chai.should()
-Chai.use(Chai.expect)
+Chai.use(ChaiHTTP)
 const expect = Chai.expect
 
 const randomString = Math.random().toString(36).substring(7)
@@ -20,7 +20,7 @@ const updatedTodo = {
     todo: 'Förskolan 9'
 }
 
-let Id = ''
+let id_global = ''
 
 const createTodo = () => {
     describe('Testing to create a todo', () => {
@@ -30,6 +30,7 @@ const createTodo = () => {
                 .send(newTodo)
                 .end((error, response) => {
                     expect(response.status).to.equal(201)
+                    id_global = response.body._id
 
                     const body = response.body
                     expect(body.name).to.equal(newTodo.name)
@@ -67,7 +68,7 @@ const getTodo = () => {
 
                     const todo = body[0]
                     expect(todo).to.be.an('object')
-                    expect(todo.name).to.equal('Svea')
+                    expect(todo.name).to.equal('Stina')
                     done()
                 })
         })
@@ -78,10 +79,14 @@ const checkIfTodoNotExist = () => {
     describe('Testing message on todo that dont exist', () => {
         it('should return a string', (done) => {
             Chai.request(app)
-                .get(`/searchTodo/lllll`)
+                .get(`/searchTodo/Malin`)
                 .end((error, response) => {
                     expect(response.status).to.equal(200)
-                    expect(response.text).to.equal(`Todo with name 'lllll' not found`)
+                    expect(response.text).to.equal([
+                        {
+                            "message": "Todo with name 'Malin' not found"
+                        }
+                    ])
                     done()
                 })
         })
@@ -109,7 +114,7 @@ const updateTodoById = () => {
     describe('Testing to update a todo', () => {
         it('should expect a todo update', (done) => {
             Chai.request(app)
-                .put(`/todo/62501ab62668dfb5a7a39000`)
+                .put(`/todo/${id_global}`)
                 .send(updatedTodo)
                 .end((error, response) => {
                     expect(response.status).to.equal(200)
@@ -128,10 +133,10 @@ const deleteTodo = () => {
     describe('Testing delete a todo', () => {
         it('should expect to delete a todo', (done) => {
             Chai.request(app)
-                .delete(`/todo/${Id}`)
+                .delete(`/todo/${id_global}`)
                 .end((error, response) => {
                     expect(response.status).to.equal(200)
-                    expect(response.text).to.equal(`Todo with id '${Id}' was deleted from database!`)
+                    expect(response.text).to.equal(`Todo with id '${id_global}' was deleted from database!`)
                     done()
                 })
         })
@@ -142,10 +147,10 @@ const todoIsDeleted = () => {
     describe('Testing delete a todo', () => {
         it('should expect to delete a todo', (done) => {
             Chai.request(app)
-                .delete(`/todo/${Id}`)
+                .delete(`/todo/${id_global}`)
                 .end((error, response) => {
                     expect(response.status).to.equal(200)
-                    expect(response.text).to.equal(`Todo with id '${Id}' not found`)
+                    expect(response.text).to.equal(`Todo with id '${id_global}' not found`)
                     done()
                 })
         })
