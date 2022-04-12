@@ -2,21 +2,27 @@ import {useState} from "react";
 import TodoService from "../../utils/api/services/TodoService";
 import css from './DataCard.module.css'
 
-const DataCard = ({name, todo, _id, done}) => {
-    const [isDone, setIsDone] = useState(done)
+const DataCard = ({name, todo, _id, todoIsDone}) => {
+    const [isDone, setIsDone] = useState(todoIsDone)
 
-    // function toggleDone() {
-    //     TodoService.(_id)
-    //         .then(response => {
-    //             setIsDone(response.data.done)
-    //             console.log(response.data)
-    //         })
-    //         .catch(error => console.log(error))
-    // }
+    function todoIsDoneToggle() {
+        const payload = {
+            newTodoStatus: !isDone
+        }
+        TodoService.toggleDone(_id, payload)
+            .then(response => {
+                console.log(response.data)
+                setIsDone(response.data)
+            }).catch(error => console.log(error))
+    }
 
     return (
         <div>
-            <p> Todo: {todo} - Namn: {name} Id: {_id}</p>
+            <ul className={isDone ? css.doneTodo : null} onClick={todoIsDoneToggle}>
+                <li>Namn: {name}</li>
+                <li className={css.otherFont}>Todo: {todo}</li>
+                <li className={css.otherFont}> Id: {_id}</li>
+            </ul>
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import {useState} from "react"
-import TodoService from "../utils/api/services/TodoService"
-import DataCard from "./dataCard/DataCard";
+import TodoService from "../../utils/api/services/TodoService"
+import DataCard from "../dataCard/DataCard";
+import css from '../createTodo/CreateTodo.module.css'
 
 const CreateTodo = () => {
     const [data, setData] = useState({})
@@ -20,7 +21,7 @@ const CreateTodo = () => {
     }
     return (
         <>
-            <article>
+            <article className={css.article}>
                 <h2>Skapa ny Todo</h2>
                 <span>Namn:</span><input type="text"
                                          value={name}

@@ -34,13 +34,13 @@ const GetTodoById = () => {
                     <div className={css.overlay}>
                         <div className={css.content}>
                             <img src={close} alt="close" className={css.close} onClick={toggleModal}/>
-                            <h1 data-testid='text'>Hämta en Todo via ett Id</h1>
-                            Id: <input type="text"
+                            <h2 data-testid='text'>Hämta en Todo via ett Id</h2>
+                            <span>Id:</span> <input type="text"
                                        id={userId}
                                        value={userId}
                                        onChange={event => setUserId(event.target.value)}/>
-                            <button onClick={sendDataToApi}>Hämta Id</button>
-                            <button onClick={ () => setData([]) }>clear</button>
+                            <button onClick={sendDataToApi}>Hämta</button>
+                            <button onClick={ () => setData([]) }>Clear</button>
 
                             { data.length > 0 && data[0].message
                                 ? <p>{ data[0].message }</p>

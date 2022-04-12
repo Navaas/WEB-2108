@@ -35,7 +35,7 @@ const DeleteTodo = () => {
                             Id: <input type="text"
                                        value={userId}
                                        onChange={event => setUserId(event.target.value)}/>
-                            <button onClick={sendDataToApi}>Hämta id</button>
+                            <button onClick={sendDataToApi}>Ta bort</button>
                             <h2>{data}</h2>
                         </div>
                     </div>

@@ -1,3 +1,17 @@
 .doneTodo{
     text-decoration: line-through;
 }
+
+li {
+    text-align: left;
+    list-style: none;
+    font-family: "Quicksand Bold", sans-serif;
+}
+
+ul:hover {
+    background-color: lightgrey;
+}
+
+.otherFont {
+    font-family: "Quicksand Light", sans-serif;
+}

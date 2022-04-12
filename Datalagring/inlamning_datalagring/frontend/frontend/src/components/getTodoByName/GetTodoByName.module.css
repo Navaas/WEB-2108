@@ -38,3 +38,7 @@
 .close:hover {
     background-color: #ed4e4e;
 }
+
+.todoDone {
+    text-decoration: line-through;
+}

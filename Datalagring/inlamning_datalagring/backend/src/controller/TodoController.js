@@ -84,9 +84,9 @@ const getTodoWithName = async (req, res) => {
                 })
             } else {
                 Logger.info(todos)
-                res.status(StatusCode.OK).send(todos.length > 0 ? todos :
-                    `Todo with name '${req.params.name}' not found`
-                )
+                res.status(StatusCode.OK).send(todos.length > 0 ? todos : [{
+                    message: `Todo with name '${req.params.name}' not found`
+                }])
             }
         })
     } catch (error) {
@@ -155,10 +155,34 @@ const deleteTodo = (req, res) => {
 }
 
 const todoIsDoneToggle = (req, res) => {
-    const id = Number(req.params.userId)
-    TodoModel[id].Done = !TodoModel[id].Done
-    res.status(StatusCode.ACCEPTED).send(TodoModel[id])
+
+    try {
+        const {userId} = req.params
+        const {newTodoStatus} = req.body
+        const returnUpdatedObject = {
+            new: true
+        }
+        const Query = {
+            todoIsDone: newTodoStatus
+        }
+        TodoModel.findByIdAndUpdate(userId, Query, returnUpdatedObject, (error, todo) => {
+            if (error) {
+                Logger.error(error)
+                res.status(StatusCode.BAD_REQUEST).send({
+                    error: `Error changing isDone`
+                })
+            } else {
+                res.status(StatusCode.OK).send(todo.todoIsDone)
+            }
+        })
+    } catch (error) {
+        Logger.error(error)
+        res.status(StatusCode.BAD_REQUEST).send({
+            error: `Error updating isDone`
+        })
+    }
 }
+
 
 
 export default {
@@ -168,5 +192,5 @@ export default {
     getTodoWithName,
     updateTodo,
     deleteTodo,
-    todoIsDoneToggle
+    todoIsDoneToggle,
 }

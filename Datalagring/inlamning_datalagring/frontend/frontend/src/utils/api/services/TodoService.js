@@ -29,9 +29,9 @@ const deleteTodo = (_id) => {
     return http.delete(`/todo/${_id}`)
 }
 
-// const toggleDone = (_id) => {
-//     return http.put(`/todoIsDoneToggle/:id`)
-// }
+const toggleDone = (_id, payload) => {
+    return http.put(`/todoIsDoneToggle/${_id}`, payload)
+}
 
 export default {
     createTodo,
@@ -40,5 +40,5 @@ export default {
     getTodoWithName,
     updateTodo,
     deleteTodo,
-    // toggleDone
+    toggleDone
 }

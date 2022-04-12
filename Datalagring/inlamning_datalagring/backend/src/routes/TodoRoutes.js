@@ -4,7 +4,7 @@ const todoRoutes = (app) => {
     const todoUrl = '/todo'
     const todoUrlById = `${todoUrl}/:userId`
     const searchTodo = '/searchTodo/:name'
-    const toggleToFalse = `/todoIsDoneToggle/:id`
+    const toggleToFalse = `/todoIsDoneToggle/:userId`
 
     app.post(todoUrl, TodoController.createTodo)
     app.get(todoUrl, TodoController.getAllTodo)

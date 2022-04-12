@@ -1,5 +1,5 @@
 import React from 'react'
-import './utils/global/Global.css'
+import './utils/global/css/Global.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 

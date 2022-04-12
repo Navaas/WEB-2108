@@ -1,0 +1,9 @@
+article {
+    background-color: #CEAB93;
+    margin: 0px 450px 0px;
+    width: 600px;
+    text-align: center;
+    border: 4px ridge whitesmoke;
+    border-radius: 10px;
+    padding-bottom: 40px;
+}

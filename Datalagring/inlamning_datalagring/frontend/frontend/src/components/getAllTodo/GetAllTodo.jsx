@@ -25,11 +25,11 @@ const GetAllTodo = () => {
             {modal && (
                 <div className={css.popup}>
                     <div className={css.overlay}>
-                        <div className={css.content}>
+                        <div className={css.scrollWindowProperties}>
                             <img src={close} alt="close" className={css.close} onClick={toggleModal}/>
                             <h2>Hämta hela listan</h2>
                             <button onClick={sendToApi} >Hämta hela listan</button>
-                            <DataList todo={data}/>
+                            <DataList  todo={data}/>
                         </div>
                     </div>
                 </div>

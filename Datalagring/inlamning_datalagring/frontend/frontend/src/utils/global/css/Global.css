@@ -2,21 +2,25 @@ body {
     background-color: #AD8B73;
 }
 
-article {
-    background-color: #CEAB93;
-    margin: 150px 500px;
-    width: 600px;
-    text-align: center;
-    border: 4px ridge whitesmoke;
-    border-radius: 10px;
-    padding-bottom: 40px;
+@font-face {
+    font-family: 'IndieFlower';
+    src: local('IndieFlower'),
+    url('./fonts/IndieFlower-Regular.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'Quicksand Bold';
+    src: local('Quicksand Bold'),
+    url('./fonts/Quicksand-Bold.ttf') format('truetype');
+}
+
 
 button {
     background-color: #967864;
     border-radius: 10px;
     padding: 5px;
     margin-right: 10px;
+    font-family: "Quicksand Bold", sans-serif;
 }
 
 button:hover {
@@ -36,17 +40,30 @@ p:hover {
     background-color: lightgrey;
 }
 
+input {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+h2 {
+    font-family: "IndieFlower", sans-serif ;
+}
+
+span {
+    font-family: "Quicksand Bold", sans-serif;
+}
+
+h1 {
+    padding: 0;
+    text-align: center;
+}
+
 section {
     background-color: #CEAB93;
-    margin: -135px 480px;
+    margin-left: 350px;
     width: 600px;
     text-align: center;
     border: 4px ridge whitesmoke;
     border-radius: 10px;
     padding: 20px;
-}
-
-input {
-    border-radius: 10px;
-    padding: 5px;
 }
