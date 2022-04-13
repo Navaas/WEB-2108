@@ -35,6 +35,7 @@ const GetTodoByName = () => {
                                                       value={name}
                                                       onChange={event => setName(event.target.value)}/>
                             <button onClick={sendDataToApi}>Hämta</button>
+                            <button onClick={ () => setData([]) }>Clear</button>
                             {data.length > 0 && data[0].message
                                 ? <p>{data[0].message}</p>
                                 : <DataList todo={data}/>}

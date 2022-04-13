@@ -29,6 +29,7 @@ const GetAllTodo = () => {
                             <img src={close} alt="close" className={css.close} onClick={toggleModal}/>
                             <h2>Hämta hela listan</h2>
                             <button onClick={sendToApi} >Hämta hela listan</button>
+                            <button onClick={ () => setData([]) }>Clear</button>
                             <DataList  todo={data}/>
                         </div>
                     </div>

@@ -52,6 +52,7 @@ const UpdateTodo = () => {
                                                          onChange={event => setTodo(event.target.value)}/>
                             <br/>
                             <button onClick={updateTodo}>Uppdatera</button>
+                            <button onClick={ () => setData([]) }>Clear</button>
                             {data.length > 0 && data[0].message
                                 ? <p>{data[0].message}</p>
                                 : <DataList todo={data}/> }
