@@ -1,4 +1,5 @@
 ## Dokumentation - Datalagring
+
 Vi har skapat ett fullstack projekt med hjäp av, Docker, MongoDB, Mongoose, React.
 ![bild](frontend/frontend/src/utils/global/image/TodoMongo.JPG)
 Detta är min nya frontend, tog inte den från förra inlämningen.
@@ -12,13 +13,13 @@ med en knapp och sen med ett popup window. Jag googlade fram en tutorial på en 
 den passade min css. Jag ville skapa en annan css och utmana mig själv.
 
 Lars gick igenom hur man skapade ett globalt id, som ska underlätta om någon ska kolla testerna i backend. Eftersom
-databasen är tom så ligger createTodo testet först i min testfil.
+databasen är tom så ligger createTodo först i min testfil.
 
 ### Beskriv något som var besvärligt att få till.
 
 Jag stötte på problem när jag skulle koppla ihop min backend med min frontend, jag hade missat att tex skriva in rätt
-url. Hade även fel när jag gjorde skapade mina todos. Dom hamnade en egen collection än den jag hade skapat. Men då
-hittade jag felet i min TodoModel.js jg hade missat att skriva i ett , mellan "databaseCollection TodoSchema".
+url. Hade även fel när jag skapade mina todos. Dom hamnade i en egen collection än den jag hade skapat. Men då hittade
+jag felet i min TodoModel.js jag hade missat att skriva i ett , mellan "databaseCollection TodoSchema".
 
 ### Beskriv om du fått byta lösning och varför i sådana fall.
 
@@ -44,7 +45,8 @@ denna gången ch det gick fortare att få ut rätt i Insomnia.
 Det har varit svårt att koppla ihop hela frontend, då insomnia släpper igenom saker som inte React gör. Tex när jag vill
 få ut ett meddelande att en Todo inte finns. Det har synts i Insomnia som det ska men på frontend kom det ut
 felmeddelande i inspectorn eller hela sidan blev vit. Det har gjort att jag har fått gå tillbaka i backend och göra om
-mina message till tex en sträng eller en array för att frontend förväntar sig det.
+mina message till tex en sträng eller en array för att frontend förväntar sig det. Har tagit hjälp av min klasskamrat
+Christoffer om jag haft prolem på backend.
 
 ### Vad har du lärt dig
 
@@ -73,8 +75,8 @@ till nästan varje component.
 
 ### Lämna exempel på lösningar du valde att inte implementera
 
-Jag tror det hade varit snyggare med en bock eller liknande. Men jag valde att ha kvar min överstrukning när en todo är
-färdig. Men fick hjälp av Lars att skriva om den förra koden med togglesDone så att den fungerar till denna nlämning.
+Jag tror det hade varit snyggare med en bock eller liknande om en todo är klar. Men jag valde att ha kvar min
+överstrukning. Fick hjälp av Lars att skriva om den förra koden med toggleDone så att den fungerar till denna nlämning.
 
 ### Lämna förslag på förbättringar av din UI/UX design eller reflektera över den.
 
