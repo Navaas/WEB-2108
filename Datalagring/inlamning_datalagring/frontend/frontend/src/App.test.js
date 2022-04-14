@@ -1,4 +1,4 @@
-test('check that true is true', () => {
-  const something = true
-  expect(something).toBe(true)
+test('check that false is false', () => {
+  const something = false
+  expect(something).toBe(false)
 })

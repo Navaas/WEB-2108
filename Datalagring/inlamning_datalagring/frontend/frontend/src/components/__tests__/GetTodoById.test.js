@@ -8,6 +8,7 @@ beforeEach(() => {
     getByTestId = component.getByTestId
 })
 
+
 test('Check text in button', () => {
     const button = getByTestId('buttonText')
     fireEvent.click(button)

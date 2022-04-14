@@ -9,6 +9,7 @@ beforeEach(() => {
     getByTestId = component.getByTestId
 })
 
+
 test('Check text in h2', () => {
     expect(getByTestId('buttonText').textContent).toBe('Hämta hela listan')
 })

@@ -8,6 +8,7 @@ beforeEach(() => {
     getByTestId = component.getByTestId
 })
 
+
 test('Check text in h2', () => {
     expect(getByTestId('headerText').textContent).toBe('Yey, api is Alive!')
 })
