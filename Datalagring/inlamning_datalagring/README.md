@@ -1,4 +1,7 @@
 ## Dokumentation - Datalagring
+Min Trello för datalagring.
+[TRELLO](https://trello.com/invite/b/MPCRli8r/4441cff04c834099e21d4e4da7ec5a54/datalagring "Trello")
+
 
 Vi har skapat ett fullstack projekt med hjäp av, Docker, MongoDB, Mongoose, React.
 ![bild](frontend/frontend/src/utils/global/image/TodoMongo.JPG)
@@ -23,8 +26,8 @@ jag felet i min TodoModel.js jag hade missat att skriva i ett , mellan "database
 
 ### Beskriv om du fått byta lösning och varför i sådana fall.
 
-Jag hade en Middlewares och en ApplyMiddlewares men insåg att jag kunde lägga allt jag hade i ApplyMiddlewares i
-Middlewares så fick jag bara en fil istället för två. Enklare att städa upp i backend och mindre filer att ha koll på.
+Jag har en Middlewares och en ApplyMiddlewares för att hålla isär mina middlewares. Jag kan ha allt i samma fil men jag
+tycker det är enklare om man behöver felsöka att ha det i två.
 
 ### Beskriv hur du felsökt ditt program när det uppstått problem
 
