@@ -4,7 +4,7 @@ import {render} from '@testing-library/react'
 let getByTestId
 
 beforeEach(() => {
-    const component = render (<Alive/>)
+    const component = render(<Alive/>)
     getByTestId = component.getByTestId
 })
 

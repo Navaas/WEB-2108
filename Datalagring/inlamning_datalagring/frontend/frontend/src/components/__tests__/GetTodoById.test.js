@@ -4,7 +4,7 @@ import {fireEvent, render} from '@testing-library/react'
 let getByTestId
 
 beforeEach(() => {
-    const component = render (<GetTodoById/>)
+    const component = render(<GetTodoById/>)
     getByTestId = component.getByTestId
 })
 
