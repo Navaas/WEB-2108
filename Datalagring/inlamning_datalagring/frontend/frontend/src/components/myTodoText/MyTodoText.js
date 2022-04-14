@@ -1,5 +1,5 @@
-import pencil from '../utils/global/image/pencil.png'
-import css from '../components/MyTodoText.module.css'
+import pencil from '../../utils/global/image/pencil.png'
+import css from './MyTodoText.module.css'
 
 export default function MyTodoText() {
     return (

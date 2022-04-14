@@ -1,6 +1,5 @@
 import TodoService from "../../utils/api/services/TodoService"
 import {useState} from "react"
-import DataCard from "../dataCard/DataCard";
 import css from './DeleteTodo.module.css'
 import close from '../../utils/global/image/close.png'
 
@@ -32,7 +31,7 @@ const DeleteTodo = () => {
                         <div className={css.content}>
                             <img src={close} alt="close" className={css.close} onClick={toggleModal}/>
                             <h2 data-testid='text'>Ta bort en Todo via Id</h2>
-                            Id: <input type="text"
+                            <span>Id:</span> <input type="text"
                                        value={userId}
                                        onChange={event => setUserId(event.target.value)}/>
                             <button onClick={sendDataToApi}>Ta bort</button>

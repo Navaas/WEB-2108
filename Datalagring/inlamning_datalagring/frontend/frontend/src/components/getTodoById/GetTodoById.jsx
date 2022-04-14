@@ -1,6 +1,5 @@
 import TodoService from "../../utils/api/services/TodoService"
 import {useState} from "react"
-import DataCard from "../dataCard/DataCard";
 import css from "../deleteTodo/DeleteTodo.module.css";
 import close from "../../utils/global/image/close.png";
 import DataList from "../dataList/DataList";

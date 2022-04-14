@@ -5,7 +5,7 @@ import GetTodoByName from "./components/getTodoByName/GetTodoByName";
 import UpdateTodo from "./components/updateTodo/UpdateTodo";
 import GetTodoById from "./components/getTodoById/GetTodoById";
 import DeleteTodo from "./components/deleteTodo/DeleteTodo";
-import MyTodoText from "./components/MyTodoText";
+import MyTodoText from "./components/myTodoText/MyTodoText";
 
 
 function App() {
