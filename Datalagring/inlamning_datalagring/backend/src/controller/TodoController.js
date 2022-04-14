@@ -21,11 +21,11 @@ const createTodo = async (req, res) => {
         } catch (error) {
             Logger.error(error)
             res.status(StatusCode.BAD_REQUEST).send({
-                error: 'Error creating user'
+                error: 'Error creating todo'
             })
         }
     } else {
-        Logger.error('name, todo failed')
+        Logger.error('name and todo failed')
         res.status(StatusCode.NO_CONTENT).send('No body')
     }
 }
@@ -114,7 +114,7 @@ const updateTodo = async (req, res) => {
             } else {
                 Logger.info(todo)
                 res.status(StatusCode.OK).send(todo ? todo : {
-                    message: `User with id '${req.params.userId}' not found`
+                    message: `Todo with id '${req.params.userId}' not found`
                 })
             }
         })
@@ -169,7 +169,7 @@ const todoIsDoneToggle = (req, res) => {
             if (error) {
                 Logger.error(error)
                 res.status(StatusCode.BAD_REQUEST).send({
-                    error: `Error changing isDone`
+                    error: `Error changing todoIsDone`
                 })
             } else {
                 res.status(StatusCode.OK).send(todo.todoIsDone)
@@ -178,12 +178,10 @@ const todoIsDoneToggle = (req, res) => {
     } catch (error) {
         Logger.error(error)
         res.status(StatusCode.BAD_REQUEST).send({
-            error: `Error updating isDone`
+            error: `Error updating todoIsDone`
         })
     }
 }
-
-
 
 export default {
     createTodo,

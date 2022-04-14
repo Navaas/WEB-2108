@@ -31,7 +31,7 @@ const connectToDatabase = async (app) => {
         await mongoose.connect(url)
         Logger.info('Successfully connected to the Database')
     } catch (error) {
-        Logger.error('Error connecting to the Datebase'.toUpperCase(), error)
+        Logger.error('Error connecting to the Database'.toUpperCase(), error)
         process.exit()
     }
 }
