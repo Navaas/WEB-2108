@@ -6,3 +6,408 @@
 2022-04-26 13:28:36:2836 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
 2022-04-26 13:28:37:2837 [32minfo[39m: [32mSuccessfully connected to the Database![39m
 2022-04-26 13:28:37:2837 [37mdebug[39m: [37m--== lolz ==--[39m
+2022-04-26 13:52:04:524 [32minfo[39m: [32m⚡️[server]: Server is running at http://localhost/:8080[39m
+2022-04-26 13:52:04:524 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2022-04-26 13:52:04:524 [32minfo[39m: [32mSuccessfully connected to the Database![39m
+2022-04-26 13:52:04:524 [37mdebug[39m: [37m--== lolz ==--[39m
+2022-04-26 13:54:20:5420 [32minfo[39m: [32m⚡️[server]: Server is running at http://localhost/:8080[39m
+2022-04-26 13:54:20:5420 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2022-04-26 13:54:20:5420 [32minfo[39m: [32mSuccessfully connected to the Database![39m
+2022-04-26 13:54:20:5420 [37mdebug[39m: [37m--== lolz ==--[39m
+2022-04-26 13:59:32:5932 [32minfo[39m: [32m⚡️[server]: Server is running at http://localhost/:8080[39m
+2022-04-26 13:59:32:5932 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2022-04-26 13:59:32:5932 [32minfo[39m: [32mSuccessfully connected to the Database![39m
+2022-04-26 13:59:32:5932 [37mdebug[39m: [37m--== lolz ==--[39m
+2022-04-26 13:59:38:5938 [35mhttp[39m: [35mGET / 200 28 - 8.400 ms[39m
+[35m[39m
+2022-04-26 13:59:39:5939 [35mhttp[39m: [35mGET /favicon.ico 404 1348 - 24.156 ms[39m
+[35m[39m
+2022-04-26 14:03:31:331 [32minfo[39m: [32m⚡️[server]: Server is running at http://localhost/:8080[39m
+2022-04-26 14:03:31:331 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2022-04-26 14:03:31:331 [35mhttp[39m: [35mGET / 304 - - 3.804 ms[39m
+[35m[39m
+2022-04-26 14:03:31:331 [32minfo[39m: [32mSuccessfully connected to the Database![39m
+2022-04-26 14:03:31:331 [37mdebug[39m: [37m--== lolz ==--[39m
+2022-04-26 14:04:03:43 [35mhttp[39m: [35mGET / 304 - - 2.862 ms[39m
+[35m[39m
+2022-04-26 14:43:54:4354 [32minfo[39m: [32m⚡️[server]: Server is running at http://localhost/:8080[39m
+2022-04-26 14:43:54:4354 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2022-04-26 14:43:55:4355 [32minfo[39m: [32mSuccessfully connected to the Database![39m
+2022-04-26 14:43:55:4355 [37mdebug[39m: [37m--== lolz ==--[39m
+2022-04-26 15:18:12:1812 [32minfo[39m: [32m⚡️[server]: Server is running at http://localhost/:8080[39m
+2022-04-26 15:18:12:1812 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2022-04-26 15:18:12:1812 [32minfo[39m: [32mSuccessfully connected to the Database![39m
+2022-04-26 15:18:12:1812 [37mdebug[39m: [37m--== lolz ==--[39m
+2022-04-26 15:19:06:196 [32minfo[39m: [32m⚡️[server]: Server is running at http://localhost/:8080[39m
+2022-04-26 15:19:06:196 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2022-04-26 15:19:06:196 [32minfo[39m: [32mSuccessfully connected to the Database![39m
+2022-04-26 15:19:06:196 [37mdebug[39m: [37m--== lolz ==--[39m
+2022-04-26 15:21:05:215 [32minfo[39m: [32mcreateUser([39m
+2022-04-26 15:21:05:215 [35mhttp[39m: [35m{ name: 'Michaela', age: 32, gender: 'Male' }[39m
+2022-04-26 15:21:05:215 [35mhttp[39m: [35m{ name: 'Michaela', age: 32, gender: 'Male' }[39m
+2022-04-26 15:21:05:215 [35mhttp[39m: [35m{[39m
+[35m  name: 'Michaela',[39m
+[35m  age: 32,[39m
+[35m  gender: 'Male',[39m
+[35m  _id: new ObjectId("6267f1c1b575bfd7f93e2629"),[39m
+[35m  createdAt: 2022-04-26T13:21:05.347Z,[39m
+[35m  updatedAt: 2022-04-26T13:21:05.347Z,[39m
+[35m  __v: 0[39m
+[35m}[39m
+2022-04-26 15:21:05:215 [35mhttp[39m: [35mPOST /user 201 163 - 192.019 ms[39m
+[35m[39m
+2022-04-26 15:22:22:2222 [32minfo[39m: [32mcreateUser([39m
+2022-04-26 15:22:22:2222 [35mhttp[39m: [35m{ name: 'Michaela', age: 32, gender: 'Female' }[39m
+2022-04-26 15:22:22:2222 [35mhttp[39m: [35m{ name: 'Michaela', age: 32, gender: 'Female' }[39m
+2022-04-26 15:22:22:2222 [35mhttp[39m: [35m{[39m
+[35m  name: 'Michaela',[39m
+[35m  age: 32,[39m
+[35m  gender: 'Female',[39m
+[35m  _id: new ObjectId("6267f20eb575bfd7f93e262b"),[39m
+[35m  createdAt: 2022-04-26T13:22:22.500Z,[39m
+[35m  updatedAt: 2022-04-26T13:22:22.500Z,[39m
+[35m  __v: 0[39m
+[35m}[39m
+2022-04-26 15:22:22:2222 [35mhttp[39m: [35mPOST /user 201 165 - 94.627 ms[39m
+[35m[39m
+2022-04-26 15:25:10:2510 [35mhttp[39m: [35mGET /user 404 1334 - 12.173 ms[39m
+[35m[39m
+2022-04-26 15:37:35:3735 [32minfo[39m: [32m⚡️[server]: Server is running at http://localhost/:8080[39m
+2022-04-26 15:37:35:3735 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2022-04-26 15:37:35:3735 [32minfo[39m: [32mSuccessfully connected to the Database![39m
+2022-04-26 15:37:35:3735 [37mdebug[39m: [37m--== lolz ==--[39m
+2022-04-27 10:41:06:416 [32minfo[39m: [32m⚡️[server]: Server is running at http://localhost/:8080[39m
+2022-04-27 10:41:06:416 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2022-04-27 10:41:06:416 [32minfo[39m: [32mSuccessfully connected to the Database![39m
+2022-04-27 10:41:06:416 [37mdebug[39m: [37m--== lolz ==--[39m
+2022-04-27 10:41:14:4114 [32minfo[39m: [32mcreateUser()[39m
+2022-04-27 10:41:14:4114 [35mhttp[39m: [35m{ name: 'Aram', age: 32, gender: 'Male' }[39m
+2022-04-27 10:41:14:4114 [35mhttp[39m: [35m{ name: 'Aram', age: 32, gender: 'Male' }[39m
+2022-04-27 10:41:14:4114 [35mhttp[39m: [35m{[39m
+[35m  name: 'Aram',[39m
+[35m  age: 32,[39m
+[35m  gender: 'Male',[39m
+[35m  _id: new ObjectId("626901aa7a6828a7b90978ed"),[39m
+[35m  createdAt: 2022-04-27T08:41:14.199Z,[39m
+[35m  updatedAt: 2022-04-27T08:41:14.199Z,[39m
+[35m  __v: 0[39m
+[35m}[39m
+2022-04-27 10:41:14:4114 [35mhttp[39m: [35mPOST /user 201 159 - 89.569 ms[39m
+[35m[39m
+2022-04-27 10:41:22:4122 [35mhttp[39m: [35mGET /user 404 1334 - 12.538 ms[39m
+[35m[39m
+2022-04-27 10:41:59:4159 [35mhttp[39m: [35m[[39m
+[35m  {[39m
+[35m    _id: new ObjectId("626901aa7a6828a7b90978ed"),[39m
+[35m    name: 'Aram',[39m
+[35m    age: 32,[39m
+[35m    gender: 'Male',[39m
+[35m    createdAt: 2022-04-27T08:41:14.199Z,[39m
+[35m    updatedAt: 2022-04-27T08:41:14.199Z,[39m
+[35m    __v: 0[39m
+[35m  }[39m
+[35m][39m
+2022-04-27 10:41:59:4159 [35mhttp[39m: [35mGET /user/all 200 161 - 38.272 ms[39m
+[35m[39m
+2022-04-27 10:42:14:4214 [32minfo[39m: [32mcreateUser()[39m
+2022-04-27 10:42:14:4214 [35mhttp[39m: [35m{ name: 'Michaela', age: 32, gender: 'Female' }[39m
+2022-04-27 10:42:14:4214 [35mhttp[39m: [35m{ name: 'Michaela', age: 32, gender: 'Female' }[39m
+2022-04-27 10:42:14:4214 [35mhttp[39m: [35m{[39m
+[35m  name: 'Michaela',[39m
+[35m  age: 32,[39m
+[35m  gender: 'Female',[39m
+[35m  _id: new ObjectId("626901e67a6828a7b90978f0"),[39m
+[35m  createdAt: 2022-04-27T08:42:14.748Z,[39m
+[35m  updatedAt: 2022-04-27T08:42:14.748Z,[39m
+[35m  __v: 0[39m
+[35m}[39m
+2022-04-27 10:42:14:4214 [35mhttp[39m: [35mPOST /user 201 165 - 24.363 ms[39m
+[35m[39m
+2022-04-27 10:42:17:4217 [35mhttp[39m: [35m[[39m
+[35m  {[39m
+[35m    _id: new ObjectId("626901aa7a6828a7b90978ed"),[39m
+[35m    name: 'Aram',[39m
+[35m    age: 32,[39m
+[35m    gender: 'Male',[39m
+[35m    createdAt: 2022-04-27T08:41:14.199Z,[39m
+[35m    updatedAt: 2022-04-27T08:41:14.199Z,[39m
+[35m    __v: 0[39m
+[35m  },[39m
+[35m  {[39m
+[35m    _id: new ObjectId("626901e67a6828a7b90978f0"),[39m
+[35m    name: 'Michaela',[39m
+[35m    age: 32,[39m
+[35m    gender: 'Female',[39m
+[35m    createdAt: 2022-04-27T08:42:14.748Z,[39m
+[35m    updatedAt: 2022-04-27T08:42:14.748Z,[39m
+[35m    __v: 0[39m
+[35m  }[39m
+[35m][39m
+2022-04-27 10:42:17:4217 [35mhttp[39m: [35mGET /user/all 200 327 - 15.518 ms[39m
+[35m[39m
+2022-04-27 10:43:02:432 [35mhttp[39m: [35m[[39m
+[35m  {[39m
+[35m    _id: new ObjectId("626901aa7a6828a7b90978ed"),[39m
+[35m    name: 'Aram',[39m
+[35m    age: 32,[39m
+[35m    gender: 'Male',[39m
+[35m    createdAt: 2022-04-27T08:41:14.199Z,[39m
+[35m    updatedAt: 2022-04-27T08:41:14.199Z,[39m
+[35m    __v: 0[39m
+[35m  }[39m
+[35m][39m
+2022-04-27 10:43:02:432 [35mhttp[39m: [35mGET /user/name/Aram 200 161 - 15.166 ms[39m
+[35m[39m
+2022-04-27 10:43:46:4346 [35mhttp[39m: [35m{[39m
+[35m  _id: new ObjectId("626901e67a6828a7b90978f0"),[39m
+[35m  name: 'Michaela',[39m
+[35m  age: 32,[39m
+[35m  gender: 'Female',[39m
+[35m  createdAt: 2022-04-27T08:42:14.748Z,[39m
+[35m  updatedAt: 2022-04-27T08:42:14.748Z,[39m
+[35m  __v: 0[39m
+[35m}[39m
+2022-04-27 10:43:46:4346 [35mhttp[39m: [35mGET /user/626901e67a6828a7b90978f0 200 165 - 17.322 ms[39m
+[35m[39m
+2022-04-27 10:44:16:4416 [32minfo[39m: [32m⚡️[server]: Server is running at http://localhost/:8080[39m
+2022-04-27 10:44:16:4416 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2022-04-27 10:44:16:4416 [32minfo[39m: [32mSuccessfully connected to the Database![39m
+2022-04-27 10:44:16:4416 [37mdebug[39m: [37m--== lolz ==--[39m
+2022-04-27 10:45:23:4523 [35mhttp[39m: [35mGET /user/Aram/Male 404 1354 - 18.922 ms[39m
+[35m[39m
+2022-04-27 10:46:04:464 [35mhttp[39m: [35m[[39m
+[35m  {[39m
+[35m    _id: new ObjectId("626901aa7a6828a7b90978ed"),[39m
+[35m    name: 'Aram',[39m
+[35m    age: 32,[39m
+[35m    gender: 'Male',[39m
+[35m    createdAt: 2022-04-27T08:41:14.199Z,[39m
+[35m    updatedAt: 2022-04-27T08:41:14.199Z,[39m
+[35m    __v: 0[39m
+[35m  }[39m
+[35m][39m
+2022-04-27 10:46:04:464 [35mhttp[39m: [35mGET /user/name/Aram/32 200 161 - 45.444 ms[39m
+[35m[39m
+2022-04-27 10:46:12:4612 [35mhttp[39m: [35m[[39m
+[35m  {[39m
+[35m    _id: new ObjectId("626901aa7a6828a7b90978ed"),[39m
+[35m    name: 'Aram',[39m
+[35m    age: 32,[39m
+[35m    gender: 'Male',[39m
+[35m    createdAt: 2022-04-27T08:41:14.199Z,[39m
+[35m    updatedAt: 2022-04-27T08:41:14.199Z,[39m
+[35m    __v: 0[39m
+[35m  }[39m
+[35m][39m
+2022-04-27 10:46:12:4612 [35mhttp[39m: [35mGET /user/name/Aram/ 200 161 - 9.974 ms[39m
+[35m[39m
+2022-04-27 10:46:34:4634 [32minfo[39m: [32mcreateUser()[39m
+2022-04-27 10:46:34:4634 [35mhttp[39m: [35m{ name: 'Aram', age: 10, gender: 'Male' }[39m
+2022-04-27 10:46:34:4634 [35mhttp[39m: [35m{ name: 'Aram', age: 10, gender: 'Male' }[39m
+2022-04-27 10:46:34:4634 [35mhttp[39m: [35m{[39m
+[35m  name: 'Aram',[39m
+[35m  age: 10,[39m
+[35m  gender: 'Male',[39m
+[35m  _id: new ObjectId("626902ea84122daa8f5d6923"),[39m
+[35m  createdAt: 2022-04-27T08:46:34.605Z,[39m
+[35m  updatedAt: 2022-04-27T08:46:34.605Z,[39m
+[35m  __v: 0[39m
+[35m}[39m
+2022-04-27 10:46:34:4634 [35mhttp[39m: [35mPOST /user 201 159 - 80.377 ms[39m
+[35m[39m
+2022-04-27 10:46:37:4637 [35mhttp[39m: [35m[[39m
+[35m  {[39m
+[35m    _id: new ObjectId("626901aa7a6828a7b90978ed"),[39m
+[35m    name: 'Aram',[39m
+[35m    age: 32,[39m
+[35m    gender: 'Male',[39m
+[35m    createdAt: 2022-04-27T08:41:14.199Z,[39m
+[35m    updatedAt: 2022-04-27T08:41:14.199Z,[39m
+[35m    __v: 0[39m
+[35m  },[39m
+[35m  {[39m
+[35m    _id: new ObjectId("626901e67a6828a7b90978f0"),[39m
+[35m    name: 'Michaela',[39m
+[35m    age: 32,[39m
+[35m    gender: 'Female',[39m
+[35m    createdAt: 2022-04-27T08:42:14.748Z,[39m
+[35m    updatedAt: 2022-04-27T08:42:14.748Z,[39m
+[35m    __v: 0[39m
+[35m  },[39m
+[35m  {[39m
+[35m    _id: new ObjectId("626902ea84122daa8f5d6923"),[39m
+[35m    name: 'Aram',[39m
+[35m    age: 10,[39m
+[35m    gender: 'Male',[39m
+[35m    createdAt: 2022-04-27T08:46:34.605Z,[39m
+[35m    updatedAt: 2022-04-27T08:46:34.605Z,[39m
+[35m    __v: 0[39m
+[35m  }[39m
+[35m][39m
+2022-04-27 10:46:37:4637 [35mhttp[39m: [35mGET /user/all 200 487 - 16.480 ms[39m
+[35m[39m
+2022-04-27 10:46:40:4640 [35mhttp[39m: [35m[[39m
+[35m  {[39m
+[35m    _id: new ObjectId("626901aa7a6828a7b90978ed"),[39m
+[35m    name: 'Aram',[39m
+[35m    age: 32,[39m
+[35m    gender: 'Male',[39m
+[35m    createdAt: 2022-04-27T08:41:14.199Z,[39m
+[35m    updatedAt: 2022-04-27T08:41:14.199Z,[39m
+[35m    __v: 0[39m
+[35m  },[39m
+[35m  {[39m
+[35m    _id: new ObjectId("626902ea84122daa8f5d6923"),[39m
+[35m    name: 'Aram',[39m
+[35m    age: 10,[39m
+[35m    gender: 'Male',[39m
+[35m    createdAt: 2022-04-27T08:46:34.605Z,[39m
+[35m    updatedAt: 2022-04-27T08:46:34.605Z,[39m
+[35m    __v: 0[39m
+[35m  }[39m
+[35m][39m
+2022-04-27 10:46:40:4640 [35mhttp[39m: [35mGET /user/name/Aram/ 200 321 - 13.875 ms[39m
+[35m[39m
+2022-04-27 10:46:45:4645 [35mhttp[39m: [35m[[39m
+[35m  {[39m
+[35m    _id: new ObjectId("626901aa7a6828a7b90978ed"),[39m
+[35m    name: 'Aram',[39m
+[35m    age: 32,[39m
+[35m    gender: 'Male',[39m
+[35m    createdAt: 2022-04-27T08:41:14.199Z,[39m
+[35m    updatedAt: 2022-04-27T08:41:14.199Z,[39m
+[35m    __v: 0[39m
+[35m  },[39m
+[35m  {[39m
+[35m    _id: new ObjectId("626902ea84122daa8f5d6923"),[39m
+[35m    name: 'Aram',[39m
+[35m    age: 10,[39m
+[35m    gender: 'Male',[39m
+[35m    createdAt: 2022-04-27T08:46:34.605Z,[39m
+[35m    updatedAt: 2022-04-27T08:46:34.605Z,[39m
+[35m    __v: 0[39m
+[35m  }[39m
+[35m][39m
+2022-04-27 10:46:45:4645 [35mhttp[39m: [35mGET /user/name/Aram/10 200 321 - 11.480 ms[39m
+[35m[39m
+2022-04-27 10:46:52:4652 [35mhttp[39m: [35m[[39m
+[35m  {[39m
+[35m    _id: new ObjectId("626901aa7a6828a7b90978ed"),[39m
+[35m    name: 'Aram',[39m
+[35m    age: 32,[39m
+[35m    gender: 'Male',[39m
+[35m    createdAt: 2022-04-27T08:41:14.199Z,[39m
+[35m    updatedAt: 2022-04-27T08:41:14.199Z,[39m
+[35m    __v: 0[39m
+[35m  },[39m
+[35m  {[39m
+[35m    _id: new ObjectId("626902ea84122daa8f5d6923"),[39m
+[35m    name: 'Aram',[39m
+[35m    age: 10,[39m
+[35m    gender: 'Male',[39m
+[35m    createdAt: 2022-04-27T08:46:34.605Z,[39m
+[35m    updatedAt: 2022-04-27T08:46:34.605Z,[39m
+[35m    __v: 0[39m
+[35m  }[39m
+[35m][39m
+2022-04-27 10:46:52:4652 [35mhttp[39m: [35mGET /user/name/Aram/10 200 321 - 13.385 ms[39m
+[35m[39m
+2022-04-27 10:52:16:5216 [37mdebug[39m: [37m626901aa7a6828a7b90978ed[39m
+2022-04-27 10:52:16:5216 [37mdebug[39m: [37m{ name: 'Aram', age: 20, gender: 'Male' }[39m
+2022-04-27 10:52:16:5216 [37mdebug[39m: [37m{ name: 'Aram', age: 20, gender: 'Male' }[39m
+2022-04-27 10:52:16:5216 [35mhttp[39m: [35m{[39m
+[35m  _id: new ObjectId("626901aa7a6828a7b90978ed"),[39m
+[35m  name: 'Aram',[39m
+[35m  age: 20,[39m
+[35m  gender: 'Male',[39m
+[35m  createdAt: 2022-04-27T08:41:14.199Z,[39m
+[35m  updatedAt: 2022-04-27T08:52:16.939Z,[39m
+[35m  __v: 0[39m
+[35m}[39m
+2022-04-27 10:52:16:5216 [35mhttp[39m: [35mPUT /user/626901aa7a6828a7b90978ed 200 159 - 30.229 ms[39m
+[35m[39m
+2022-04-27 10:52:24:5224 [35mhttp[39m: [35m[[39m
+[35m  {[39m
+[35m    _id: new ObjectId("626901aa7a6828a7b90978ed"),[39m
+[35m    name: 'Aram',[39m
+[35m    age: 20,[39m
+[35m    gender: 'Male',[39m
+[35m    createdAt: 2022-04-27T08:41:14.199Z,[39m
+[35m    updatedAt: 2022-04-27T08:52:16.939Z,[39m
+[35m    __v: 0[39m
+[35m  },[39m
+[35m  {[39m
+[35m    _id: new ObjectId("626901e67a6828a7b90978f0"),[39m
+[35m    name: 'Michaela',[39m
+[35m    age: 32,[39m
+[35m    gender: 'Female',[39m
+[35m    createdAt: 2022-04-27T08:42:14.748Z,[39m
+[35m    updatedAt: 2022-04-27T08:42:14.748Z,[39m
+[35m    __v: 0[39m
+[35m  },[39m
+[35m  {[39m
+[35m    _id: new ObjectId("626902ea84122daa8f5d6923"),[39m
+[35m    name: 'Aram',[39m
+[35m    age: 10,[39m
+[35m    gender: 'Male',[39m
+[35m    createdAt: 2022-04-27T08:46:34.605Z,[39m
+[35m    updatedAt: 2022-04-27T08:46:34.605Z,[39m
+[35m    __v: 0[39m
+[35m  }[39m
+[35m][39m
+2022-04-27 10:52:24:5224 [35mhttp[39m: [35mGET /user/all 200 487 - 14.319 ms[39m
+[35m[39m
+2022-04-27 10:53:38:5338 [35mhttp[39m: [35m{[39m
+[35m  _id: new ObjectId("626901aa7a6828a7b90978ed"),[39m
+[35m  name: 'Aram',[39m
+[35m  age: 20,[39m
+[35m  gender: 'Male',[39m
+[35m  createdAt: 2022-04-27T08:41:14.199Z,[39m
+[35m  updatedAt: 2022-04-27T08:52:16.939Z,[39m
+[35m  __v: 0[39m
+[35m}[39m
+2022-04-27 10:53:38:5338 [35mhttp[39m: [35mDELETE /user/626901aa7a6828a7b90978ed 200 196 - 12.294 ms[39m
+[35m[39m
+2022-04-27 10:53:58:5358 [35mhttp[39m: [35mnull[39m
+2022-04-27 10:53:58:5358 [35mhttp[39m: [35mDELETE /user/626901aa7a6828a7b90978ed 200 41 - 8.613 ms[39m
+[35m[39m
+2022-04-27 10:55:52:5552 [32minfo[39m: [32m⚡️[server]: Server is running at http://localhost/:8080[39m
+2022-04-27 10:55:52:5552 [33mwarn[39m: [33mSERVER RUNNING IN DEVELOPMENT MODE![39m
+2022-04-27 10:55:52:5552 [32minfo[39m: [32mSuccessfully connected to the Database![39m
+2022-04-27 10:55:52:5552 [37mdebug[39m: [37m--== lolz ==--[39m
+2022-04-27 10:55:52:5552 [35mhttp[39m: [35m[[39m
+[35m  {[39m
+[35m    _id: new ObjectId("626901e67a6828a7b90978f0"),[39m
+[35m    name: 'Michaela',[39m
+[35m    age: 32,[39m
+[35m    gender: 'Female',[39m
+[35m    createdAt: 2022-04-27T08:42:14.748Z,[39m
+[35m    updatedAt: 2022-04-27T08:42:14.748Z,[39m
+[35m    __v: 0[39m
+[35m  },[39m
+[35m  {[39m
+[35m    _id: new ObjectId("626902ea84122daa8f5d6923"),[39m
+[35m    name: 'Aram',[39m
+[35m    age: 10,[39m
+[35m    gender: 'Male',[39m
+[35m    createdAt: 2022-04-27T08:46:34.605Z,[39m
+[35m    updatedAt: 2022-04-27T08:46:34.605Z,[39m
+[35m    __v: 0[39m
+[35m  }[39m
+[35m][39m
+2022-04-27 10:55:52:5552 [35mhttp[39m: [35mGET /user/all 200 327 - 159.911 ms[39m
+[35m[39m
+2022-04-27 10:56:02:562 [35mhttp[39m: [35m{[39m
+[35m  _id: new ObjectId("626901e67a6828a7b90978f0"),[39m
+[35m  name: 'Michaela',[39m
+[35m  age: 32,[39m
+[35m  gender: 'Female',[39m
+[35m  createdAt: 2022-04-27T08:42:14.748Z,[39m
+[35m  updatedAt: 2022-04-27T08:42:14.748Z,[39m
+[35m  __v: 0[39m
+[35m}[39m
+2022-04-27 10:56:02:562 [35mhttp[39m: [35mDELETE /user/626901e67a6828a7b90978f0 200 80 - 21.165 ms[39m
+[35m[39m
+2022-04-27 10:56:08:568 [35mhttp[39m: [35mnull[39m
+2022-04-27 10:56:08:568 [35mhttp[39m: [35mDELETE /user/626901e67a6828a7b90978f0 200 63 - 54.824 ms[39m
+[35m[39m
